@@ -1,0 +1,27 @@
+{
+  "name": "restart-fe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LuckyChou710/ReStart-FE.git",
+  "author": "zhourunkai <944268618@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "husky": "^6.0.0"
+  },
+  "scripts": {
+    "cz": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
