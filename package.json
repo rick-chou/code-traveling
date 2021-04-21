@@ -27,6 +27,7 @@
   "dependencies": {
     "@rematch/core": "^2.0.1",
     "axios": "^0.21.1",
+    "cz-conventional-changelog": "^3.3.0",
     "mobx": "^6.2.0",
     "mobx-react": "^7.1.0",
     "mockjs": "^1.1.0",
