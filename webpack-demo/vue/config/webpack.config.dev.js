@@ -12,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, '../build'),
     filename: 'js/[name].[hash].bundle.js',
   },
+
   module: {
     rules: [
       {
@@ -21,10 +22,11 @@ module.exports = {
       },
     ],
   },
-
   plugins: [htmlWebpackPlugin, new VueLoaderPlugin()],
-
   resolve: {
-    extensions: ['.vue'],
+    extensions: ['.js', '.css', '.vue'],
+    alias: {
+      vue$: 'vue/dist/vue.esm.js',
+    },
   },
 };
