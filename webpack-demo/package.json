@@ -12,12 +12,17 @@
     "html-webpack-plugin": "4.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "4.44.2",
     "webpack-cli": "3",
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
     "start:react": "webpack-dev-server --config  ./react/config/webpack.config.dev.js --open",
-    "build:react": "webpack --config ./react/config/webpack.config.prod.js"
+    "build:react": "webpack --config ./react/config/webpack.config.prod.js",
+    "start:vue": "webpack-dev-server --config  ./vue/config/webpack.config.dev.js --open",
+    "build:vue": "webpack --config ./vue/config/webpack.config.prod.js"
   }
 }
