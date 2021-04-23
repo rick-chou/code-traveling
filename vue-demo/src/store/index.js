@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     list: ['fixing bug...'],
+    title: 'TODO LIST',
   },
   mutations: {
     addItem(state, item) {

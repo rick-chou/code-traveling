@@ -6,7 +6,7 @@ import ToDoList from '../components/ToDoList.vue';
 
 Vue.use(VueRouter);
 
-export default new VueRouter({
+const router = new VueRouter({
   routes: [
     {
       path: '/add',
@@ -20,3 +20,13 @@ export default new VueRouter({
     },
   ],
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.path === '/add' || to.path === '/list') {
+    next();
+  } else {
+    next('/add');
+  }
+});
+
+export default router;
