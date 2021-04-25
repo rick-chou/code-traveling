@@ -1,6 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import store from '@store';
+import { connect, Provider } from 'react-redux';
+import store from '@store/react-redux';
 let Counter = () => {
   return <div>123</div>;
 };
@@ -17,7 +17,9 @@ Counter = connect(mapStateToProps, mapDispatchToProps)(Counter);
 const CounterWrapper = () => {
   return (
     <div store={store}>
-      <Counter />
+      <Provider>
+        <Counter />
+      </Provider>
     </div>
   );
 };
