@@ -1,4 +1,4 @@
-import Comments from './views/Comments';
+import Comments from '@containers/Comments';
 
 function App() {
   return (
