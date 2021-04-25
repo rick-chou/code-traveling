@@ -1,9 +1,15 @@
-import Comments from '@containers/Comments';
+import routesConfig from '@router';
 
 function App() {
   return (
     <div className="App">
-      <Comments />
+      {
+        routesConfig.map((item,idx)=>{
+          return(
+            <div></div>
+          )
+        })
+      }
     </div>
   );
 }
