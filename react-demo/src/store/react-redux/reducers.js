@@ -7,7 +7,8 @@ const defaultState = {
 const state = (state = defaultState, action) => {
   switch (action.type) {
     case MODIFY_COUNTER: {
-      const { counter } = action.payload;
+      let { counter } = action;
+      counter += state.counter;
       return { ...state, counter };
     }
     default:

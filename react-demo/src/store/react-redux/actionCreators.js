@@ -1,6 +1,6 @@
 import { MODIFY_COUNTER } from './actionTypes';
 
-export const modifyCounter = (payload) => ({
+export const modifyCounter = (counter) => ({
   type: MODIFY_COUNTER,
-  payload,
+  counter,
 });
