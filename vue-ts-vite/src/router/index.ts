@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
 // 路由懒加载
 
@@ -17,7 +17,7 @@ import Add from '../components/goods/Add.vue'
 import Order from '../components/order/Order.vue'
 import Report from '../components/report/Report.vue'
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   // 重定向
   { path: '/', redirect: '/login' },
   { path: '/login', component: Login },

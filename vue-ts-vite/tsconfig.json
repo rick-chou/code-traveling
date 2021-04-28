@@ -7,7 +7,10 @@
       "@store/*": ["./src/store/*"],
       "@components/*": ["./src/components/*"],
       "@router/*": ["./src/router/*"],
-      "@containers/*": ["./src/containers/*"]
+      "@containers/*": ["./src/containers/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@types/*": ["./src/types/*"]
     },
     "module": "esnext",
     "moduleResolution": "node",

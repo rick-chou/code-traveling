@@ -251,13 +251,16 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.el-checkbox
-  margin: 0 10px 0 0 !important
+<style lang="scss" scoped>
+.el-checkbox {
+  margin: 0 10px 0 0 !important;
+}
 
-.previewImg
-  width: 100%
+.previewImg {
+  width: 100%;
+}
 
-.btnAdd
-  margin-top: 15px
+.btnAdd {
+  margin-top: 15px;
+}
 </style>

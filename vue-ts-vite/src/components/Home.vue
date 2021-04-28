@@ -12,7 +12,9 @@
     <el-container>
       <!-- 侧边栏 -->
       <el-aside :width="isCollapse ? '64px' : '200px'">
-        <div class="toggle-button" @click="toggleCollapse"><b>|||</b></div>
+        <div class="toggle-button" @click="!isCollapse">
+          <b>{{ isCollapse }}</b>
+        </div>
         <!-- 侧边栏菜单区域 -->
         <el-menu background-color="#333744" text-color="#fff" active-text-color="#409EFF" unique-opened :collapse="isCollapse" :collapse-transition="false" router :default-active="activePath">
           <!-- 一级菜单 -->
@@ -47,23 +49,30 @@
 </template>
 
 <script lang="ts">
-export default {
+import { ref, defineComponent } from 'vue'
+import { Func } from '../types/common'
+export default defineComponent({
   data() {
     return {
       // 左侧菜单数据
       menulist: [],
       iconsObj: {
-        '125': 'iconfont icon-user',
-        '103': 'iconfont icon-tijikongjian',
-        '101': 'iconfont icon-shangpin',
-        '102': 'iconfont icon-danju',
-        '145': 'iconfont icon-baobiao',
+        125: 'iconfont icon-user',
+        103: 'iconfont icon-tijikongjian',
+        101: 'iconfont icon-shangpin',
+        102: 'iconfont icon-danju',
+        145: 'iconfont icon-baobiao',
       },
       // 是否折叠
-      isCollapse: false,
+      // isCollapse: false,
       // 被激活的链接地址
       activePath: '',
     }
+  },
+  setup: () => {
+    const isCollapse = ref(false)
+
+    return { isCollapse }
   },
   created() {
     this.getMenuList()
@@ -92,53 +101,61 @@ export default {
       this.activePath = activePath
     },
   },
-}
+})
 </script>
 
-<style lang="sass" scoped>
-.home-container
-  height: 100%
+<style lang="scss" scoped>
+.home-container {
+  height: 100%;
+}
+.el-header {
+  background-color: #43353d;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  > div {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 15px;
+    }
+  }
+  img {
+    border-radius: 50%;
+    width: 45px;
+    margin-left: 10px;
+  }
+  span {
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
 
-.el-header
-  background-color: #43353d
-  display: flex
-  justify-content: space-between
-  padding-left: 0
-  align-items: center
-  color: #fff
-  font-size: 20px
-  > div
-    display: flex
-    align-items: center
-    span
-      margin-left: 15px
+.el-aside {
+  background-color: #43353d;
+  .el-menu {
+    border-right: none;
+  }
+}
 
-  img
-    border-radius: 50%
-    width: 45px
-    margin-left: 10px
+.el-main {
+  background-color: #eaedf1;
+}
 
-  span
-    font-family: 'Courier New', Courier, monospace
+.iconfont {
+  margin-right: 10px;
+}
 
-.el-aside
-  background-color: #43353d
-  .el-menu
-    border-right: none
-
-.el-main
-  background-color: #eaedf1
-
-.iconfont
-  margin-right: 10px
-
-.toggle-button
-  background-color: #4a5064
-  height: 20px
-  font-size: 10px
-  line-height: 20px
-  color: #fff
-  text-align: center
-  letter-spacing: 0.2em
-  cursor: pointer
+.toggle-button {
+  background-color: #4a5064;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
 </style>

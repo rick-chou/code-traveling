@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<style lang="sass">
-img
-  width: 100%
+<style lang="scss">
+img {
+  width: 100%;
+}
 </style>

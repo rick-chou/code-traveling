@@ -13,6 +13,9 @@ export default defineConfig({
       '@store': '@/store',
       '@containers': '@/containers',
       '@components': '@/components',
+      '@utils': '@/utils',
+      '@assets': '@/assets',
+      '@types': '@/types',
     },
   },
 })

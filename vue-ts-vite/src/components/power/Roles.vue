@@ -20,7 +20,7 @@
       <el-table :data="rolelist" border stripe>
         <!-- 展开列 -->
         <el-table-column type="expand">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <el-row :class="['bdbottom', i1 === 0 ? 'bdtop' : '', 'vcenter']" v-for="(item1, i1) in scope.row.children" :key="item1.id">
               <!-- 渲染一级权限 -->
               <el-col :span="5">
@@ -52,7 +52,7 @@
         <el-table-column label="角色名称" prop="roleName"></el-table-column>
         <el-table-column label="角色描述" prop="roleDesc"></el-table-column>
         <el-table-column label="操作" width="300px">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <el-button size="mini" type="primary" icon="el-icon-edit" @click="showEditDialog(scope.row.id)">编辑</el-button>
             <el-button size="mini" type="danger" icon="el-icon-delete" @click="removeRoleById(scope.row.id)">删除</el-button>
             <el-button size="mini" type="warning" icon="el-icon-setting" @click="showSetRightDialog(scope.row)">分配权限</el-button>
@@ -327,17 +327,21 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.el-tag
-  margin: 7px
+<style lang="scss" scoped>
+.el-tag {
+  margin: 7px;
+}
 
-.bdtop
-  border-top: 1px solid #eee
+.bdtop {
+  border-top: 1px solid #eee;
+}
 
-.bdbottom
-  border-bottom: 1px solid #eee
+.bdbottom {
+  border-bottom: 1px solid #eee;
+}
 
-.vcenter
-  display: flex
-  align-items: center
+.vcenter {
+  display: flex;
+  align-items: center;
+}
 </style>

@@ -29,12 +29,12 @@
         <el-table-column label="电话" prop="mobile"></el-table-column>
         <el-table-column label="角色" prop="role_name"></el-table-column>
         <el-table-column label="状态">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <el-switch v-model="scope.row.mg_state" @change="userStateChanged(scope.row)"> </el-switch>
           </template>
         </el-table-column>
         <el-table-column label="操作" width="180px">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <!-- 修改按钮 -->
             <el-button type="primary" icon="el-icon-edit" size="mini" @click="showEditDialog(scope.row.id)"></el-button>
             <!-- 删除按钮 -->
@@ -381,5 +381,5 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 </style>

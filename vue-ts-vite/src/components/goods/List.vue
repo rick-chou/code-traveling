@@ -28,7 +28,7 @@
         <el-table-column label="商品数量(件)" prop="goods_number"></el-table-column>
         <el-table-column label="商品重量" prop="goods_weight"></el-table-column>
         <el-table-column label="操作" width="120px">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <!-- 修改 -->
             <el-button type="primary" icon="el-icon-edit" size="mini" @click="showEditDialog(scope.row.goods_id)"></el-button>
             <!-- 删除 -->
@@ -184,4 +184,4 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped></style>
+<style lang="scss" scoped></style>

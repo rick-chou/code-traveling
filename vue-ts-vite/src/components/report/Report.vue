@@ -190,7 +190,8 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
-.chart
-  display: inline-block
+<style lang="scss" scoped>
+.chart {
+  display: inline-block;
+}
 </style>
