@@ -8,7 +8,8 @@
       "@components/*": ["./src/components/*"],
       "@router/*": ["./src/router/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@containers/*": ["./src/containers/*"]
+      "@containers/*": ["./src/containers/*"],
+      "@type/*": ["./src/type/*"]
     },
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": ["vite/client"],
