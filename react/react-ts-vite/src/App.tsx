@@ -4,7 +4,6 @@ import { BrowserRouter as Router, NavLink } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 import routes from '@router/index'
 const App: FC = () => {
-  console.log(routes);
   return (
     <Router>
       {routes.map((route, idx) => {
