@@ -15,3 +15,8 @@ export interface RouteConfig {
   render?: (props: RouteConfigComponentProps<any>) => React.ReactNode
   [propName: string]: any
 }
+
+export interface IAction {
+  type: string
+  [x: string]: any
+}
