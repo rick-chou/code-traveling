@@ -17,7 +17,7 @@ const Article = (props: IProps) => {
       <Button onClick={() => props.getList()}>Get List</Button>
       <Button onClick={() => props.getListAsync()}>Get List Async</Button>
       <br />
-      {props.list.map((item) => {
+      {props?.list?.map((item) => {
         return <Image width={200} src={item.img} key={item.id} />
       })}
     </div>

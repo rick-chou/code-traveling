@@ -13,8 +13,8 @@ const index: FC<IProp> = (props: IProp) => {
   return (
     <div>
       {routes
-        .filter((route) => route.path === props.routerName)[0]
-        .routes.map((route: any, idx: number) => {
+        ?.filter((route) => route.path === props.routerName)[0]
+        ?.routes.map((route: any, idx: number) => {
           return (
             <Button key={idx}>
               <NavLink to={route.path}>{route.path.slice(props.routerName.length + 1).split(':')[0]}</NavLink>

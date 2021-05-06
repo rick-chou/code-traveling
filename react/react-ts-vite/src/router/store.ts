@@ -1,19 +1,31 @@
-import store from '@containers/Store'
+import redux from '@/containers/Store/Redux'
 import home from '@/containers/Store/Redux/Home'
 import article from '@/containers/Store/Redux/Article'
+import mobx from '@containers/Store/Mobx/'
+import todo from '@containers/Store/Mobx/Demo'
 
 const routes = [
   {
-    path: '/store',
-    component: store,
+    path: '/redux',
+    component: redux,
     routes: [
       {
-        path: '/store/redux/home',
+        path: '/redux/home',
         component: home,
       },
       {
-        path: '/store/redux/article',
+        path: '/redux/article',
         component: article,
+      },
+    ],
+  },
+  {
+    path: '/mobx',
+    component: mobx,
+    routes: [
+      {
+        path: '/mobx/home',
+        component: todo,
       },
     ],
   },

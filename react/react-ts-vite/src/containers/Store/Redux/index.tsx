@@ -6,7 +6,7 @@ import store from '@store/redux/index'
 const index = (props: RouteConfigComponentProps) => {
   return (
     <Provider store={store}>
-      <RouterTemp routerName="/store" renderRoutes={props!.route!.routes} />
+      <RouterTemp routerName="/redux" renderRoutes={props!.route!.routes} />
     </Provider>
   )
 }
