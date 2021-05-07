@@ -4,6 +4,10 @@
 
 - Vue3 + Vite + TS 迁移 Vue2 项目 Vue-Shop-Admin
 
+- 富文本编辑器
+
+- 元素拖拽 / 旋转 / 缩放
+
 - Koa / Express
 
 ## Done
