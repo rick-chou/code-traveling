@@ -12,9 +12,15 @@
 
 ## Done
 
-- 阮一峰 ECMAScript 6 入门 https://www.bookstack.cn/read/es6-3rd/sidebar.md
+- Js
 
-- Redux 中文文档 https://www.redux.org.cn/
+  - 阮一峰 ECMAScript 6 入门 https://www.bookstack.cn/read/es6-3rd/sidebar.md
+
+- Store
+
+  - Redux 中文文档 https://www.redux.org.cn/
+
+  - Rematch 中文文档 https://rematch.gitbook.io/handbook/
 
 ## Archive
 
