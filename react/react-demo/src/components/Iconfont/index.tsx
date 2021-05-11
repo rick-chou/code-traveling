@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import 'https://gitee.com/LuckyChou/ReStart-FE/raw/main/assets/icon/iconfont.css'
+import '@assets/icon/iconfont.css'
 
 interface IProps {
   iconName: string

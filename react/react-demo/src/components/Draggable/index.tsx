@@ -6,8 +6,9 @@ const index = () => {
     <div>
       <h2>
         Draggable
-        <Iconfont iconName=""/>
+        <Iconfont iconName="quanping" />
       </h2>
+      <Iconfont iconName="quanping" />
     </div>
   )
 }

@@ -15,6 +15,7 @@ export default defineConfig({
       '@type': '@/type',
       '@utils': '@/utils',
       '@styles': '@/styles',
+      '@assets': '@/assets',
     },
   },
 })
