@@ -3,7 +3,7 @@ import React from 'react'
 const index = () => {
   return (
     <div>
-      <h2>Draggable</h2>
+      <h2>Stretch</h2>
     </div>
   )
 }

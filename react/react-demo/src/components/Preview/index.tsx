@@ -1,8 +1,11 @@
 import React from 'react'
-import styles from './index.module.scss'
 
 const index = () => {
-  return <div>Preview</div>
+  return (
+    <div>
+      <h2>Preview</h2>
+    </div>
+  )
 }
 
 export default index

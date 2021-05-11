@@ -14,6 +14,7 @@ export default defineConfig({
       '@components': '@/components',
       '@type': '@/type',
       '@utils': '@/utils',
+      '@styles': '@/styles',
     },
   },
 })

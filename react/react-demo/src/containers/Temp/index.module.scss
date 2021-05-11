@@ -1,0 +1,9 @@
+.container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  h2 {
+    padding-top: 20px;
+  }
+}

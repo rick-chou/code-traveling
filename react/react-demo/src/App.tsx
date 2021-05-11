@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
-import './App.css'
 import Draggable from '@components/Draggable'
+import Clipboard from '@components/Clipboard'
+import Preview from '@components/Preview'
+import Stretch from '@components/Stretch'
+import Temp from '@containers/Temp'
 
 function App() {
-
   return (
-    <div className="App">
-      React-Demo
+    <Temp>
       <Draggable />
-    </div>
+      <Clipboard />
+      <Preview />
+      <Stretch />
+    </Temp>
   )
 }
 
