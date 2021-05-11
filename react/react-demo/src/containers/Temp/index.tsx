@@ -6,6 +6,7 @@ const index = (props: any) => {
   return (
     <div className={styles.container}>
       {props.children.map((child: ReactElement, idx: number) => {
+        console.log(child)
         return (
           <div className={commonStyles.container} key={idx}>
             {child}
