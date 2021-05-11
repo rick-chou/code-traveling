@@ -1,0 +1,16 @@
+{
+  "id": "2541486",
+  "name": "chou",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5920504",
+      "name": "全屏",
+      "font_class": "dashujukeshihuaico-",
+      "unicode": "e800",
+      "unicode_decimal": 59392
+    }
+  ]
+}

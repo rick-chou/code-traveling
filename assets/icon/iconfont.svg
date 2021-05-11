@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="dashujukeshihuaico-" unicode="&#59392;" d="M759.808 336.384a51.2 51.2 0 0 1-51.2-51.2v-110.592h-110.08a51.2 51.2 0 1 1 0-102.4h161.792a51.2 51.2 0 0 1 51.2 51.2v161.792a51.2 51.2 0 0 1-51.712 51.2zM400.384 695.808H238.592a51.2 51.2 0 0 1-51.2-51.2v-161.792a51.2 51.2 0 0 1 102.4 0V593.408h110.592a51.2 51.2 0 1 1 0 102.4zM530.944 424.448a51.2 51.2 0 1 1 0-72.704 51.2 51.2 0 0 1 0 72.704z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
