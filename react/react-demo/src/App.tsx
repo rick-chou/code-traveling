@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { Provider } from 'react-redux'
+import { store } from '@store/index'
+
 import Temp from '@containers/Temp'
 
 import Draggable from '@components/Draggable'
@@ -17,20 +20,22 @@ import Transfer from '@components/Transfer'
 
 function App() {
   return (
-    <Temp>
-      <Draggable />
-      <Clipboard />
-      <Preview />
-      <Stretch />
-      <Affix />
-      <Breadcrumb />
-      <Carousel />
-      <Date />
-      <Rate />
-      <Space />
-      <Tab />
-      <Transfer />
-    </Temp>
+    <Provider store={store}>
+      <Temp>
+        <Draggable />
+        <Clipboard />
+        <Preview />
+        <Stretch />
+        <Affix />
+        <Breadcrumb />
+        <Carousel />
+        <Date />
+        <Rate />
+        <Space />
+        <Tab />
+        <Transfer />
+      </Temp>
+    </Provider>
   )
 }
 

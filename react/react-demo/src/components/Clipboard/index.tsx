@@ -2,10 +2,11 @@
  * 只有线上图片会被识别会file文件
  */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { Button } from 'antd'
+import Iconfont from '@components/Iconfont'
 
-const index = () => {
+const index = (props: any) => {
   const handlePaste = (e: any) => {
     console.log('files', e.clipboardData.files)
     console.log('items', e.clipboardData.items)
@@ -32,7 +33,10 @@ const index = () => {
 
   return (
     <div onPaste={(e) => handlePaste(e)}>
-      <h2>Clipboard</h2>
+      <h2>
+        Clipboard
+        <Iconfont iconName="quanping" onClick={props.onClick} />
+      </h2>
       <Button onClick={() => navigator.clipboard.readText().then((text) => console.log(text))}>GET CLIPBOARD</Button>
     </div>
   )

@@ -1,18 +1,14 @@
 import React from 'react'
 import Iconfont from '@components/Iconfont'
-import styles from './index.module.scss'
 
-const index = () => {
-
-  const fullScreen = ()=>{
-    
-  }
+const index = (props: any) => {
+  console.log(props)
 
   return (
     <div>
       <h2>
         Draggable
-        <Iconfont iconName="quanping" onClick={fullScreen}/>
+        <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
     </div>
   )

@@ -1,27 +1,29 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState } from 'react'
+// import { useDispatch, useSelector } from 'react-redux'
 import commonStyles from '@styles/common.module.scss'
 import styles from './index.module.scss'
 
-interface IProps {
-  onClick?: () => void
-}
-
-function tempWrapper(Component: ReactElement) {
-  return (
-    <div>
-      {Component}
-    </div>
-  )
-}
-
 const index = (props: any) => {
+  const [isFull, setIsFull] = useState<Array<boolean>>(new Array(React.Children.count(props.children)).fill(false))
+  // const dispatch = useDispatch()
+  // const fullScreen = useSelector((state) => state.common.fullScreen)
+
+  const toggleFullScreen = (idx: number) => {
+    const _isFull = [...isFull]
+    _isFull[idx] = !_isFull[idx]
+    setIsFull(_isFull)
+    console.log(isFull)
+    // dispatch.common.toggleFullScreen()
+  }
+
   return (
     <div className={styles.container}>
-      {props.children.map((child: ReactElement, idx: number) => {
+      {React.Children.map(props.children, (child: ReactElement, idx: number) => {
         return (
-          <div className={commonStyles.container} key={idx}>
-            {/* {child} */}
-            {tempWrapper(child)}
+          <div className={`${commonStyles.container} ${isFull[idx] ? `${commonStyles.fullScreen}` : ''}`} key={idx}>
+            {React.cloneElement(child, {
+              onClick: () => toggleFullScreen(idx),
+            })}
           </div>
         )
       })}
