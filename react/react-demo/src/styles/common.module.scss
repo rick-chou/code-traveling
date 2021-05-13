@@ -6,6 +6,8 @@
   background: #f5f4f4;
   margin-top: 40px;
   transition: all 1.5s ease;
+  padding: 20px;
+  overflow: hidden;
   &:hover {
     transform: translateY(-20px);
     box-shadow: 10px 10px 20px #d0cfcf, -10px -10px 20px #ffffff;

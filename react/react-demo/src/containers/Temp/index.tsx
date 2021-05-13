@@ -12,7 +12,6 @@ const index = (props: any) => {
     const _isFull = [...isFull]
     _isFull[idx] = !_isFull[idx]
     setIsFull(_isFull)
-    console.log(isFull)
     // dispatch.common.toggleFullScreen()
   }
 
