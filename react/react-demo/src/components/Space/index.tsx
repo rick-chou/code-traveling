@@ -1,9 +1,13 @@
-import { Button, Slider, Space } from 'antd'
+import { Button, Slider, Space, Switch } from 'antd'
 import React, { useState } from 'react'
 import Iconfont from '@components/Iconfont'
 
 const index = (props: any) => {
-  const [size, setSize] = useState(0)
+  const [size, setSize] = useState(9)
+  const [isHorizontal, setIsHorizontal] = useState(true)
+  const handleChange = (state: boolean) => {
+    setIsHorizontal(state)
+  }
   return (
     <div>
       <h2>
@@ -11,9 +15,10 @@ const index = (props: any) => {
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
       <Slider value={size} onChange={(value) => setSize(value)} />
+      <Switch checkedChildren="horizontal" unCheckedChildren="vertical" defaultChecked onChange={handleChange} />
       <br />
       <br />
-      <Space size={size}>
+      <Space size={size} direction={isHorizontal ? 'horizontal' : 'vertical'}>
         <Button type="primary" size={'small'}>
           Primary
         </Button>

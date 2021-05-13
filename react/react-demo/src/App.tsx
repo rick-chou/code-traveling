@@ -17,6 +17,7 @@ import Rate from '@components/Rate'
 import Space from '@components/Space'
 import Tab from '@components/Tab'
 import Transfer from '@components/Transfer'
+import Progress from '@components/Progress'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Space />
         <Tab />
         <Transfer />
+        <Progress />
       </Temp>
     </Provider>
   )
