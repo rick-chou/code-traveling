@@ -1,12 +1,12 @@
-var log4js = require('log4js')
+import { configure, getLogger } from 'log4js'
 
-log4js.configure({
+configure({
   appenders: { cheese: { type: 'file', filename: 'cheese.log' } },
   categories: { default: { appenders: ['cheese'], level: 'error' } },
 })
 
-exports.logger = function (level) {
-  var logger = log4js.getLogger('cheese')
+exports.logger = function () {
+  var logger = getLogger('cheese')
   logger.level = 'debug'
   return logger
 }

@@ -1,6 +1,7 @@
-var express = require('express')
-var router = express.Router()
-var path = require('path')
+import express from 'express'
+import path from 'path'
+
+const router = express.Router()
 
 // 获取验证模块
 var authorization = require(path.join(process.cwd(), '/modules/authorization'))

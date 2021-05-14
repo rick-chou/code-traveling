@@ -77,24 +77,6 @@ authorization.setAuthFn(function (req, res, next, serviceName, actionName, passF
 // 带路径的用法并且可以打印出路有表
 mount(app, path.join(process.cwd(), '/routes'), true)
 
-app.all('/ueditor/ue', function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*')
-  res.header('Access-Control-Allow-Headers', 'X-Requested-With, mytoken')
-  res.header('Access-Control-Allow-Headers', 'X-Requested-With, Authorization')
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With, X_Requested_With')
-  res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
-  res.header('X-Powered-By', ' 3.2.1')
-  if (req.method == 'OPTIONS') res.send(200)
-  /*让options请求快速返回*/ else next()
-})
-
-// 富文本编辑器上传
-var ueditor = require(path.join(process.cwd(), '/modules/ueditor'))
-// 富文本控件处理qing q
-app.use('/ueditor/ue', ueditor)
-//. 设置富文本空间地址
-app.use('/ueditor', express.static('public/ueditor'))
-
 app.use('/tmp_uploads', express.static('tmp_uploads'))
 app.use('/x/common', express.static('uploads/common'))
 app.use('/uploads/goodspics', express.static('uploads/goodspics'))
@@ -115,7 +97,7 @@ app.get('/api/private/v1/kuaidi/:orderno', logistics.getLogisticsInfo)
  *
  */
 // 如果没有路径处理就返回 Not Found
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
   res.sendResult(null, 404, 'Not Found')
 })
 

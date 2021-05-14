@@ -1,7 +1,4 @@
-var path = require('path')
-// var roles_controller = require("../controllers/roles");
-
-var path = require('path')
+import path from 'path'
 
 global.service_caches = {}
 
