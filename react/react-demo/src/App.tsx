@@ -18,6 +18,11 @@ import Space from '@components/Space'
 import Tab from '@components/Tab'
 import Transfer from '@components/Transfer'
 import Progress from '@components/Progress'
+import Spin from '@components/Spin'
+import Skeleton from '@components/Skeleton'
+import Notification from '@components/Notification'
+import Modal from '@components/Modal'
+import Drawer from '@components/Drawer'
 
 function App() {
   return (
@@ -36,6 +41,11 @@ function App() {
         <Tab />
         <Transfer />
         <Progress />
+        <Spin />
+        <Skeleton />
+        <Notification />
+        <Modal />
+        <Drawer />
       </Temp>
     </Provider>
   )
