@@ -1,52 +1,31 @@
 import React from 'react'
+import '@styles/antd.css'
 
 import { Provider } from 'react-redux'
 import { store } from '@store/index'
+// import { BrowserRouter as Router, NavLink } from 'react-router-dom'
+// import { renderRoutes } from 'react-router-config'
 
-import Temp from '@containers/Temp'
+import routes from '@router/index'
 
-import Draggable from '@components/Draggable'
-import Clipboard from '@components/Clipboard'
-import Preview from '@components/Preview'
-import Stretch from '@components/Stretch'
-import Affix from '@/components/Step'
-import Breadcrumb from '@components/Breadcrumb'
-import Carousel from '@components/Carousel'
-import Date from '@components/Date'
-import Rate from '@components/Rate'
-import Space from '@components/Space'
-import Tab from '@components/Tab'
-import Transfer from '@components/Transfer'
-import Progress from '@components/Progress'
-import Spin from '@components/Spin'
-import Skeleton from '@components/Skeleton'
-import Notification from '@components/Notification'
-import Modal from '@components/Modal'
-import Drawer from '@components/Drawer'
+import { Tabs } from 'antd'
+const { TabPane } = Tabs
 
 function App() {
+  console.log(routes)
+
   return (
     <Provider store={store}>
-      <Temp>
-        <Draggable />
-        <Clipboard />
-        <Preview />
-        <Stretch />
-        <Affix />
-        <Breadcrumb />
-        <Carousel />
-        <Date />
-        <Rate />
-        <Space />
-        <Tab />
-        <Transfer />
-        <Progress />
-        <Spin />
-        <Skeleton />
-        <Notification />
-        <Modal />
-        <Drawer />
-      </Temp>
+      {/* {renderRoutes(routes)} */}
+      <Tabs defaultActiveKey="1">
+        {routes.map((route, idx) => {
+          return (
+            <TabPane tab={route.path.slice(1).toUpperCase()} key={idx + 1}>
+              {route.component()}
+            </TabPane>
+          )
+        })}
+      </Tabs>
     </Provider>
   )
 }
