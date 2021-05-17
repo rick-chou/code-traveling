@@ -29,7 +29,7 @@ const routes = [
         ],
       },
       {
-        path: '/router/article:id',
+        path: '/router/article/:id',
         component: article,
       },
     ],
