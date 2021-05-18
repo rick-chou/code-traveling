@@ -23,8 +23,7 @@ body {
   grid-template-rows: repeat(6, var(--button-height));
 
   /* 拟态化样式 轮廓*/
-  box-shadow: -8px -8px 16px -10px rgba(255, 255, 255, 1),
-    8px 8px 16px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: -8px -8px 16px -10px rgba(255, 255, 255, 1), 8px 8px 16px -10px rgba(0, 0, 0, 0.15);
   padding: 24px;
   border-radius: 20px;
 }
@@ -41,16 +40,13 @@ body {
   font-family: Helvetica;
   font-weight: normal;
   color: #999;
-  background: linear-gradient(135deg, rgba(230, 230, 230, 1)) 0%,
-    rgba(246, 246, 246, 1) 100%;
-  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1),
-    4px 4px 10px -8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgba(230, 230, 230, 1)) 0%, rgba(246, 246, 246, 1) 100%;
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1), 4px 4px 10px -8px rgba(0, 0, 0, 0.3);
 }
 
 /* 按钮按下时的样式 */
 .calculator button:active {
-  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1) inset,
-    4px 4px 10px -8px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: -4px -4px 10px -8px rgba(255, 255, 255, 1) inset, 4px 4px 10px -8px rgba(0, 0, 0, 0.3) inset;
 }
 
 .result {

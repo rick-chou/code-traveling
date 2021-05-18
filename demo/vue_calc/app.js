@@ -64,16 +64,10 @@ new Vue({
     },
     // When pressed '='
     calculate() {
-      let result = this.equation
-        .replace(new RegExp('×', 'g'), '*')
-        .replace(new RegExp('÷', 'g'), '/')
-
+      let result = this.equation.replace(new RegExp('×', 'g'), '*').replace(new RegExp('÷', 'g'), '/')
       let ans = eval(result)
 
-      this.equation = (ans < 1.0e9
-        ? parseFloat(ans.toFixed(9))
-        : ans.toExponential(3)
-      ).toString()
+      this.equation = (ans < 1.0e9 ? parseFloat(ans.toFixed(9)) : ans.toExponential(3)).toString()
       this.isDecimalAdded = false
       this.isOperatorAdded = false
 
