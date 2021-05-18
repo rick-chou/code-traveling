@@ -2,8 +2,6 @@
 
 ## Todo
 
-- Vue3 + Vite + TS 迁移 Vue2 项目 Vue-Shop-Admin
-
 - Next.js
 
 - 富文本编辑器
@@ -20,9 +18,15 @@
 
 - React
 
-  - Redux 中文文档 https://www.redux.org.cn/
+  - Redux https://www.redux.org.cn/
 
-  - Rematch 中文文档 https://rematch.gitbook.io/handbook/
+  - Rematch https://rematch.gitbook.io/handbook/
+
+- UI
+
+  - Antd https://ant.design/index-cn
+
+  - Antv https://antv.gitee.io/zh/
 
 ## Archive
 
