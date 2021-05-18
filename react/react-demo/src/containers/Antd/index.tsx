@@ -21,6 +21,7 @@ import Table from '@/components/Antd/Table'
 function App() {
   return (
     <Temp>
+      <Table full={true} />
       <Affix />
       <Breadcrumb />
       <Carousel />
@@ -35,7 +36,6 @@ function App() {
       <Notification />
       <Modal />
       <Drawer />
-      <Table full={true} />
     </Temp>
   )
 }
