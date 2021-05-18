@@ -16,25 +16,27 @@ import Skeleton from '@/components/Antd/Skeleton'
 import Notification from '@/components/Antd/Notification'
 import Modal from '@/components/Antd/Modal'
 import Drawer from '@/components/Antd/Drawer'
+import Table from '@/components/Antd/Table'
 
 function App() {
   return (
-      <Temp>
-        <Affix />
-        <Breadcrumb />
-        <Carousel />
-        <Date />
-        <Rate />
-        <Space />
-        <Tab />
-        <Transfer />
-        <Progress />
-        <Spin />
-        <Skeleton />
-        <Notification />
-        <Modal />
-        <Drawer />
-      </Temp>
+    <Temp>
+      <Affix />
+      <Breadcrumb />
+      <Carousel />
+      <Date />
+      <Rate />
+      <Space />
+      <Tab />
+      <Transfer />
+      <Progress />
+      <Spin />
+      <Skeleton />
+      <Notification />
+      <Modal />
+      <Drawer />
+      <Table full={true} />
+    </Temp>
   )
 }
 

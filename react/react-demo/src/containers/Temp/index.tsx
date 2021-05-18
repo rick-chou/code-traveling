@@ -4,7 +4,7 @@ import commonStyles from '@styles/common.module.scss'
 import styles from './index.module.scss'
 
 const index = (props: any) => {
-  const [isFull, setIsFull] = useState<Array<boolean>>(new Array(React.Children.count(props.children)).fill(props.full ? props.full : false))
+  const [isFull, setIsFull] = useState<Array<boolean>>(React.Children.map(props.children, (child: ReactElement, idx: number) => (child.props.full ? true : false)))
   // const dispatch = useDispatch()
   // const fullScreen = useSelector((state) => state.common.fullScreen)
 
