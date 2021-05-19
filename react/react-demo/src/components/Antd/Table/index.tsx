@@ -4,8 +4,14 @@ import _ from 'lodash'
 import { Table } from 'antd'
 import { ColumnsType } from 'antd/lib/table'
 
-interface ITable {
+/**
+ * @param name 学生姓名
+ * @param id 学号
+ */
+type ITable = {
+  /** name : student name */
   name: string
+  /** name : student id */
   id: number
   teacher: string
   school: string
@@ -103,10 +109,10 @@ const index = (props: any) => {
     },
   ]
 
-  const data = []
+  const data: ITable[] = []
   for (let i = 0; i < 100; i++) {
     data.push({
-      key: i,
+      // key: i,
       name: 'chou',
       id: i + 1,
       teacher: 'Lucky',
@@ -126,7 +132,7 @@ const index = (props: any) => {
         Table
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <Table columns={columns} dataSource={_.shuffle(data)} bordered size="large" scroll={{ x: 'calc(700px + 50%)', y: 500 }} />
+      <Table columns={columns} dataSource={_.shuffle(data)} bordered size="large" scroll={{ x: 'calc(700px + 50%)', y: 500 }} rowKey={(record) => record.id} />
     </div>
   )
 }
