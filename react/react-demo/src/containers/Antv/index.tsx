@@ -12,7 +12,7 @@ import HistogramNoSpace from '@/components/Antv/HistogramNoSpace'
 function App() {
   return (
     <Temp full={true}>
-      <Liquid />
+      {/* <Liquid /> */}
       <Histogram />
       <HistogramNoSpace />
       <GroupedHistogram />
