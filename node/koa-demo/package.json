@@ -1,0 +1,16 @@
+{
+  "name": "koa-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "koa": "^2.13.1",
+    "koa-json-error": "^3.1.2",
+    "koa-router": "^10.0.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon app.js"
+  }
+}
