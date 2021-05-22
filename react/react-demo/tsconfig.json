@@ -30,5 +30,5 @@
     "jsx": "react",
     "experimentalDecorators": true
   },
-  "include": ["./src"]
+  "include": ["./src", "src/components/Antv/01_学生成绩分布直方图.tsx"]
 }
