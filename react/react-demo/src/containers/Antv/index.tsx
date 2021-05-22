@@ -2,7 +2,7 @@ import React from 'react'
 
 import Temp from '@containers/Temp'
 
-import Liquid from '@/components/Antv/Liquid'
+// import Liquid from '@/components/Antv/Liquid'
 import GroupedHistogram from '@/components/Antv/GroupedHistogram'
 import GroupedStackedHistogram from '@/components/Antv/GroupedStackedHistogram'
 import BoxPlot from '@/components/Antv/BoxPlot'
@@ -12,7 +12,7 @@ import ColumnClass from '@/components/Antv/03_班级成绩报告柱状图'
 
 function App() {
   return (
-    <Temp full={true}>
+    <Temp>
       {/* <Liquid /> */}
       <Histogram />
       <Column />

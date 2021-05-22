@@ -2,6 +2,7 @@ import Antd from '@containers/Antd'
 import Demo from '@containers/Demo'
 import Echarts from '@containers/Echarts'
 import Antv from '@containers/Antv'
+import Bizcharts from '@containers/Bizcharts'
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
   {
     path: '/antv',
     component: Antv,
+  },
+  {
+    path: '/bizcharts',
+    component: Bizcharts,
   },
 ]
 

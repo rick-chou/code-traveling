@@ -22,7 +22,6 @@ const BoxPlot: React.FC = (props: any) => {
     const chart = new Chart({
       container: 'box-plot',
       autoFit: true,
-      height: 500,
     })
     chart.data(dv.rows)
     chart.scale('range', {
@@ -74,7 +73,7 @@ const BoxPlot: React.FC = (props: any) => {
         BoxPlot
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <div id="box-plot"></div>
+      <div id="box-plot" style={{ width: '100%', height: '80%' }}></div>
     </>
   )
 }

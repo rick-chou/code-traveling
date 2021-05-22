@@ -17,7 +17,6 @@ const Histogram: React.FC = (props: any) => {
     const chart = new Chart({
       container: 'column',
       autoFit: true,
-      height: 500,
     })
 
     chart.data(data)
@@ -42,7 +41,7 @@ const Histogram: React.FC = (props: any) => {
         学校成绩分布柱状图
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <div id="column"></div>
+      <div id="column" style={{ width: '100%', height: '80%' }}></div>
     </>
   )
 }

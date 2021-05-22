@@ -48,7 +48,6 @@ const HistogramNoSpace: React.FC = (props: any) => {
     const chart = new Chart({
       container: 'histogram',
       autoFit: true,
-      height: 500,
     })
 
     chart.data(dv.rows)
@@ -81,7 +80,7 @@ const HistogramNoSpace: React.FC = (props: any) => {
         学生成绩分布直方图
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <div id="histogram"></div>
+      <div id="histogram" style={{ width: '100%', height: '80%' }}></div>
     </>
   )
 }

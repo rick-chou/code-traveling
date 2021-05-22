@@ -120,7 +120,6 @@ const GroupedStackedHistogram: React.FC = (props: any) => {
     const chart = new Chart({
       container: 'grouped-stacked-histogram',
       autoFit: true,
-      height: 500,
     })
 
     chart.data(dv.rows)
@@ -182,7 +181,7 @@ const GroupedStackedHistogram: React.FC = (props: any) => {
         GroupedStackedHistogram
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <div id="grouped-stacked-histogram"></div>
+      <div id="grouped-stacked-histogram" style={{ width: '100%', height: '80%' }}></div>
     </>
   )
 }

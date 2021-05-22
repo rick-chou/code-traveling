@@ -1,0 +1,19 @@
+import React from 'react'
+
+import Temp from '@containers/Temp'
+
+import Histogram from '@/components/Bizcharts/01_学生成绩分布直方图'
+import Column from '@/components/Bizcharts/02_学校成绩分布柱状图'
+import ColumnClass from '@/components/Bizcharts/03_班级成绩报告柱状图'
+
+function App() {
+  return (
+    <Temp>
+      <Histogram />
+      <Column />
+      <ColumnClass />
+    </Temp>
+  )
+}
+
+export default App
