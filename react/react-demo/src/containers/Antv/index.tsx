@@ -9,6 +9,7 @@ import BoxPlot from '@/components/Antv/BoxPlot'
 import Histogram from '@/components/Antv/01_学生成绩分布直方图'
 import Column from '@/components/Antv/02_学校成绩分布柱状图'
 import ColumnClass from '@/components/Antv/03_班级成绩报告柱状图'
+import BulletChart from '@components/Antv/BulletChart'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <GroupedHistogram />
       <GroupedStackedHistogram />
       <BoxPlot />
+      <BulletChart />
     </Temp>
   )
 }
