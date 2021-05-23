@@ -15,6 +15,7 @@ const App = () => {
   const handleChange = (key: string) => {
     localStorage.setItem('tabIdx', key)
   }
+  
 
   return (
     <Provider store={store}>

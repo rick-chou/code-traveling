@@ -3,6 +3,7 @@
     "Bizcharts",
     "antd",
     "antv",
+    "codemirror",
     "commitlint",
     "echarts",
     "mockjs",
