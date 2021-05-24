@@ -976,7 +976,7 @@ binary-extensions@^2.0.0:
 
 bizcharts@^4.1.10:
   version "4.1.10"
-  resolved "https://registry.nlark.com/bizcharts/download/bizcharts-4.1.10.tgz?cache=0&sync_timestamp=1621317297544&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fbizcharts%2Fdownload%2Fbizcharts-4.1.10.tgz#9ce8b761e5ea41abde58f698f4a7729b25c47a64"
+  resolved "https://registry.nlark.com/bizcharts/download/bizcharts-4.1.10.tgz?cache=0&sync_timestamp=1621317267427&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fbizcharts%2Fdownload%2Fbizcharts-4.1.10.tgz#9ce8b761e5ea41abde58f698f4a7729b25c47a64"
   integrity sha1-nOi3YeXqQaveWPaY9KdymyXEemQ=
   dependencies:
     "@antv/component" "*"

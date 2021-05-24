@@ -6,7 +6,6 @@ import Draggable from '@/components/Demo/Draggable'
 import Clipboard from '@/components/Demo/Clipboard'
 import Preview from '@/components/Demo/Preview'
 import Stretch from '@/components/Demo/Stretch'
-import Code from '@/components/Demo/CodeEditor'
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Clipboard />
       <Preview />
       <Stretch />
-      <Code />
     </Temp>
   )
 }
