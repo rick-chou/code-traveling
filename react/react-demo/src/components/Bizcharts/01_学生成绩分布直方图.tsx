@@ -43,7 +43,7 @@ const HistogramNoSpace: React.FC = (props: any) => {
           name="value"
           label={{
             formatter: (val) => {
-              if (val % 2) {
+              if (parseInt(val) % 2) {
                 return val
               }
               return ''
@@ -51,7 +51,7 @@ const HistogramNoSpace: React.FC = (props: any) => {
           }}
         />
         <Axis name="count" />
-        <Tooltip inPlot={false} crosshairs={false} position={'top'} />
+        <Tooltip inPlot={false} showCrosshairs={true} position={'top'} />
         <Interval
           position="value*count"
           style={{

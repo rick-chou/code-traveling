@@ -5,9 +5,11 @@
     "antv",
     "codemirror",
     "commitlint",
+    "crosshairs",
     "echarts",
     "mockjs",
     "quanping",
+    "ramires",
     "vite",
     "vitejs"
   ]

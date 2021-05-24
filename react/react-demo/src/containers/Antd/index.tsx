@@ -16,12 +16,16 @@ import Skeleton from '@/components/Antd/Skeleton'
 import Notification from '@/components/Antd/Notification'
 import Modal from '@/components/Antd/Modal'
 import Drawer from '@/components/Antd/Drawer'
-import Table from '@/components/Antd/Table'
+import GroupHeaderTable from '@/components/Antd/Table/01_表头分组'
+import DynamicTable from '@/components/Antd/Table/02_列不固定'
+import ScrollTable from '@/components/Antd/Table/03_滚动条'
 
 function App() {
   return (
     <Temp>
-      <Table full={true} />
+      <GroupHeaderTable full={true} />
+      <DynamicTable full={true} />
+      <ScrollTable full={true} />
       <Affix />
       <Breadcrumb />
       <Carousel />

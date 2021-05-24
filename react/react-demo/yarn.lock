@@ -759,6 +759,11 @@
   resolved "https://registry.nlark.com/@types/lodash/download/@types/lodash-4.14.169.tgz"
   integrity sha1-g8IXaI8HpNnvjyij69HTGPb/TLs=
 
+"@types/mockjs@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.nlark.com/@types/mockjs/download/@types/mockjs-1.0.3.tgz?cache=0&sync_timestamp=1621241984490&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fmockjs%2Fdownload%2F%40types%2Fmockjs-1.0.3.tgz#bd8ee3c7cbbd9a18788ab677b9e4f97c8d0bb0bf"
+  integrity sha1-vY7jx8u9mhh4irZ3ueT5fI0LsL8=
+
 "@types/node@^15.0.2":
   version "15.0.2"
   resolved "https://registry.nlark.com/@types/node/download/@types/node-15.0.2.tgz"

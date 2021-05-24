@@ -11,7 +11,7 @@ import { ColumnsType } from 'antd/lib/table'
 type ITable = {
   /** name : student name */
   name: string
-  /** name : student id */
+  /** id : student id */
   id: number
   teacher: string
   school: string
