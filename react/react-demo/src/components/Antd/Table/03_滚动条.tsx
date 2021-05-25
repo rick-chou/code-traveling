@@ -14,6 +14,8 @@ type ITable = {
   math: number
   physical: number
   biological: number
+  political: number
+  geography: number
 }
 
 const index = (props: any) => {
@@ -22,6 +24,7 @@ const index = (props: any) => {
       title: '排名',
       dataIndex: 'rank',
       key: 'rank',
+      fixed: 'left',
       render: (item, record) => {
         if (item <= 3) {
           return <div style={{ borderRadius: '50%', width: '30px', height: '30px', background: '#ccc', textAlign: 'center', lineHeight: '30px' }}>{item}</div>
@@ -33,23 +36,32 @@ const index = (props: any) => {
       title: '班级',
       dataIndex: 'class',
       key: 'class',
+      fixed: 'left',
+      width: 150,
     },
     {
       title: '班主任',
       dataIndex: 'teacher',
       key: 'teacher',
+      fixed: 'left',
     },
     {
       title: '所属学校',
       dataIndex: 'school',
       key: 'school',
+      fixed: 'left',
     },
     {
       title: '班级平均分',
       dataIndex: 'classAvg',
       key: 'classAvg',
       sorter: (a, b) => a.classAvg - b.classAvg,
+      fixed: 'left',
+      width: 150,
     },
+  ]
+
+  const subjectColumns: ColumnsType<ITable> = [
     {
       title: '语文',
       dataIndex: 'chinese',
@@ -74,6 +86,18 @@ const index = (props: any) => {
       key: 'biological',
       sorter: (a, b) => a.biological - b.biological,
     },
+    {
+      title: '政治',
+      dataIndex: 'political',
+      key: 'political',
+      sorter: (a, b) => a.political - b.political,
+    },
+    {
+      title: '地理',
+      dataIndex: 'geography',
+      key: 'geography',
+      sorter: (a, b) => a.geography - b.geography,
+    },
   ]
 
   const { data } = Mock.mock({
@@ -88,9 +112,24 @@ const index = (props: any) => {
         'math|1-99.1-1': 1,
         'physical|1-99.1-1': 1,
         'biological|1-99.1-1': 1,
+        'political|1-99.1-1': 1,
+        'geography|1-99.1-1': 1,
       },
     ],
   })
+
+  
+
+  const generateColumn = (columns: ColumnsType<ITable>, subjectColumns: ColumnsType<ITable>, data: Array<ITable>) => {
+    const subjects = data[0]
+    subjectColumns.forEach((subjectColumn) => {
+      if (subjects[subjectColumn.key]) {
+        columns.push(subjectColumn)
+      }
+    })
+  }
+
+  generateColumn(columns, subjectColumns, data)
 
   return (
     <div>
@@ -98,7 +137,7 @@ const index = (props: any) => {
         Table
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <Table columns={columns} dataSource={data} bordered size="large" rowKey={(record) => record.rank} />
+      <Table columns={columns} dataSource={data} bordered size="large" scroll={{ x: 950, y: 500 }} rowKey={(record) => record.rank} />
     </div>
   )
 }
