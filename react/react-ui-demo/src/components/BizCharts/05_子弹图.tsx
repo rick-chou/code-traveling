@@ -17,7 +17,7 @@ const Bullet: React.FC = (props: any) => {
         BulletChart
         <Iconfont iconName="quanping" onClick={props.onClick} />
       </h2>
-      <BulletChart data={data} measureField="measures" rangeField="ranges" targetField="target" rangeMax={100} />
+      {/* <BulletChart data={data} measureField="measures" rangeField="ranges" targetField="target" rangeMax={100} /> */}
     </>
   )
 }
