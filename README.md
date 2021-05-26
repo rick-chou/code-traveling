@@ -16,6 +16,8 @@
 
   - 阮一峰 ECMAScript 6 入门 https://www.bookstack.cn/read/es6-3rd/sidebar.md
 
+  - Lodash https://www.lodashjs.com/
+
 - React
 
   - Redux https://www.redux.org.cn/
