@@ -28,6 +28,15 @@
 
   - Antv https://antv.gitee.io/zh/
 
+  - BizCharts https://bizcharts.net/
+
+- MiniProgram
+
+  - 微信小程序开发者文档 https://developers.weixin.qq.com/miniprogram/dev/framework/
+
+  - Remax https://remaxjs.org/
+
+  - Taro https://taro-docs.jd.com/taro/docs/README
 ## Archive
 
 - 😜 React 小册 --> https://www.yuque.com/u12206867/react
