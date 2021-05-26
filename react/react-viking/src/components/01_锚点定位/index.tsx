@@ -5,7 +5,7 @@ import classNames from 'classnames'
 const App = () => {
   const [top, setTop] = useState(0)
   const [activeTab, setActiveTab] = useState(1)
-  const containerRef = useRef<HTMLElement | null>(null)
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +13,7 @@ const App = () => {
       const containerOffsetTop = (containerRef.current as HTMLElement).offsetTop
       const offsetTop1 = (document.querySelector('#one') as HTMLElement).offsetTop + containerOffsetTop
       const offsetTop2 = (document.querySelector('#two') as HTMLElement).offsetTop + containerOffsetTop
-      const offsetTop3 = (document.querySelector('#three') as HTMLElement).offsetTop + containerOffsetTop
+      // const offsetTop3 = (document.querySelector('#three') as HTMLElement).offsetTop + containerOffsetTop
       if (scrollTop > containerOffsetTop) {
         setTop(scrollTop - offsetTop1)
       } else {
