@@ -8,10 +8,13 @@
     "commitlint",
     "crosshairs",
     "echarts",
+    "miniprogram",
     "mockjs",
     "quanping",
     "ramires",
+    "tarojs",
     "vite",
-    "vitejs"
+    "vitejs",
+    "wechat"
   ]
 }
