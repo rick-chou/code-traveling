@@ -2,8 +2,10 @@
   "cSpell.words": [
     "Bizcharts",
     "Remax",
+    "alipay",
     "antd",
     "antv",
+    "browserslist",
     "codemirror",
     "commitlint",
     "crosshairs",
@@ -11,10 +13,13 @@
     "miniprogram",
     "mockjs",
     "quanping",
+    "quickapp",
     "ramires",
+    "stylelint",
     "tarojs",
     "vite",
     "vitejs",
+    "weapp",
     "wechat"
   ]
 }
