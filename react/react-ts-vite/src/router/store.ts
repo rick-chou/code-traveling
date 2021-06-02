@@ -2,7 +2,8 @@ import redux from '@/containers/Store/Redux'
 import home from '@/containers/Store/Redux/Home'
 import article from '@/containers/Store/Redux/Article'
 import mobx from '@containers/Store/Mobx/'
-import todo from '@containers/Store/Mobx/Demo'
+import classMobx from '@containers/Store/Mobx/Class'
+import funcMobx from '@containers/Store/Mobx/Func'
 
 const routes = [
   {
@@ -24,8 +25,12 @@ const routes = [
     component: mobx,
     routes: [
       {
-        path: '/mobx/home',
-        component: todo,
+        path: '/mobx/class',
+        component: classMobx,
+      },
+      {
+        path: '/mobx/func',
+        component: funcMobx,
       },
     ],
   },
