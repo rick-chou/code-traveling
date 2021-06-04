@@ -20,9 +20,13 @@
 
 - React
 
+  - React https://react.docschina.org/
+
   - Redux https://www.redux.org.cn/
 
   - Rematch https://rematch.gitbook.io/handbook/
+
+  - SSR同构 https://www.nextjs.cn/
 
 - UI
 
