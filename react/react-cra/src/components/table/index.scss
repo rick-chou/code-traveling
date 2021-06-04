@@ -1,0 +1,21 @@
+:global {
+  .ant-table-thead > tr > th {
+    background-color: #f6f6f6;
+    border: none;
+  }
+  // 去除鼠标悬浮的背景色
+  .ant-table-tbody > tr > td {
+    background: rgba(255, 255, 255, 0) !important;
+    border: none;
+  }
+  .ant-table-tbody > tr > td:hover {
+    background: rgba(255, 255, 255, 0) !important;
+  }
+  // 偶数行加背景色
+  .ant-table-tbody {
+    font-size: 12px;
+    tr:nth-child(even) {
+      background-color: #fcfcfc;
+    }
+  }
+}
