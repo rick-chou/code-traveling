@@ -91,7 +91,7 @@ export const batchLine = [
     align: 'center',
     ellipsis: true,
   },
-];
+]
 // 班级排名
 export const classRanking = [
   {
@@ -152,7 +152,7 @@ export const classRanking = [
     align: 'center',
     ellipsis: true,
   },
-];
+]
 // 成绩分布
 export const scoreLine = [
   {
@@ -245,4 +245,98 @@ export const scoreLine = [
     align: 'center',
     ellipsis: true,
   },
-];
+]
+
+// 动态渲染列表
+export const subjects = [
+  {
+    title: '序号',
+    render: (text, record, index) => index + 1,
+    align: 'center',
+  },
+  {
+    title: '班级',
+    dataIndex: 'className',
+    key: 'className',
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '班主任',
+    dataIndex: 'teacherName',
+    key: 'teacherName',
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '所属学校',
+    dataIndex: 'schoolName',
+    key: 'schoolName',
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '优秀人数',
+    dataIndex: 'excellentNum',
+    key: 'excellentNum',
+    sorter: (a, b) => a.excellentNum - b.excellentNum,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '优秀比例',
+    dataIndex: 'excellentRate',
+    key: 'excellentRate',
+    sorter: (a, b) => a.excellentRate - b.excellentRate,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '良好人数',
+    dataIndex: 'goodNum',
+    key: 'goodNum',
+    sorter: (a, b) => a.goodNum - b.goodNum,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '良好比例',
+    dataIndex: 'goodRate',
+    key: 'goodRate',
+    sorter: (a, b) => a.goodRate - b.goodRate,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '及格人数',
+    dataIndex: 'passNum',
+    key: 'passNum',
+    sorter: (a, b) => a.passNum - b.passNum,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '及格比例',
+    dataIndex: 'passRate',
+    key: 'passRate',
+    sorter: (a, b) => a.passRate - b.passRate,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '不及格人数',
+    dataIndex: 'noPassNum',
+    key: 'noPassNum',
+    sorter: (a, b) => a.noPassNum - b.noPassNum,
+    align: 'center',
+    ellipsis: true,
+  },
+  {
+    title: '不及格比例',
+    dataIndex: 'noPassRate',
+    key: 'noPassRate',
+    sorter: (a, b) => a.noPassRate - b.noPassRate,
+    align: 'center',
+    ellipsis: true,
+  },
+]

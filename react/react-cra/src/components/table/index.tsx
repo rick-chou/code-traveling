@@ -1,10 +1,8 @@
-import React from 'react';
-import { Table } from 'antd';
-import PropTypes, { number } from 'prop-types';
-import './index.scss';
-const List = (props) => {
-  const { dataSource, onChange, onShowSizeChange, columns, defaultPageSize } =
-    props;
+import React from 'react'
+import { Table } from 'antd'
+import './index.module.scss'
+const List = (props: any) => {
+  const { dataSource, onChange, onShowSizeChange, columns, defaultPageSize } = props
 
   return (
     <Table
@@ -21,15 +19,7 @@ const List = (props) => {
         // pageSizeOptions: [10, 20, 30],
       }}
     />
-  );
-};
+  )
+}
 
-List.propTypes = {
-  dataSource: PropTypes.array,
-  onChange: PropTypes.func,
-  onShowSizeChange: PropTypes.func,
-  columns: PropTypes.array,
-  defaultPageSize: number,
-};
-
-export default List;
+export default List
