@@ -6,7 +6,7 @@
 
 - 富文本编辑器
 
-- 元素拖拽 / 旋转 / 缩放
+- 元素拖拽
 
 - Koa / Express
 
@@ -31,6 +31,8 @@
   - Lodash https://www.lodashjs.com/
 
   - Mock数据 http://mockjs.com/
+
+  - 动画 https://github.com/tweenjs/tween.js/
 
   - https://2020.stateofjs.com/zh-Hans/
 
