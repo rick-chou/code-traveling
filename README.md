@@ -30,8 +30,6 @@
 
   - Lodash https://www.lodashjs.com/
 
-  - 文件上传 https://pqina.nl/filepond/
-
   - Mock数据 http://mockjs.com/
 
   - https://2020.stateofjs.com/zh-Hans/
@@ -99,6 +97,8 @@
   - Element Plus https://element-plus.gitee.io/#/zh-CN
 
   - Plyr（视频播放器） https://plyr.io/
+
+  - Filepond (文件上传) https://pqina.nl/filepond/
 
 - Node
 
