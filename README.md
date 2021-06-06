@@ -1,5 +1,7 @@
 # ReStart-FE
 
+> 往者不可谏，来者犹可追
+
 ## Todo
 
 - Next.js
@@ -22,6 +24,8 @@
 
   - PostCSS https://www.postcss.com.cn/
 
+  - Tailwind https://www.tailwindcss.cn/
+
 - JS
 
   - 阮一峰 ECMAScript 6 入门 https://www.bookstack.cn/read/es6-3rd/sidebar.md
@@ -30,7 +34,7 @@
 
   - Lodash https://www.lodashjs.com/
 
-  - Mock数据 http://mockjs.com/
+  - Mock 数据 http://mockjs.com/
 
   - 动画 https://github.com/tweenjs/tween.js/
 
@@ -66,7 +70,9 @@
 
     - https://reactrouter.com/web/guides/quick-start
 
-  - SSR 同构 https://www.nextjs.cn/
+  - Next （SSR 同构） https://www.nextjs.cn/
+
+  - Umi https://umijs.org/zh-CN
 
 - Vue
 
@@ -111,6 +117,14 @@
   - Egg https://eggjs.org/zh-cn/
 
   - cheerio(爬虫) https://github.com/cheeriojs/cheerio/wiki/Chinese-README
+
+- 工程化
+
+  - Webpack https://www.webpackjs.com/
+
+  - Vite https://cn.vitejs.dev/
+
+  - Snowpack https://www.snowpack.dev/
 
 - 面试
 
