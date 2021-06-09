@@ -4,14 +4,14 @@ import './index.module.scss'
 
 interface IProps {
   dataSource: any
-  handlePageChange: any
-  handleTableChange: any
-  handleShowSizeChange: any
+  handlePageChange?: any
+  handleTableChange?: any
+  handleShowSizeChange?: any
   columns: any
-  defaultPageSize: number
-  total: number
-  pageSize: any
-  tableSize: any
+  defaultPageSize?: number
+  total?: number
+  pageSize?: any
+  tableSize?: any
 }
 
 const List = (props: IProps) => {

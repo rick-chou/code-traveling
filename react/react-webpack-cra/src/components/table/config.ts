@@ -4,7 +4,7 @@ import { PaginationProps } from 'antd'
 export const batchLine = (pagination: PaginationProps) => [
   {
     title: '序号',
-    render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination.pageSize + index + 1,
+    // render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination.pageSize + index + 1,
     align: 'center',
     width: 50,
   },
@@ -98,7 +98,7 @@ export const batchLine = (pagination: PaginationProps) => [
 export const classRanking = (pagination: PaginationProps) => [
   {
     title: '序号',
-    render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination!.pageSize + index + 1,
+    // render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination!.pageSize + index + 1,
     align: 'center',
   },
   {
@@ -159,7 +159,7 @@ export const classRanking = (pagination: PaginationProps) => [
 export const scoreLine = (pagination: PaginationProps) => [
   {
     title: '序号',
-    render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination.pageSize + index + 1,
+    // render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination.pageSize + index + 1,
     align: 'center',
   },
   {
@@ -253,7 +253,7 @@ export const scoreLine = (pagination: PaginationProps) => [
 export const classSingle = (pagination: PaginationProps) => [
   {
     title: '名次',
-    render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination.pageSize + index + 1,
+    // render: (text: any, record: any, index: number) => (pagination.current - 1) * pagination.pageSize + index + 1,
     align: 'center',
     ellipsis: true,
   },
