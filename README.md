@@ -12,6 +12,8 @@
 
 - Koa / Express
 
+- 剪切板 clipboard.js
+
 ## Done
 
 - CSS
@@ -20,11 +22,13 @@
 
   - Less https://less.bootcss.com/
 
-  - 兼容性 https://caniuse.com/#home
+  - 兼容性查询 https://caniuse.com/#home
 
   - PostCSS https://www.postcss.com.cn/
 
   - Tailwind https://www.tailwindcss.cn/
+
+  - 🧐 https://2020.stateofcss.com/en-US/report/
 
 - JS
 
@@ -34,19 +38,25 @@
 
   - Lodash https://www.lodashjs.com/
 
-  - Mock 数据 http://mockjs.com/
+  - Http https://www.axios-http.cn/
+
+  - Mock数据 http://mockjs.com/
+
+  - 日期 http://momentjs.cn/
 
   - 动画 https://github.com/tweenjs/tween.js/
 
-  - https://2020.stateofjs.com/zh-Hans/
+  - 🎃 https://2020.stateofjs.com/zh-Hans/
 
 - TS
 
   - https://www.tslang.cn/
 
-  - https://ts.xcatliu.com/introduction/what-is-typescript.html
+  - TS入门教程 https://ts.xcatliu.com/introduction/what-is-typescript.html
 
-  - https://jkchao.github.io/typescript-book-chinese/
+  - 深入理解TS https://jkchao.github.io/typescript-book-chinese/
+
+  - TS学习笔记 https://juejin.cn/post/6872111128135073806
 
 - React
 
