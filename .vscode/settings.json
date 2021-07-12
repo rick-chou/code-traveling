@@ -1,28 +1,3 @@
 {
-  "cSpell.words": [
-    "Bizcharts",
-    "Filepond",
-    "Plyr",
-    "Remax",
-    "Vuex",
-    "alipay",
-    "antd",
-    "antv",
-    "browserslist",
-    "codemirror",
-    "commitlint",
-    "crosshairs",
-    "echarts",
-    "miniprogram",
-    "mockjs",
-    "quanping",
-    "quickapp",
-    "ramires",
-    "stylelint",
-    "tarojs",
-    "vite",
-    "vitejs",
-    "weapp",
-    "wechat"
-  ]
+  "cSpell.words": ["Bizcharts", "Filepond", "Plyr", "Remax", "Sider", "Vuex", "alipay", "antd", "antv", "browserslist", "codemirror", "commitlint", "crosshairs", "echarts", "miniprogram", "mockjs", "quanping", "quickapp", "ramires", "stylelint", "tarojs", "vite", "vitejs", "weapp", "wechat"]
 }
