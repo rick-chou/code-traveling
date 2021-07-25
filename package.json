@@ -10,7 +10,7 @@
     "@commitlint/config-conventional": "^12.1.1"
   },
   "scripts": {
-    "cz": "git-cz"
+    "commit": "git-cz"
   },
   "config": {
     "commitizen": {
