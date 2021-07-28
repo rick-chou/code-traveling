@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@api": ["./api"],
+      "@components": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@models": ["./models"],
+      "@res": ["./res"]
+    },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
