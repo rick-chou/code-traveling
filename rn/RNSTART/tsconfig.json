@@ -3,10 +3,11 @@
     "baseUrl": "./src",
     "paths": {
       "@api": ["./api"],
-      "@components": ["./components/*"],
-      "@pages/*": ["./pages/*"],
+      "@components/*": ["./components/*"],
+      "@config": ["./config"],
       "@models": ["./models"],
-      "@res": ["./res"]
+      "@res": ["./res"],
+      "@utils": ["./utils"]
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
@@ -17,7 +18,8 @@
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",

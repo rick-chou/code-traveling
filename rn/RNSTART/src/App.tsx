@@ -1,15 +1,11 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text
-} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
+import Touchable from './components/Touchable';
 
 const App = () => {
-
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={{ fontSize: 30 }}>RN START</Text>
+      <Touchable />
     </SafeAreaView>
   );
 };
@@ -19,7 +15,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-  }
+  },
 });
 
 export default App;
