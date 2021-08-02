@@ -27,7 +27,7 @@ const Counter: React.FunctionComponent = () => {
       setCount(count + 1)
       setCount(count + 1)
       setCount(count + 1)
-    }, 0)
+    })
   }
 
   // Promise
