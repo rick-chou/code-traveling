@@ -15,14 +15,14 @@ const App: FC = () => {
   const history = useHistory()
 
   // 设置菜单列表互斥 同时只能打开一个
-  const [openKeys, setOpenKeys] = React.useState([]);
+  const [openKeys, setOpenKeys] = React.useState<any>([]);
 
   const rootSubMenuKeys = routes.reduce((a: Array<any>, b) => {
     return a.concat(b.path)
   }, [])
 
-  const onOpenChange = keys => {
-    const latestOpenKey = keys.find(key => openKeys.indexOf(key) === -1);
+  const onOpenChange = (keys:any) => {
+    const latestOpenKey = keys.find((key: any) => openKeys.indexOf(key) === -1);
     if (rootSubMenuKeys.indexOf(latestOpenKey) === -1) {
       setOpenKeys(keys);
     } else {

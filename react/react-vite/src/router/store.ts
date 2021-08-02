@@ -1,9 +1,9 @@
-import redux from '@/containers/Store/Redux'
-import home from '@/containers/Store/Redux/Home'
-import article from '@/containers/Store/Redux/Article'
-import mobx from '@containers/Store/Mobx/'
-import classMobx from '@containers/Store/Mobx/Class'
-import funcMobx from '@containers/Store/Mobx/Func'
+import redux from '@/containers/store/redux'
+import home from '@/containers/store/redux/Home'
+import article from '@/containers/store/redux/Article'
+import mobx from '@/containers/store/mobx'
+import classMobx from '@/containers/store/mobx/Class'
+import funcMobx from '@/containers/store/mobx/Func'
 
 const routes = [
   {

@@ -1,9 +1,9 @@
-import router from '@containers/Router'
-import home from '@containers/Router/Home'
-import about from '@containers/Router/About'
-import address from '@containers/Router/About/Address'
-import culture from '@containers/Router/About/Culture'
-import article from '@containers/Router/Article'
+import router from '@/containers/router'
+import home from '@/containers/router/home'
+import about from '@/containers/router/about'
+import address from '@/containers/router/about/Address'
+import culture from '@/containers/router/about/Culture'
+import article from '@/containers/router/article'
 
 const routes = [
   {

@@ -1,7 +1,7 @@
-import performance from '@/containers/Performance/index'
-import shouldComponentUpdate from '@containers/Performance/shouldComponentUpdate'
-import memo from '@containers/Performance/memo'
-import pureComponent from '@containers/Performance/pureComponent'
+import performance from '@/containers/performance/index'
+import shouldComponentUpdate from '@/containers/performance/shouldComponentUpdate'
+import memo from '@/containers/performance/memo'
+import pureComponent from '@/containers/performance/pureComponent'
 
 const routes = [
   {

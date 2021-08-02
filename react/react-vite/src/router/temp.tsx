@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-// import routes from '@router/index'
 import { renderRoutes, RouteConfig, RouteConfigComponentProps } from 'react-router-config'
 
 interface IProp extends Partial<RouteConfigComponentProps> {
