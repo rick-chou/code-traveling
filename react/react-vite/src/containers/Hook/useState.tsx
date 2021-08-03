@@ -1,12 +1,19 @@
-import React, { useState } from 'react'
-import { Statistic, Button } from 'antd'
-import { LikeOutlined } from '@ant-design/icons'
+import React, { useEffect, useState } from 'react'
+import { Statistic, Button, Space } from 'antd'
+import { LikeOutlined, AreaChartOutlined, PieChartOutlined } from '@ant-design/icons'
 
 const Counter: React.FunctionComponent = () => {
   const [count, setCount] = useState<number>(0)
+  const [other, setOther] = useState<number>(0)
+  const [renderCount, setRenderCount] = useState<number>(0)
+
+  useEffect(() => {
+    setRenderCount(count + 1)
+  }, [count])
 
   // 普通调用
   const addCount = () => {
+    setOther(other + 1)
     setCount(count + 1)
     setCount(count + 1)
     setCount(count + 1)
@@ -14,6 +21,7 @@ const Counter: React.FunctionComponent = () => {
   }
   // 回调函数
   const addCountByCallback = () => {
+    setOther((preState) => preState + 1)
     setCount((preState) => preState + 1)
     setCount((preState) => preState + 1)
     setCount((preState) => preState + 1)
@@ -23,6 +31,7 @@ const Counter: React.FunctionComponent = () => {
   // 定时器
   const addCountBySetTimeOut = () => {
     setTimeout(() => {
+      setOther(other + 1)
       setCount(count + 1)
       setCount(count + 1)
       setCount(count + 1)
@@ -33,6 +42,7 @@ const Counter: React.FunctionComponent = () => {
   // Promise
   const addCountByPromise = () => {
     Promise.resolve().then(() => {
+      setOther(other + 1)
       setCount(count + 1)
       setCount(count + 1)
       setCount(count + 1)
@@ -42,7 +52,12 @@ const Counter: React.FunctionComponent = () => {
 
   return (
     <>
-      <Statistic value={count} prefix={<LikeOutlined />} />
+      <Space size="large">
+        <Statistic value={count} prefix={<LikeOutlined />} />
+        <Statistic value={other} prefix={<PieChartOutlined />} />
+        <Statistic value={renderCount} prefix={<AreaChartOutlined />} />
+      </Space>
+      <br />
       <Button onClick={addCount}>普通调用</Button>
       <Button onClick={addCountByCallback}>回调函数</Button>
       <Button onClick={addCountBySetTimeOut}>定时器</Button>

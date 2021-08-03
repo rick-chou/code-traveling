@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import { Statistic, Button } from 'antd'
-import { LikeOutlined } from '@ant-design/icons'
+import { Statistic, Button, Space } from 'antd'
+import { LikeOutlined, PieChartOutlined } from '@ant-design/icons'
 
 interface IProps {}
 
 interface IState {
   count: number
+  other: number
 }
 
 class App extends Component<IProps, IState> {
@@ -13,11 +14,21 @@ class App extends Component<IProps, IState> {
     super(props)
     this.state = {
       count: 0,
+      other: 0,
     }
+  }
+
+  componentDidMount() {
+    console.log('render...')
+  }
+
+  componentDidUpdate() {
+    console.log('render...')
   }
 
   // 普通调用
   addCount = () => {
+    this.setState({ other: this.state.other + 1 })
     this.setState({ count: this.state.count + 1 })
     this.setState({ count: this.state.count + 1 })
     this.setState({ count: this.state.count + 1 })
@@ -31,6 +42,7 @@ class App extends Component<IProps, IState> {
   // 定时器
   addCountBySetTimeOut = () => {
     setTimeout(() => {
+      this.setState({ other: this.state.other + 1 })
       this.setState({ count: this.state.count + 1 })
       this.setState({ count: this.state.count + 1 })
       this.setState({ count: this.state.count + 1 })
@@ -41,6 +53,7 @@ class App extends Component<IProps, IState> {
   // Promise
   addCountByPromise = () => {
     Promise.resolve().then(() => {
+      this.setState({ other: this.state.other + 1 })
       this.setState({ count: this.state.count + 1 })
       this.setState({ count: this.state.count + 1 })
       this.setState({ count: this.state.count + 1 })
@@ -49,10 +62,14 @@ class App extends Component<IProps, IState> {
   }
 
   render() {
-    const { count } = this.state
+    const { count, other } = this.state
     return (
       <>
-        <Statistic value={count} prefix={<LikeOutlined />} />
+        <Space size="large">
+          <Statistic value={count} prefix={<LikeOutlined />} />
+          <Statistic value={other} prefix={<PieChartOutlined />} />
+        </Space>
+        <br />
         <Button onClick={this.addCount}>普通调用</Button>
         <Button onClick={this.addCountByCallback}>回调函数</Button>
         <Button onClick={this.addCountBySetTimeOut}>定时器</Button>
