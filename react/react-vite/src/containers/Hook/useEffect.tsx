@@ -7,44 +7,39 @@
  * 第二个参数 数组 状态依赖项 实现性能优化 如果传[] 则等同于不开启shouldComponentUpdate
  */
 
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react'
 
-import { Button, Tag } from 'antd';
+import { Button, Tag } from 'antd'
 
 const App: FC = () => {
-  const [state, setState] = useState<Number[]>([]);
-  const [tag, setTag] = useState<string>('Tag');
+
+  const [state, setState] = useState<number[]>([])
+
   useEffect(() => {
-    console.log('state更新了');
+
+    console.log('state更新了')
+    const timer = setTimeout(() => console.log('绑定定时器'))
 
     return () => {
-      console.log('componentWillUnmount');
-    };
-  }, [state]);
+      clearTimeout(timer)
+      console.log('解绑定时器')
+    }
+  }, [state])
+
   return (
     <div>
-      <Button
-        onClick={() =>
-          setState((prevState) => [
-            ...prevState,
-            Math.trunc(Math.random() * 10),
-          ])
-        }
-      >
-        change state
-      </Button>
-      <Button onClick={() => setTag('new Tag')}>change tag</Button>
+      <Button onClick={() => setState((prevState) => [...prevState, Math.trunc(Math.random() * 10)])}>change state</Button>
       <br />
-      <Tag color="orange">{tag}</Tag>
+      <br />
       {state.map((item, idx) => {
         return (
           <Tag color="orange" key={idx}>
             {item}
           </Tag>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
