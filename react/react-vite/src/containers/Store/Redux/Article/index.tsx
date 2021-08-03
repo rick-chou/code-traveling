@@ -11,13 +11,14 @@ interface IProps {
 }
 
 const Article = (props: IProps) => {
+  const { list, getList, getListAsync } = props
   return (
     <div>
       <h1>Article</h1>
-      <Button onClick={() => props.getList()}>Get List</Button>
-      <Button onClick={() => props.getListAsync()}>Get List Async</Button>
+      <Button onClick={getList}>Get List</Button>
+      <Button onClick={getListAsync}>Get List Async</Button>
       <br />
-      {props?.list?.map((item) => {
+      {list?.map((item) => {
         return <Image width={200} src={item.img} key={item.id} />
       })}
     </div>
