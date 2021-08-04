@@ -11,7 +11,7 @@ export const setList = (list: Array<any>) => ({
   list,
 })
 
-export const getListSync = (list: Array<any>) => ({
+export const _getListAsync = (list: Array<any>) => ({
   type: ACTIONS.GET_LIST_ASYNC,
   list,
 })
@@ -19,6 +19,6 @@ export const getListSync = (list: Array<any>) => ({
 export const getListAsync = () => {
   return async (dispatch: Dispatch) => {
     const { list } = await API.getList()
-    dispatch(getListSync(list))
+    dispatch(_getListAsync(list))
   }
 }
