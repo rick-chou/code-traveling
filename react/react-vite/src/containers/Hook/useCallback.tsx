@@ -8,64 +8,60 @@
  * 第二个参数 是一个数组 是这个函数的依赖项 只有依赖项更新 函数才会重新执行
  */
 
-import { Button } from 'antd'
-import React, { useState, useCallback, memo } from 'react'
+import React, { useState, useCallback, memo, useEffect } from 'react';
+import { Button, message } from 'antd';
 
 interface IProps {
-  getSum: () => number
+  getSum: () => number;
 }
 
-const Child1 = memo(({ getSum }: IProps) => {
-  console.log('我是子组件 在父组件中没使用useCallback')
-  return (
-    <div>
-      <Button onClick={getSum}>没使用useCallback</Button>
-    </div>
-  )
-})
+const ComponentWithoutUseCallback = memo(({ getSum }: IProps) => {
+  useEffect(() => {
+    message.info('ComponentWithoutUseCallback');
+  }, [getSum]);
 
-const Child2 = memo(({ getSum }: IProps) => {
-  console.log('我是子组件 在父组件中使用了useCallback')
-  return (
-    <div>
-      <Button onClick={getSum}>使用了useCallback</Button>
-    </div>
-  )
-})
+  return null;
+});
+
+const ComponentWithUseCallback = memo(({ getSum }: IProps) => {
+  useEffect(() => {
+    message.info('ComponentWithUseCallback');
+  }, [getSum]);
+
+  return null;
+});
 
 const Parent = () => {
-  const [num, setNum] = useState(0)
-  const [max, setMax] = useState(100)
+  const [num, setNum] = useState(0);
+  const [max, setMax] = useState(100);
 
-  const getSum1 = () => {
-    console.log('getSum1方法执行了')
-    let sum = 0
+  const methodsWithoutUseCallback = () => {
+    message.info('methodsWithoutUseCallback');
+    let sum = 0;
     for (let i = 0; i < max; i++) {
-      sum += i
+      sum += i;
     }
-    return sum
-  }
+    return sum;
+  };
 
-  const getSum2 = useCallback(() => {
-    console.log('getSum2方法执行了')
-    let sum = 0
+  const methodsWithUseCallback = useCallback(() => {
+    message.info('methodsWithUseCallback');
+    let sum = 0;
     for (let i = 0; i < max; i++) {
-      sum += i
+      sum += i;
     }
-    return sum
-  }, [max])
+    return sum;
+  }, [max]);
 
   return (
     <div>
-      <p>sum : {getSum1()}</p>
-      <p>sum : {getSum2()}</p>
       <p>num : {num}</p>
       <Button onClick={() => setNum(num + 1)}>change num</Button>
       <Button onClick={() => setMax((pre) => pre * 2)}>change max</Button>
-      <Child1 getSum={getSum1} />
-      <Child2 getSum={getSum2} />
+      <ComponentWithoutUseCallback getSum={methodsWithoutUseCallback} />
+      <ComponentWithUseCallback getSum={methodsWithUseCallback} />
     </div>
-  )
-}
+  );
+};
 
-export default Parent
+export default Parent;

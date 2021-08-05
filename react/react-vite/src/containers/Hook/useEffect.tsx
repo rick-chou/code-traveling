@@ -7,39 +7,30 @@
  * 第二个参数 数组 状态依赖项 实现性能优化 如果传[] 则等同于不开启shouldComponentUpdate
  */
 
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react';
 
-import { Button, Tag } from 'antd'
+import { Button, message } from 'antd';
 
 const App: FC = () => {
-
-  const [state, setState] = useState<number[]>([])
+  const [state, setState] = useState<number>(0);
 
   useEffect(() => {
-
-    console.log('state更新了')
-    const timer = setTimeout(() => console.log('绑定定时器'))
+    message.info('render');
+    const timer = setTimeout(() => {});
 
     return () => {
-      clearTimeout(timer)
-      console.log('解绑定时器')
-    }
-  }, [state])
+      clearTimeout(timer);
+      message.info('消除副作用');
+    };
+  }, [state]);
 
   return (
     <div>
-      <Button onClick={() => setState((prevState) => [...prevState, Math.trunc(Math.random() * 10)])}>change state</Button>
+      <Button onClick={() => setState(state + 1)}>{state}</Button>
       <br />
       <br />
-      {state.map((item, idx) => {
-        return (
-          <Tag color="orange" key={idx}>
-            {item}
-          </Tag>
-        )
-      })}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

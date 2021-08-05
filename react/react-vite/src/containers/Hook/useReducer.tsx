@@ -46,14 +46,8 @@ const Count = () => {
   return (
     <div>
       <p>当前计数：{state.count}</p>
-      <Button
-        onClick={() => dispatch({ type: Actions.ADD_COUNT_VALUE, payload: 2 })}
-      >
-        +2
-      </Button>
-      <Button onClick={() => dispatch({ type: Actions.SUB_COUNT_VALUE })}>
-        -1
-      </Button>
+      <Button onClick={() => dispatch({ type: Actions.ADD_COUNT_VALUE, payload: 2 })}>+2</Button>
+      <Button onClick={() => dispatch({ type: Actions.SUB_COUNT_VALUE })}>-1</Button>
     </div>
   );
 };
@@ -62,6 +56,7 @@ export default function App() {
   return (
     <>
       <Count />
+      <br />
       <Count />
     </>
   );
