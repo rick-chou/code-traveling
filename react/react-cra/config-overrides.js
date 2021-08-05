@@ -1,5 +1,5 @@
-const { override, addWebpackAlias } = require('customize-cra')
-const path = require('path')
+const { override, addWebpackAlias } = require('customize-cra');
+const path = require('path');
 
 module.exports = override(
   // add an alias for "ag-grid-react" imports
@@ -14,5 +14,5 @@ module.exports = override(
     '@utils': '@/utils',
     '@styles': '@/styles',
     '@assets': '@/assets',
-  })
-)
+  }),
+);
