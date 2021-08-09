@@ -1,4 +1,4 @@
-import { IPoint } from './02_interface'
+import { IPoint } from './interface'
 
 export type Point = {
   x: number

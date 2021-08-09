@@ -1,4 +1,4 @@
-import { Point } from './01_type'
+import { Point } from './type'
 
 /**
  * @param x x轴
