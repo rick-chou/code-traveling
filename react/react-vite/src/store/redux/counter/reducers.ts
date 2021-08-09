@@ -11,7 +11,7 @@ export default (state = defaultState, action: IAction) => {
       return { ...state, count: state.count + 1 };
     }
     case TYPES.SUB_COUNT: {
-      return { ...state, count: state.count + action.payload };
+      return { ...state, count: state.count - action.payload };
     }
     default:
       return state;
