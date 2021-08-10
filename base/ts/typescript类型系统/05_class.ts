@@ -40,10 +40,13 @@ class Person implements IPerson {
 }
 
 const person = new Person('nanshu', 'man', 18);
-person.name;
-person.nickname;
+person.name; // --> 花匠
+person.nickname; // --> nanshu
 
+// 不能访问gender 因为gender是protected 只能在声明的类和派生类中访问
 // person.gender;  Property 'gender' is protected and only accessible within class 'Person' and its subclasses.
+
+// 不能访问gender 因为age是private 只能在声明的类中访问
 // stu.age;  Property 'age' is private and only accessible within class 'Student'
 
 class Student extends Person {
