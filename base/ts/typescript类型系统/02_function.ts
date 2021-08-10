@@ -14,7 +14,7 @@ function add1(x: number, y: number): number {
   return x + y;
 }
 
-const add2: Add = function (x: number, y: number): number {
+const add2: Add = (x: number, y: number): number => {
   return x + y;
 };
 
@@ -31,7 +31,7 @@ add3(1, 2, 1, 2, 3, 4);
 function add4(x: number = 2, y: number) {
   return x + y;
 }
-add4(3, 5);
+add4(3, 4);
 
 // 可选参数
 // 可选参数必须放在参数序列的最后一项
@@ -40,7 +40,7 @@ function add5(x: number, y?: number) {
 }
 
 // 函数重载
-function parse(x: any): any {
-  if (typeof x === 'number') return x;
-  if (typeof x === 'string') return x.length;
+function add(x: any, y: any): any {
+  if (typeof x === 'number' && typeof y === 'number') return x + y;
+  if (typeof x === 'string' && typeof y === 'string') return parseInt(x) + parseInt(y);
 }

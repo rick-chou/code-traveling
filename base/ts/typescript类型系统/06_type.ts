@@ -3,6 +3,7 @@ type Name = string;
 type NameResolver = () => string;
 
 const nickname: Name = 'nanshu';
+const handleNameResolver: NameResolver = () => 'nanshu';
 
 // 不同与interface type不能重复命名
 // type Name = number;  Duplicate identifier 'Name'.
