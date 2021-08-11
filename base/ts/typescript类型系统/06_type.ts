@@ -1,4 +1,5 @@
 // 类型别名用来给类型起一个新的名字
+// 起别名不会新建一个类型 --> 它创建了一个新名字来引用那个类型
 type Name = string;
 type NameResolver = () => string;
 

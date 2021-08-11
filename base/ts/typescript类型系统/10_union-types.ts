@@ -26,3 +26,31 @@ function padLeft(value: string, padding: string | number) {
   }
   throw new Error(`Expected string or number, got '${padding}'.`);
 }
+
+// 可辨识联合
+interface Square {
+  kind: 'square';
+  size: number;
+}
+interface Rectangle {
+  kind: 'rectangle';
+  width: number;
+  height: number;
+}
+interface Circle {
+  kind: 'circle';
+  radius: number;
+}
+
+type Shape = Square | Rectangle | Circle;
+
+function area(s: Shape) {
+  switch (s.kind) {
+    case 'square':
+      return s.size * s.size;
+    case 'rectangle':
+      return s.height * s.width;
+    case 'circle':
+      return Math.PI * s.radius * 2;
+  }
+}
