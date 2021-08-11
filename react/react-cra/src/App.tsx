@@ -1,4 +1,4 @@
-import Demo from '@components/A';
+import Demo from '@components/basic/01_组件通信';
 
 function App() {
   return (
