@@ -19,6 +19,13 @@ enum Count {
 
 Count.three; // --> 3
 
+// 减少魔法数字
+enum STATUS {
+  READY = 0,
+  OK = 1,
+  FAILED = -1,
+}
+
 // 字符串枚举
 enum Lang {
   js = 'javascript',

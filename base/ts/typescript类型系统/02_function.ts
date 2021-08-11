@@ -40,7 +40,12 @@ function add5(x: number, y?: number) {
 }
 
 // 函数重载
-function add(x: any, y: any): any {
-  if (typeof x === 'number' && typeof y === 'number') return x + y;
-  if (typeof x === 'string' && typeof y === 'string') return parseInt(x) + parseInt(y);
+function showType(x: any): any {
+  if (typeof x === 'number') {
+    return 'number';
+  } else if (typeof x === 'string') {
+    return 'string';
+  } else {
+    return "I don't know";
+  }
 }
