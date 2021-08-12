@@ -1,3 +1,4 @@
+// basic
 // import Demo from '@components/basic/01_组件通信';
 // import Demo from '@components/basic/02_生命周期';
 // import Demo from '@components/basic/03_dangerouslySetInnerHTML';
@@ -6,7 +7,16 @@
 // import Demo from '@components/basic/06_ref';
 // import Demo from '@components/basic/07_高阶组件';
 // import Demo from '@components/basic/08_错误边界';
-import Demo from '@components/basic/09_renderProps';
+// import Demo from '@components/basic/09_renderProps';
+
+// hooks
+// import Demo from '@components/hooks/useState';
+// import Demo from '@components/hooks/useEffect';
+// import Demo from '@components/hooks/useMemo';
+import Demo from '@components/hooks/useCallback';
+// import Demo from '@components/hooks/useContext';
+// import Demo from '@components/hooks/useReducer';
+// import Demo from '@components/hooks/useRef';
 
 function App() {
   return (
