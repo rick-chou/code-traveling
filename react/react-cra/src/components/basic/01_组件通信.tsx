@@ -23,7 +23,7 @@ class ParentComponent extends Component<IProps, IState> {
     this.state = {
       count: 0,
     };
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
     this.setState({
