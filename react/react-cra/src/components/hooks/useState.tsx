@@ -1,38 +1,34 @@
-import React, { useEffect, useState } from 'react';
+// useState填补了函数式组件内部不能保存状态的空白
+// 更新useState中保存的状态时 都是走的异步更新 对同一个属性的多次更新 会被合并 只取最新的一次
+// 使用回调函数更新状态时 可以拿到最新的state
+
+import React, { useState } from 'react';
 import { Statistic, Button, Space } from 'antd';
-import { LikeOutlined, AreaChartOutlined, PieChartOutlined } from '@ant-design/icons';
+import { LikeOutlined, PieChartOutlined } from '@ant-design/icons';
 
-const Counter: React.FunctionComponent = () => {
+const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
-  const [other, setOther] = useState<number>(0);
-  const [renderCount, setRenderCount] = useState<number>(0);
-
-  useEffect(() => {
-    setRenderCount(count + 1);
-  }, [count]);
+  const [otherState, setOtherState] = useState<number>(0);
 
   // 普通调用
   const addCount = () => {
-    setOther(other + 1);
-    setCount(count + 1);
+    setOtherState(otherState + 1);
     setCount(count + 1);
     setCount(count + 1);
     setCount(count + 1);
   };
   // 回调函数
   const addCountByCallback = () => {
-    setOther((preState) => preState + 1);
-    setCount((preState) => preState + 1);
-    setCount((preState) => preState + 1);
-    setCount((preState) => preState + 1);
-    setCount((preState) => preState + 1);
+    setOtherState(preState => preState + 1);
+    setCount(preState => preState + 1);
+    setCount(preState => preState + 1);
+    setCount(preState => preState + 1);
   };
 
   // 定时器
   const addCountBySetTimeOut = () => {
     setTimeout(() => {
-      setOther(other + 1);
-      setCount(count + 1);
+      setOtherState(otherState + 1);
       setCount(count + 1);
       setCount(count + 1);
       setCount(count + 1);
@@ -42,8 +38,7 @@ const Counter: React.FunctionComponent = () => {
   // Promise
   const addCountByPromise = () => {
     Promise.resolve().then(() => {
-      setOther(other + 1);
-      setCount(count + 1);
+      setOtherState(otherState + 1);
       setCount(count + 1);
       setCount(count + 1);
       setCount(count + 1);
@@ -54,15 +49,14 @@ const Counter: React.FunctionComponent = () => {
     <>
       <Space size='large'>
         <Statistic value={`count:${count}`} prefix={<LikeOutlined />} />
-        <Statistic value={`other:${other}`} prefix={<PieChartOutlined />} />
-        <Statistic value={`renderCount:${renderCount}`} prefix={<AreaChartOutlined />} />
+        <Statistic value={`other:${otherState}`} prefix={<PieChartOutlined />} />
       </Space>
       <br />
       <br />
-      <Button onClick={addCount}>普通调用</Button>
-      <Button onClick={addCountByCallback}>回调函数</Button>
-      <Button onClick={addCountBySetTimeOut}>定时器</Button>
-      <Button onClick={addCountByPromise}>Promise</Button>
+      <Button onClick={addCount}>打一个</Button>
+      <Button onClick={addCountByCallback}>我要打三个</Button>
+      <Button onClick={addCountBySetTimeOut}>我也要打三个</Button>
+      <Button onClick={addCountByPromise}>那我也三个</Button>
       <br />
       <br />
       <hr />

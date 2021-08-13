@@ -10,13 +10,15 @@
 // import Demo from '@components/basic/09_renderProps';
 
 // hooks
+// import Demo from '@components/hooks/demo';
 // import Demo from '@components/hooks/useState';
 // import Demo from '@components/hooks/useEffect';
 // import Demo from '@components/hooks/useMemo';
-import Demo from '@components/hooks/useCallback';
+// import Demo from '@components/hooks/useCallback';
 // import Demo from '@components/hooks/useContext';
 // import Demo from '@components/hooks/useReducer';
 // import Demo from '@components/hooks/useRef';
+import Demo from '@components/hooks/useLogger';
 
 function App() {
   return (
