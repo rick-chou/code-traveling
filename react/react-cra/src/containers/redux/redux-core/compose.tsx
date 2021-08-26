@@ -1,12 +1,12 @@
-import { compose } from 'redux';
+// import { compose } from 'redux';
 
-const toUpper = (str: string) => {
-  return str.toUpperCase();
-};
+// const toUpper = (str: string) => {
+//   return str.toUpperCase();
+// };
 
-const reverse = (...str: string[]) => {
-  return str.reverse().join();
-};
+// const reverse = (...str: string[]) => {
+//   return str.reverse().join();
+// };
 
 // const combin = compose(toUpper, reverse);
 

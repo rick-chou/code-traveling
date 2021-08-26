@@ -30,9 +30,11 @@
 // redux
 // import Demo from '@/containers/redux/redux-core';
 // import Demo from '@containers/redux/redux-core/bindActionCreators';
-import Demo from '@containers/redux/redux-core/compose';
+// import Demo from '@containers/redux/redux-core/compose';
 // import Demo from '@containers/redux/react-redux';
 // import Demo from '@containers/redux/react-redux/hooks';
+// import Demo from '@/containers/redux/middleware/redux-thunk';
+import Demo from '@containers/redux/middleware/redux-saga';
 
 function App() {
   return (
