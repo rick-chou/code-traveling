@@ -1,7 +1,7 @@
 /**
- * 交叉类型
- * 可以把现有的多种类型叠加到一起成为一种类型
- * 它包含了所需的所有类型的特性
+ * @tutorial 交叉类型
+ * @description 可以把现有的多种类型叠加到一起成为一种类型
+ * @description 它包含了所需的所有类型的特性
  */
 interface Props1 {
   className: string;
@@ -11,7 +11,8 @@ interface Props2 {
   onClick: () => void;
 }
 
-const props: Props1 & Props2 = {
+// 两者的属性都要给到 不然会报错
+const combin: Props1 & Props2 = {
   onClick: () => {},
   className: 'nanshu-btn',
 };
