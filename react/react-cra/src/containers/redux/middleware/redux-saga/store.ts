@@ -15,22 +15,17 @@ export interface IAction {
 export enum ACTION_TYPE {
   ADD_COUNTER = 'ADD_COUNTER',
   SUB_COUNTER = 'SUB_COUNTER',
-  ADD_COUNT_ASYNC = 'ADD_COUNT_ASYNC',
+  ADD_COUNTER_ASYNC = 'ADD_COUNTER_ASYNC',
+  SUB_COUNTER_ASYNC = 'SUB_COUNTER_ASYNC',
 }
 
-// 对外暴露 Action Creators 用于组件调用
-export const addCounter = (payload: number) => ({
-  type: ACTION_TYPE.ADD_COUNTER,
+export const increment = (payload: number) => ({
+  type: ACTION_TYPE.ADD_COUNTER_ASYNC,
   payload,
 });
 
-export const subCounter = (payload: number) => ({
-  type: ACTION_TYPE.SUB_COUNTER,
-  payload,
-});
-
-export const addCounterAsync = (payload: number) => ({
-  type: ACTION_TYPE.ADD_COUNT_ASYNC,
+export const decrement = (payload: number) => ({
+  type: ACTION_TYPE.SUB_COUNTER_ASYNC,
   payload,
 });
 

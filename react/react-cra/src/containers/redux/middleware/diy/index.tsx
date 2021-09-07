@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { Button, Input } from 'antd';
 import { connect, Provider } from 'react-redux';
-import { store, increment, decrement, IStore } from './store';
+import { store, addCounter, subCounter, IStore } from './store';
+import { addCounterAsync } from './middleware';
 
 interface IProps {
   count: number;
-  increment: any;
-  decrement: any;
+  addCounter: any;
+  subCounter: any;
 }
 
 function Counter(props: IProps) {
-  const { increment, decrement, count } = props;
+  const { subCounter, count } = props;
 
   const [payload, setPayload] = useState<number>(1);
 
@@ -19,16 +20,16 @@ function Counter(props: IProps) {
   return (
     <>
       <Input value={payload} onChange={v => setPayload(parseInt(v.target.value))} />
-      <Button onClick={() => dispatch(increment(payload))}>+</Button>
+      <Button onClick={() => dispatch(addCounterAsync(payload))}>+</Button>
       <Button>{count}</Button>
-      <Button onClick={() => dispatch(decrement(payload))}>-</Button>
+      <Button onClick={() => dispatch(subCounter(payload))}>-</Button>
     </>
   );
 }
 
 const mapDispatchToProps = () => ({
-  increment: (payload: number) => increment(payload),
-  decrement: (payload: number) => decrement(payload),
+  addCounter: (payload: number) => addCounter(payload),
+  subCounter: (payload: number) => subCounter(payload),
 });
 
 const mapStateToProps = (store: IStore) => ({
