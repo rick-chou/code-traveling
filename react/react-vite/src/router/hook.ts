@@ -1,11 +1,11 @@
-import hook from '@/containers/hook'
-import useState from '@/containers/hook/useState'
-import useEffect from '@/containers/hook/useEffect'
-import useReducer from '@/containers/hook/useReducer'
-import useContext from '@/containers/hook/useContext'
-import useMemo from '@/containers/hook/useMemo'
-import useCallback from '@/containers/hook/useCallback'
-import useRef from '@/containers/hook/useRef'
+import hook from '@/containers/hook';
+import useState from '@/containers/hook/useState';
+import useEffect from '@/containers/hook/useEffect';
+import useReducer from '@/containers/hook/useReducer';
+import useContext from '@/containers/hook/useContext';
+import useMemo from '@/containers/hook/useMemo';
+import useCallback from '@/containers/hook/useCallback';
+import useRef from '@/containers/hook/useRef';
 
 const routes = [
   {
@@ -42,6 +42,6 @@ const routes = [
       },
     ],
   },
-]
+];
 
-export default routes
+export default routes;

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Button, Input } from 'antd';
 import { Provider, useDispatch, useSelector } from 'react-redux';
-import { store, addCounter, subCounter, IStore } from './store';
+import { store, addCounter, subCounter } from './store';
 
 function Counter() {
-  const { count } = useSelector((store: IStore) => store);
+  const { count } = useSelector(store => store);
   const dispatch = useDispatch();
   const [payload, setPayload] = useState<number>(1);
 

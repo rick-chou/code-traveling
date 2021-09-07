@@ -34,7 +34,18 @@
 // import Demo from '@containers/redux/react-redux';
 // import Demo from '@containers/redux/react-redux/hooks';
 // import Demo from '@/containers/redux/middleware/redux-thunk';
-import Demo from '@containers/redux/middleware/redux-saga';
+// import Demo from '@containers/redux/middleware/redux-saga';
+
+// router
+// import Demo from '@/containers/router/01_基础用法';
+// import Demo from '@containers/router/02_路由传参';
+// import Demo from '@containers/router/03_Switch';
+// import Demo from '@containers/router/04_Redirect';
+// import Demo from '@containers/router/05_路由嵌套';
+// import Demo from '@containers/router/06_withRouter';
+import Demo from '@containers/router/07_react-router-config';
+// import Demo from '@containers/router/09_Route';
+// import Demo from '@containers/router/10_Link';
 
 function App() {
   return (
