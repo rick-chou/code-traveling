@@ -23,7 +23,7 @@
 // css
 // import Demo from '@containers/css/01_css';
 // import Demo from '@containers/css/02_sass';
-import Demo from '@containers/css/03_css-modules';
+// import Demo from '@containers/css/03_css-modules';
 // import Demo from '@containers/css/04_styled-containers';
 // import Demo from '@containers/css';
 
@@ -36,6 +36,8 @@ import Demo from '@containers/css/03_css-modules';
 // import Demo from '@containers/redux/middleware/diy';
 // import Demo from '@/containers/redux/middleware/redux-thunk';
 // import Demo from '@containers/redux/middleware/redux-saga';
+// import Demo from '@/containers/redux/toolkit/01_基本使用/view';
+import Demo from '@containers/redux/toolkit/02_ query/view';
 
 // router
 // import Demo from '@/containers/router/01_基础用法';
@@ -47,6 +49,9 @@ import Demo from '@containers/css/03_css-modules';
 // import Demo from '@containers/router/07_react-router-config';
 // import Demo from '@containers/router/09_Route';
 // import Demo from '@containers/router/10_Link';
+
+// npm
+// import Demo from '@npm/index';
 
 function App() {
   return (

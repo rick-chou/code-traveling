@@ -12,7 +12,8 @@
       "@utils/*": ["./src/utils/*"],
       "@styles/*": ["./src/styles/*"],
       "@assets/*": ["./src/assets/*"],
-      "@mock/*": ["./src/mock/*"]
+      "@mock/*": ["./src/mock/*"],
+      "@npm/*": ["./src/npm/*"]
     }
   }
 }

@@ -14,5 +14,6 @@ module.exports = override(
     '@utils': '@/utils',
     '@styles': '@/styles',
     '@assets': '@/assets',
+    '@npm': '@/npm',
   }),
 );
