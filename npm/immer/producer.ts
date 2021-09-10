@@ -1,8 +1,8 @@
-/**
- * 生成一个生产者 producer
- */
-import { produce } from 'immer';
-const immer = () => {
+namespace Immer {
+  /**
+   * 生成一个生产者 producer
+   */
+  const { produce } = require('immer');
   const currentState = {
     name: 'nanshu',
     hobby: {
@@ -15,12 +15,10 @@ const immer = () => {
   // });
   // const nextState = producer(currentState);
 
-  const producer = produce((draft, name) => {
+  const producer = produce((draft: typeof currentState, name: string) => {
     draft.name = name;
   });
   const nextState = producer(currentState, 'chou');
 
   console.log(`nextState`, nextState);
-};
-
-export default immer;
+}
