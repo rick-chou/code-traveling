@@ -2,17 +2,16 @@
   "name": "restart-fe",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "fe-training-camp",
   "repository": "https://github.com/LuckyChou710/ReStart-FE.git",
   "author": "LuckyChou <944268618@qq.com>",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
-    "@types/react-router-dom": "^5.1.8",
-    "prop-types": "^15.7.2"
+    "@commitlint/config-conventional": "^12.1.1"
   },
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git add . && git-cz"
   },
   "config": {
     "commitizen": {
@@ -20,10 +19,6 @@
     }
   },
   "dependencies": {
-    "axios": "^0.21.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "lodash": "^4.17.21",
-    "mock": "^0.1.1",
-    "mockjs": "^1.1.0"
+    "cz-conventional-changelog": "^3.3.0"
   }
 }
