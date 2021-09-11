@@ -16,14 +16,20 @@ const stream$ = new Observable(subscriber => {
   }, 4000);
 });
 
+const now = new Date().getTime();
+
 // 启动流
 stream$.subscribe({
   complete: () => console.log('done'),
-  next: v => console.log(v),
+  next: v => console.log(new Date().getTime() - now, 'ms stream1', v),
   error: () => console.log('error'),
 });
-// output
-// [1,2,3]  // 500ms时
-// {a:1000} // 1000ms时
-// end // 3000ms时
-// done // 4000ms时
+
+// 延时1s后，启动流
+setTimeout(() => {
+  stream$.subscribe({
+    complete: () => console.log('done'),
+    next: v => console.log(new Date().getTime() - now, 'ms stream2', v),
+    error: () => console.log('error'),
+  });
+}, 1000);

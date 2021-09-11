@@ -17,13 +17,11 @@ const stream$ = new Observable(subscriber => {
 });
 
 // 启动流
-stream$.subscribe({
+const subscription = stream$.subscribe({
   complete: () => console.log('done'),
   next: v => console.log(v),
   error: () => console.log('error'),
 });
-// output
-// [1,2,3]  // 500ms时
-// {a:1000} // 1000ms时
-// end // 3000ms时
-// done // 4000ms时
+
+// 1s后 关闭流
+setTimeout(() => subscription.unsubscribe(), 1000);
