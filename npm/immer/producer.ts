@@ -1,8 +1,8 @@
+import { produce } from 'immer';
 namespace Immer {
   /**
    * 生成一个生产者 producer
    */
-  const { produce } = require('immer');
   const currentState = {
     name: 'nanshu',
     hobby: {

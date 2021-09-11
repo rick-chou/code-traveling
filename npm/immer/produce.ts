@@ -1,5 +1,5 @@
+import { produce } from 'immer';
 namespace Immer {
-  const produce = require('immer').produce;
   const currentState = {
     name: 'nanshu',
     hobby: {
