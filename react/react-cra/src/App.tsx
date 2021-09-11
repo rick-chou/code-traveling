@@ -37,7 +37,8 @@
 // import Demo from '@/containers/redux/middleware/redux-thunk';
 // import Demo from '@containers/redux/middleware/redux-saga';
 // import Demo from '@/containers/redux/toolkit/01_基本使用/view';
-import Demo from '@containers/redux/toolkit/02_ query/view';
+// import Demo from '@containers/redux/toolkit/02_ query/view';
+import Demo from '@containers/redux/toolkit/03_middleware/view';
 
 // router
 // import Demo from '@/containers/router/01_基础用法';
