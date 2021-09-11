@@ -12,7 +12,7 @@ interface Props2 {
 }
 
 // 两者的属性都要给到 不然会报错
-const combin: Props1 & Props2 = {
+const combine: Props1 & Props2 = {
   onClick: () => {},
   className: 'nanshu-btn',
 };
