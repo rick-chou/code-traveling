@@ -1,0 +1,67 @@
+Arguments: 
+  /Users/zhourunkai/.nvm/versions/node/v16.6.0/bin/node /opt/homebrew/Cellar/yarn/1.22.10/libexec/bin/yarn.js
+
+PATH: 
+  /Users/zhourunkai/.nvm/versions/node/v16.6.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/zhourunkai/.nvm/versions/node/v16.6.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.6.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/zhourunkai/Documents/chou/ReStart-FE/react/react-ts-diy/webpack/package.json: Unexpected token } in JSON at position 1093
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:310:30)
+      at /opt/homebrew/Cellar/yarn/1.22.10/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "react-ts-diy",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+      "@types/react-dom": "^17.0.9",
+      "@typescript-eslint/eslint-plugin": "^4.31.2",
+      "@typescript-eslint/parser": "^4.31.2",
+      "clean-webpack-plugin": "^4.0.0",
+      "css-loader": "^6.2.0",
+      "eslint": "^7.32.0",
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-plugin-import": "^2.24.2",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-react": "^7.26.0",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "html-minimizer-webpack-plugin": "^3.2.0",
+      "html-webpack-plugin": "^5.3.2",
+      "sass": "^1.41.0",
+      "sass-loader": "^12.1.0",
+      "style-loader": "^3.2.1",
+      "ts-loader": "^9.2.5",
+      "typescript": "^4.4.3",
+      "webpack": "^5.52.1",
+      "webpack-cli": "^4.8.0",
+      "webpack-dev-server": "^4.2.1"
+    },
+    "scripts": {
+      "start": "webpack-dev-server --config  ./config/webpack.config.dev.js --open",
+      "build": "webpack --config ./config/webpack.config.prod.js",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
