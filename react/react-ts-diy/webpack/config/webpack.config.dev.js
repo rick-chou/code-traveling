@@ -1,33 +1,33 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  template: path.resolve(__dirname, "../public/index.html"),
+  template: path.resolve(__dirname, '../public/index.html'),
 });
 
 module.exports = {
-  mode: "development",
-  entry: path.resolve(__dirname, "../src/index.tsx"),
+  mode: 'development',
+  entry: path.resolve(__dirname, '../src/index.tsx'),
   output: {
-    path: path.resolve(__dirname, "../build"),
-    filename: "js/[name].[hash].bundle.js",
+    path: path.resolve(__dirname, '../build'),
+    filename: 'js/[name].[hash].bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: "ts-loader",
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
           // 将 JS 字符串生成为 style 节点
-          "style-loader",
+          'style-loader',
           // 将 CSS 转化成 CommonJS 模块
-          "css-loader",
+          'css-loader',
           // 将 Sass 编译成 CSS
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ],
@@ -36,6 +36,6 @@ module.exports = {
   plugins: [htmlWebpackPlugin],
 
   resolve: {
-    extensions: [".tsx", ".ts", ".js"],
+    extensions: ['.tsx', '.ts', '.js'],
   },
 };
