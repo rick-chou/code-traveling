@@ -1,35 +1,15 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
+    // 静态资源路径
     public: { url: '/', static: true },
+    // 打包路径
     src: { url: '/dist' },
   },
+  // 配置一些插件
   plugins: [
     '@snowpack/plugin-sass',
     '@snowpack/plugin-react-refresh',
-    [
-      '@snowpack/plugin-typescript',
-      {
-        /* Yarn PnP workaround: see https://www.npmjs.com/package/@snowpack/plugin-typescript */
-        ...(process.versions.pnp ? { tsc: 'yarn pnpify tsc' } : {}),
-      },
-    ],
+    '@snowpack/plugin-typescript',
   ],
-  routes: [
-    /* Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
-  ],
-  optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
-  },
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
 };
