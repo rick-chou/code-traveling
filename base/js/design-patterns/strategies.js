@@ -1,4 +1,4 @@
-function count(type, number1, number2) {
+export function count2(type, number1, number2) {
   switch (type) {
     case 'add':
       return number1 + number2;
@@ -11,7 +11,7 @@ function count(type, number1, number2) {
   }
 }
 // if else
-function count1(type, number1, number2) {
+export function count1(type, number1, number2) {
   if (type === 'add') {
     return number1 + number2;
   } else if (type === 'subtract') {

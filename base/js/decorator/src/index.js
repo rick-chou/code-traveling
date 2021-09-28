@@ -33,4 +33,4 @@ function log2(target, name, descriptor) {
 }
 
 const test = new MyClass();
-// test.logger();
+test.logger();

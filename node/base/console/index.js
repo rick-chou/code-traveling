@@ -1,25 +1,24 @@
-
 /**
  * console.time()
  * console.timeEnd()
  * 获取程序运行的时间
  */
-console.time('for')
+console.time('for');
 
 for (let i = 0; i <= 10000000; i++) {
-
+  console.log(`i`, i);
 }
 
-console.timeEnd('for')
+console.timeEnd('for');
 
-console.time('while')
+console.time('while');
 
-let i = 0
+let i = 0;
 while (i <= 10000000) {
-  i++
+  i++;
 }
 
-console.timeEnd('while')
+console.timeEnd('while');
 
 /**
  * console.table
@@ -31,16 +30,16 @@ console.timeEnd('while')
 const obj1 = {
   name: 'chou',
   age: 18,
-  hobby: 'ramires'
-}
+  hobby: 'ramires',
+};
 
-console.table(obj1)
+console.table(obj1);
 
 const obj2 = {
   name: 'ramires',
   age: 18,
-  hobby: 'chou'
-}
+  hobby: 'chou',
+};
 
-console.table([obj1, obj2])
-console.table([obj1, obj2], ['name'])
+console.table([obj1, obj2]);
+console.table([obj1, obj2], ['name']);

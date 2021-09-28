@@ -1,3 +1,3 @@
-const bar = () => {
-  console.log('hello es6')
-}
+export const bar = () => {
+  console.log('hello es6');
+};

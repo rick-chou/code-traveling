@@ -78,7 +78,7 @@ const Parent = () => {
       x,
       y,
     }),
-    [flag],
+    [x, y]
   );
 
   return (
