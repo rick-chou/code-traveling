@@ -1,9 +1,6 @@
 <template>
   <div>
     <h1>Hello Vue</h1>
-    <router-view />
+    <el-image style="width: 30vw" src="/avatar.jpeg" fit="fit"></el-image>
   </div>
 </template>
-
-<style lang="scss">
-</style>

@@ -1,20 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '@/views/home/index.vue';
+import home from './home';
 import base from './base';
 import v from './v';
+import vuex from './vuex';
+import routers from './vue-router';
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home,
-  },
-  ...v,
-  ...base,
-];
+const routes = [...home, ...v, ...base, ...vuex, ...routers];
 
 const router = new VueRouter({
   mode: 'history',

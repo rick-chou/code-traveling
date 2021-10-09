@@ -3,7 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/base">Base</router-link> |
-      <router-link to="/v">V</router-link>
+      <router-link to="/v">V</router-link> |
+      <router-link to="/vuex">VueX</router-link> |
+      <router-link to="/vue-router">Vue Router</router-link>
     </div>
     <router-view />
   </div>
@@ -20,14 +22,23 @@
 
 #nav {
   padding: 30px;
+  width: 60vw;
+  margin: auto;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    display: inline-block;
+    margin-bottom: 20px;
 
     &.router-link-exact-active {
       color: #42b983;
     }
   }
+}
+
+.app {
+  width: 70vw;
+  margin: auto;
 }
 </style>
