@@ -8,8 +8,8 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <Button title="APIs" onPress={() => navigation.navigate('APIs')} />
-      <Button title="Navigation" onPress={() => navigation.navigate('Navigation')} />
+      <Button title="Home" onPress={() => navigation.navigate('HomeScreen')} />
+      <Button title="Details" onPress={() => navigation.navigate('DetailsScreen', { type: 'article' })} />
     </View>
   );
 }

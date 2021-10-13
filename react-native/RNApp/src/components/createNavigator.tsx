@@ -15,7 +15,7 @@ export default function createNavigator(router: NavigatorRouterProps[]) {
     <NavigationContainer>
       <Stack.Navigator>
         {router.map(item => {
-          return <Stack.Screen name={item.name} component={item.component} key={item.name} />;
+          return <Stack.Screen name={item.name} component={item.component} key={item.name} options={item.options} />;
         })}
       </Stack.Navigator>
     </NavigationContainer>
