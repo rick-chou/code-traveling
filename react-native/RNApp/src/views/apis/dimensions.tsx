@@ -1,40 +1,39 @@
-import React, { Component } from 'react';
-import { View, StyleSheet, Text, Dimensions } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, StyleSheet, Text, Dimensions, useWindowDimensions } from 'react-native';
 
 const window = Dimensions.get('window');
 const screen = Dimensions.get('screen');
 
-class App extends Component {
-  state = {
-    dimensions: {
-      window,
-      screen,
-    },
+const App = () => {
+  const [dimensions, setDimensions] = useState({ window, screen });
+
+  const windowHook = useWindowDimensions();
+
+  const onChange = ({ window, screen }) => {
+    setDimensions({ window, screen });
   };
 
-  onChange = ({ window, screen }) => {
-    this.setState({ dimensions: { window, screen } });
-  };
+  useEffect(() => {
+    const subscription = Dimensions.addEventListener('change', onChange);
+    return () => {
+      subscription.remove();
+    };
+  });
 
-  componentDidMount() {
-    Dimensions.addEventListener('change', this.onChange);
-  }
-
-  componentWillUnmount() {
-    Dimensions.removeEventListener('change', this.onChange);
-  }
-
-  render() {
-    const { dimensions } = this.state;
-
-    return (
-      <View style={styles.container}>
-        <Text>{`Window Dimensions: height - ${dimensions.window.height}, width - ${dimensions.window.width}`}</Text>
-        <Text>{`Screen Dimensions: height - ${dimensions.screen.height}, width - ${dimensions.screen.width}`}</Text>
-      </View>
-    );
-  }
-}
+  return (
+    <View style={styles.container}>
+      <Text>Dimensions</Text>
+      <Text>------------------------------------</Text>
+      <Text>{`Window Dimensions: height - ${dimensions.window.height}, width - ${dimensions.window.width}`}</Text>
+      <Text>{`Screen Dimensions: height - ${dimensions.screen.height}, width - ${dimensions.screen.width}`}</Text>
+      <Text>------------------------------------</Text>
+      <Text>useWindowDimensions</Text>
+      <Text>------------------------------------</Text>
+      <Text>{`Window Dimensions: height - ${windowHook.height}, width - ${windowHook.width}`}</Text>
+      <Text>------------------------------------</Text>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
