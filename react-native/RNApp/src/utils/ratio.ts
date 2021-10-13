@@ -20,9 +20,9 @@ if (baseWidth === width && finalRatio > 1) {
   finalRatio = 1;
 }
 export const ratio = finalRatio;
-export const convertX = width => (isWeb ? width : width * HRatio);
-export const convertY = height => (isWeb ? height : height * VRatio);
-export const convert = number => (isWeb ? number : number * ratio);
+export const convertX = (_width: number) => (isWeb ? _width : _width * HRatio);
+export const convertY = (_height: number) => (isWeb ? _height : _height * VRatio);
+export const convert = (_number: number) => (isWeb ? _number : _number * ratio);
 export const topBarHeight = isIos ? (isIphoneX ? 88 : 64) : 56;
 export const statusBarHeight = isIos ? (isIphoneX ? 44 : 20) : statusHeight;
 
@@ -32,7 +32,7 @@ export const isSmallH = height < 667;
 const getDimension = () => {
   if (isWeb) {
     try {
-      return Dimensions.get('osWindow');
+      return Dimensions.get('window');
     } catch (error) {
       return Dimensions.get('window');
     }
@@ -79,17 +79,17 @@ export default {
   get viewHeight() {
     return getDimension().height - (isIos ? (isIphoneX ? 88 : 64) : 56 + statusHeight);
   },
-  convertX: number => {
+  convertX: (number: number) => {
     const { width: actualWidth } = getDimension();
     const hRatio = actualWidth / baseWidth;
     return number * hRatio;
   },
-  convertY: number => {
+  convertY: (number: number) => {
     const { height: actualHeight } = getDimension();
     const vRatio = actualHeight / baseHeight;
     return number * vRatio;
   },
-  convert: number => {
+  convert: (number: number) => {
     const actualX = Math.sqrt(height * height + width * width);
     const { width: actualWidth } = getDimension();
     let actualRatio = actualX / baseX;
@@ -106,7 +106,6 @@ export default {
   },
   isIos,
   isIphoneX,
-  iPhoneX: isIphoneX,
   topBarHeight,
   statusBarHeight,
 };
