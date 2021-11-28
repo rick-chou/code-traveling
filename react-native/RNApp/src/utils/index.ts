@@ -1,2 +1,9 @@
-export { default as Ratio } from './ratio';
+export { default as RatioUtils } from './ratio';
 export { default as Data } from './data';
+export { default as ThemeUtils } from './theme';
+export { default as CoreUtils } from './core';
+export { default as ColorUtils } from './color';
+export { default as JsonUtils } from './json';
+export { default as NumberUtils } from './number';
+export { default as StringUtils } from './string';
+export { default as TimeUtils } from './time';

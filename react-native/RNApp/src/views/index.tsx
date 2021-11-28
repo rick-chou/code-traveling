@@ -11,6 +11,7 @@ export default function Home() {
       <Button title="Components" onPress={() => navigation.navigate('Components')} />
       <Button title="APIs" onPress={() => navigation.navigate('APIs')} />
       <Button title="Navigation" onPress={() => navigation.navigate('Navigation')} />
+      <Button title="Demo" onPress={() => navigation.navigate('Demo')} />
     </View>
   );
 }

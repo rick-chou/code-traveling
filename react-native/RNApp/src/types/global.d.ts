@@ -52,7 +52,7 @@ declare module '*.jpeg' {
   export default ref;
 }
 declare module '*.png' {
-  const ref: string;
+  const ref: any;
   export default ref;
 }
 

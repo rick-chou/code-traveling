@@ -41,6 +41,7 @@
       "@components/*": ["./components/*"],
       "@views/*": ["./views/*"],
       "@utils/*": ["./utils/*"],
+      "@utils": ["./utils"],
       "@types": ["./types"],
       "@router": ["./router"],
       "@res": ["./res"]
