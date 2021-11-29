@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cache</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <h1>Hello Cache</h1>
+    <script>
+      window.addEventListener('load', async () => {
+        if ('serviceWorker' in navigator) {
+          try {
+            const registration = await navigator.serviceWorker.register(
+              './sw.js'
+            );
+            console.log('注册成功', registration);
+          } catch (err) {
+            console.log('注册失败', err);
+          }
+        }
+      });
+
+      // 提示授权
+      if (Notification.permission === 'default') {
+        Notification.requestPermission();
+      }
+
+      if (!navigator.onLine) {
+        new Notification('提示', { body: '你当前没有网络，访问的是缓存' });
+      }
+
+      window.addEventListener('online', () => {
+        new Notification('提示', {
+          body: '你已经连上网络，请刷新页面，访问最新的数据',
+        });
+      });
+    </script>
+  </body>
+</html>
