@@ -1,14 +1,35 @@
 {
-  "name": "南树 - PWA",
-  "short-name": "南树",
-  "start_url": "/index.html",
+  "name": "OS - PWA",
+  "short-name": "OS",
+  "start_url": "/",
   "icons": [
     {
-      "src": "images/logo.png",
-      "sizes": "48*48",
+      "src": "images/logo48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo200.png",
+      "sizes": "200x200",
       "type": "image/png"
     }
   ],
   "background_color": "yellow",
+  "theme_color": "yellow",
   "display": "standalone"
 }

@@ -6,9 +6,10 @@ self.addEventListener('install', async (event) => {
   const cache = await caches.open(CACHE_NAME);
   await cache.addAll([
     '/',
-    '/static/img1.jpg',
-    '/static/img2.jpg',
-    '/static/img3.jpg',
+    '/images/logo48.png',
+    '/images/logo128.png',
+    '/images/logo144.png',
+    '/images/logo200.png',
     '/manifest.json',
     '/index.css',
   ]);
