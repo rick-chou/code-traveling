@@ -1,22 +1,17 @@
 {
-  "name": "restart-fe",
+  "name": "code-traveling",
   "version": "1.0.0",
   "main": "index.js",
   "description": "fe-training-camp",
-  "repository": "https://github.com/LuckyChou710/ReStart-FE.git",
+  "repository": "https://github.com/LuckyChou710/code-traveling",
   "author": "LuckyChou <944268618@qq.com>",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2"
+    "@commitlint/config-conventional": "^12.1.1"
   },
   "scripts": {
-    "commit": "git add . && git-cz",
-    "prepare": "husky install"
+    "commit": "git add . && git-cz"
   },
   "config": {
     "commitizen": {

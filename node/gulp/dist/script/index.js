@@ -1,1 +1,0 @@
-"use strict";var bar=function(){console.log("hello es6")};
