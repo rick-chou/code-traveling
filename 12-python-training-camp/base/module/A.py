@@ -7,3 +7,7 @@ def fun(a, b):
 
 class Student:
     pass
+
+
+if __name__ == '__main__':
+    print('我执行了')

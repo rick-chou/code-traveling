@@ -3,4 +3,8 @@
 
 from math import pi
 
+from A import fun
+
 print(pi)
+
+fun(1, 2)
