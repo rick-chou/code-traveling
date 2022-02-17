@@ -1,0 +1,11 @@
+{
+  "name": "04_webpack_css_loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

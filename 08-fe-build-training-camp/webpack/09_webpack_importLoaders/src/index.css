@@ -1,0 +1,5 @@
+@import './other.css';
+.title {
+  color: yellow;
+  font-size: 200px;
+}
