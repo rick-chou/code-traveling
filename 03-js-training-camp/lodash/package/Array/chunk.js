@@ -1,9 +1,10 @@
 const { chunk } = require('lodash');
 
 /**
- * chunk(array, [size=1])
- * array (Array): 需要处理的数组
- * [size=1] (number): 每个数组区块的长度
+ * @name chunk(array, [size=1])
+ * @param array (Array): 需要处理的数组
+ * @param [size=1] (number): 每个数组区块的长度
+ * @description 数组切片
  */
 
 chunk(['a', 'b', 'c', 'd'], 2);
