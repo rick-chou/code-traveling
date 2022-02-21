@@ -32,8 +32,12 @@ const _chunk = (array, size = 1) => {
   return result;
 };
 
-console.log(_chunk(['a', 'b', 'c', 'd'], 2));
-console.log(_chunk(['a', 'b', 'c', 'd'], 3));
-console.log(_chunk([], 3));
-console.log(_chunk(null, 3));
-console.log(_chunk(4, 3));
+if (require.main === module) {
+  console.log(_chunk(['a', 'b', 'c', 'd'], 2));
+  console.log(_chunk(['a', 'b', 'c', 'd'], 3));
+  console.log(_chunk([], 3));
+  console.log(_chunk(null, 3));
+  console.log(_chunk(4, 3));
+}
+
+module.exports = _chunk;

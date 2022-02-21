@@ -27,4 +27,8 @@ const _compact = (array) => {
   return result;
 };
 
-console.log(_compact([0, 1, false, 2, '', 3]));
+if (require.main === module) {
+  console.log(_compact([0, 1, false, 2, '', 3]));
+}
+
+module.exports = _compact;
