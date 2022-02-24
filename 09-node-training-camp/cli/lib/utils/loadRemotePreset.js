@@ -1,4 +1,5 @@
 const download = require('download-git-repo');
+const ora = require('ora');
 const { orgName } = require('./constants');
 
 /**
@@ -8,15 +9,14 @@ const { orgName } = require('./constants');
  * @param {string} extra branch or tag
  */
 module.exports = async function loadRemotePreset(repo, dest, extra) {
+  const spinner = ora('downloading...');
   await new Promise((resolve, reject) => {
-    download(
-      `${orgName}/${repo}#${extra}`,
-      dest,
-      { clone: false },
-      (err) => {
-        if (err) return reject(err);
-        return resolve();
-      }
-    );
+    spinner.start();
+    download(`${orgName}/${repo}#${extra}`, dest, { clone: false }, (err) => {
+      if (err) return reject(err);
+      spinner.text = 'success';
+      spinner.succeed();
+      return resolve();
+    });
   });
 };

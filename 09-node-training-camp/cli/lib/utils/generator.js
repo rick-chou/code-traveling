@@ -1,39 +1,30 @@
-const merge = require('deepmerge');
-const to = require('await-to-js').default;
-const { getRepo, getTag } = require('./request');
-const { getCustomRepo, getCustomTag, getPkgConfig } = require('./prompt');
-const { repo, tag } = require('./constants');
+const Metalsmith = require('metalsmith');
+const ejs = require('ejs');
 
 /**
- * @description get custom preset
- * @returns {Object} custom preset
- * @example
- * {
- *  repo: 'custom-ejs-template',
- *  tag: 'v1.0',
- *  projectName: 'react-demo',
- *  author: 'chou',
- *  version: '1.0.0',
- *  description: 'react template cli'
- * }
+ * @description generator custom package.json
+ * @param {string} source source
+ * @param {string} dest destination
+ * @param {Object} config template
  */
-module.exports = async function generator() {
-  const projectName = {
-    projectName: process.argv[3],
-  };
-
-  const [repoError, repoResult] = await to(getRepo());
-  const repoList = repoError ? repo : repoResult.data.map((item) => item.name);
-  const customRepo = await getCustomRepo(repoList);
-
-  const [tagError, tagResult] = await to(getTag(customRepo.repo));
-  const tagList = tagError ? tag : tagResult.data.map((item) => item.name);
-  const customTag = await getCustomTag(tagList);
-
-  if (customRepo.repo === 'custom-ejs-template') {
-    const pkgConfig = await getPkgConfig();
-    return merge.all([customRepo, customTag, pkgConfig, projectName]);
-  }
-
-  return merge.all([customRepo, customTag, projectName]);
+module.exports = function generator(source, dest, config) {
+  return new Promise((resolve, reject) => {
+    Metalsmith(process.cwd())
+      .source(source)
+      .clean(false)
+      .use((files, meta, done) => {
+        Object.keys(files).forEach((fileName) => {
+          if (fileName === 'package.json') {
+            const res = ejs.render(files[fileName].contents.toString(), config);
+            files[fileName].contents = Buffer.from(res);
+          }
+        });
+        done();
+      })
+      .destination(dest)
+      .build((err) => {
+        if (err) reject(err);
+        resolve();
+      });
+  });
 };

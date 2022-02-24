@@ -11,7 +11,7 @@ const orgName = 'YepGym';
 const pkgQuestions = [
   {
     type: 'input',
-    name: 'author',
+    name: 'projectAuthor',
     message: 'author',
     default() {
       return '秃头程序员';
@@ -19,7 +19,7 @@ const pkgQuestions = [
   },
   {
     type: 'input',
-    name: 'version',
+    name: 'projectVersion',
     message: 'version',
     default() {
       return '1.0.0';
@@ -27,11 +27,19 @@ const pkgQuestions = [
   },
   {
     type: 'input',
-    name: 'description',
+    name: 'projectDescription',
     message: 'description',
     default() {
-      return 'react project';
+      return '这是秃头程序员写的一个祖传代码';
     },
+  },
+];
+
+const dirExistQuestion = [
+  {
+    name: 'ok',
+    type: 'confirm',
+    message: 'Generate project in current directory?',
   },
 ];
 
@@ -42,4 +50,5 @@ module.exports = {
   baseURL,
   orgName,
   pkgQuestions,
+  dirExistQuestion,
 };
