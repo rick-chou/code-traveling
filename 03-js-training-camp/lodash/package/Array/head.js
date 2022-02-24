@@ -10,6 +10,7 @@ head([]);
  * @example head(array)
  * @description 获取数组 array 的第一个元素
  * @param {Array} array
+ * @return {Array | undefined}
  */
 const _head = (array) => {
   return array && array.length ? array[0] : undefined;
