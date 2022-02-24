@@ -1,25 +1,45 @@
-## boxen
+```
+Usage: YepGym [options] [command]
 
-![boxen](https://raw.githubusercontent.com/sindresorhus/boxen/HEAD/screenshot.png)
+ __    __              ____                        __
+/\ \  /\ \            /\  _`\                     /\ \
+\ `\`\\/'/  __   _____\ \ \L\_\  __  __    ___ ___\ \ \
+ `\ `\ /' /'__`\/\ '__`\ \ \L_L /\ \/\ \ /' __` __`\ \ \
+   `\ \ \/\  __/\ \ \L\ \ \ \/, \ \ \_\ \/\ \/\ \/\ \ \_\
+     \ \_\ \____\\ \ ,__/\ \____/\/`____ \ \_\ \_\ \_\/\_\
+      \/_/\/____/ \ \ \/  \/___/  `/___/> \/_/\/_/\/_/\/_/
+                   \ \_\             /\___/
+                    \/_/             \/__/
 
-## figlet
+Options:
+  -V, --version   output the version number
+  -h, --help      display help for command
 
-- demo http://www.figlet.org/examples.html
+Commands:
+  create|c        create a project
+  help [command]  display help for command
+```
 
 ```
-  _   _      _ _          ____ _                   _ _
- | | | | ___| | | ___    / ___| |__   ___  _   _  | | |
- | |_| |/ _ \ | |/ _ \  | |   | '_ \ / _ \| | | | | | |
- |  _  |  __/ | | (_) | | |___| | | | (_) | |_| | |_|_|
- |_| |_|\___|_|_|\___/   \____|_| |_|\___/ \__,_| (_|_)
+cli
+├─ .eslintrc.js
+├─ README.md
+├─ bin
+│  └─ YepGym.js
+├─ lib
+│  ├─ commander.js
+│  ├─ create.js
+│  ├─ main.js
+│  └─ utils
+│     ├─ constants.js
+│     ├─ generator.js // 编译模版文件
+│     ├─ index.js
+│     ├─ loadCustomPreset.js // 加载用户自定义配置
+│     ├─ loadRemotePreset.js // 加载远程仓库模版
+│     ├─ prompt.js // 用户自定义信息输入
+│     ├─ request.js  //  github api request
+│     └─ sign.js
+├─ package.json
+└─ yarn.lock
+
 ```
-
-## chalk
-
-![chalk](https://raw.githubusercontent.com/chalk/chalk/HEAD/media/logo.svg)
-
-## download-git-repo
-
-- github api
-
-  - https://docs.github.com/en/rest
