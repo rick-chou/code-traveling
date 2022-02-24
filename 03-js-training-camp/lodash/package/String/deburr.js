@@ -1,15 +1,14 @@
+
 const { deburr } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example deburr
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _deburr = (number, lower, upper) => {};
+const _deburr = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

@@ -1,4 +1,4 @@
-const { castArray } = require('lodash');
+const { cloneDeep } = require('lodash');
 
 /**
  * @name cloneDeep(value)
@@ -7,7 +7,7 @@ const { castArray } = require('lodash');
 
 var objects = [{ a: 1 }, { b: 2 }];
 
-var deep = _.cloneDeep(objects);
+var deep = cloneDeep(objects);
 // console.log(deep[0] === objects[0]);
 // => false
 

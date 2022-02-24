@@ -2,7 +2,7 @@ const { drop } = require('lodash');
 const { dropWhile } = require('lodash');
 const { dropRight } = require('lodash');
 const { dropRightWhile } = require('lodash');
-const { _difference } = require('./');
+const { _difference } = require('../Array');
 
 var users = [
   { user: 'barney', active: false },
@@ -19,10 +19,11 @@ drop([1, 2, 3]);
 // => [2, 3]
 
 /**
- *
+ * @example drop(array, [n=1])
  * @param {Array} array
  * @param {Number} number
  * @param {Function} func
+ * @description 创建一个切片数组，去除array前面的n个元素。（n默认值为1。）
  */
 const _drop = (array, number = 1, func) => {
   if (!number) {

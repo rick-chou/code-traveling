@@ -1,17 +1,13 @@
 const { difference } = require('lodash');
 
-/**
- * @name difference(array, [values])
- * @param array (Array): 需要处理的数组
- * @param [values] (...Array): 排除的值
- * @description 创建一个具有唯一array值的数组，每个值不包含在其他给定的数组中
- */
-
 difference([3, 2, 1], [4, 2]);
 // => [3, 1]
 
 /**
- *
+ * @example difference(array, [values])
+ * @param array (Array): 需要处理的数组
+ * @param [values] (...Array): 排除的值
+ * @description 创建一个具有唯一array值的数组，每个值不包含在其他给定的数组中
  * @param {Array} array
  * @param {Array} values
  * @param {Function} func

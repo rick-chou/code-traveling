@@ -1,17 +1,16 @@
-const { escapeRegExp } = require('lodash');
+
+const { kebabCase } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example kebabCase
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _escapeRegExp = (number, lower, upper) => {};
+const _kebabCase = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }
 
-module.exports = _escapeRegExp;
+module.exports = _kebabCase;

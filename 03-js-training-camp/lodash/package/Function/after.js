@@ -1,18 +1,14 @@
+
 const { after } = require('lodash');
 
 /**
- * @name chunk(array, [size=1])
- * @param array (Array): 需要处理的数组
- * @param [size=1] (number): 每个数组区块的长度
- * @description 数组切片
+ * @example after
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {Array} array
- * @param {number} size
- */
-const _after = (array, size = 1) => {};
+const _after = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

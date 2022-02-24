@@ -1,15 +1,14 @@
+
 const { capitalize } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example capitalize
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _capitalize = (number, lower, upper) => {};
+const _capitalize = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

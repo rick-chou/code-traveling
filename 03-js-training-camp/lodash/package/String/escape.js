@@ -1,15 +1,14 @@
+
 const { escape } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example escape
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _escape = (number, lower, upper) => {};
+const _escape = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

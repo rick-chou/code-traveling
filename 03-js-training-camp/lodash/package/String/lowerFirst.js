@@ -1,15 +1,14 @@
+
 const { lowerFirst } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example lowerFirst
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _lowerFirst = (number, lower, upper) => {};
+const _lowerFirst = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

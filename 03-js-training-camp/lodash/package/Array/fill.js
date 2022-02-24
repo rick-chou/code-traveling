@@ -1,9 +1,4 @@
-const { fill, result } = require('lodash');
-
-/**
- * fill(array, value, [start=0], [end=array.length])
- * @description 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）
- */
+const { fill } = require('lodash');
 
 var array = [1, 2, 3];
 
@@ -17,7 +12,8 @@ fill([4, 6, 8, 10], '*', 1, 3);
 // => [4, '*', '*', 10]
 
 /**
- *
+ * @example fill(array, value, [start=0], [end=array.length])
+ * @description 使用 value 值来填充（替换） array，从start位置开始, 到end位置结束（但不包含end位置）
  * @param {Array} array
  * @param {*} value
  * @param {number} start

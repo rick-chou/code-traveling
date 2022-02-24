@@ -1,15 +1,14 @@
+
 const { camelCase } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example camelCase
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _camelCase = (number, lower, upper) => {};
+const _camelCase = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

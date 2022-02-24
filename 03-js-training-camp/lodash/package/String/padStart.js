@@ -1,15 +1,14 @@
+
 const { padStart } = require('lodash');
 
 /**
- * @name clamp(number, [lower], upper)
- * @description 返回限制在 lower 和 upper 之间的值
+ * @example padStart
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {number} number
- */
-const _padStart = (number, lower, upper) => {};
+const _padStart = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }

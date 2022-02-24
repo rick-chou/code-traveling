@@ -1,20 +1,16 @@
-const { after } = require('lodash');
+
+const { bindKey } = require('lodash');
 
 /**
- * @name chunk(array, [size=1])
- * @param array (Array): 需要处理的数组
- * @param [size=1] (number): 每个数组区块的长度
- * @description 数组切片
+ * @example bindKey
+ * @description 
+ * @param {} 
  */
-
-/**
- *
- * @param {Array} array
- * @param {number} size
- */
-const _after = (array, size = 1) => {};
+const _bindKey = () => {
+  // TODO
+};
 
 if (require.main === module) {
 }
 
-module.exports = _after;
+module.exports = _bindKey;
