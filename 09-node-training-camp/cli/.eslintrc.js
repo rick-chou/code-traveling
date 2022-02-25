@@ -15,5 +15,6 @@ module.exports = {
     'function-paren-newline': 'off',
     'consistent-return': 'off',
     'no-param-reassign': 'off',
+    'no-unused-expressions': 'off',
   },
 };

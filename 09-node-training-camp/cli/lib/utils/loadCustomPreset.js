@@ -12,9 +12,9 @@ const { repo, tag } = require('./constants');
  *  repo: 'custom-ejs-template',
  *  tag: 'v1.0',
  *  projectName: 'react-demo',
- *  author: 'chou',
- *  version: '1.0.0',
- *  description: 'react template cli'
+ *  projectAuthor: 'chou',
+ *  projectVersion: '1.0.0',
+ *  projectDescription: 'react template cli'
  * }
  */
 module.exports = async function loadCustomPreset() {

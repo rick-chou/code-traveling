@@ -33,7 +33,6 @@ cli
 │  └─ utils
 │     ├─ constants.js
 │     ├─ generator.js // 编译模版文件
-│     ├─ index.js
 │     ├─ loadCustomPreset.js // 加载用户自定义配置
 │     ├─ loadRemotePreset.js // 加载远程仓库模版
 │     ├─ prompt.js // 用户自定义信息输入

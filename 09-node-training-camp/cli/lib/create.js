@@ -46,7 +46,6 @@ module.exports = async function create() {
   /**
    * @description Display some info
    */
-  const sign = await showSign();
   const projectPath = path.join(process.cwd(), projectName);
   console.log(`Success! Created ${projectName} at ${projectPath}`);
   console.log();
@@ -58,5 +57,5 @@ module.exports = async function create() {
   console.log();
   console.log('Happy hacking!');
   console.log();
-  console.log(sign);
+  await showSign(true);
 };

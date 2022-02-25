@@ -3,8 +3,9 @@ const chalk = require('chalk');
 
 /**
  * @description show YepGym
+ * @param {boolean} show
  */
-module.exports = function showSign() {
+module.exports = function showSign(show = false) {
   return new Promise((resolve, reject) => {
     figlet.text(
       'YepGym!',
@@ -19,6 +20,7 @@ module.exports = function showSign() {
         if (err) {
           reject(err);
         }
+        show && console.log(data);
         resolve(chalk.blueBright(data));
       }
     );
