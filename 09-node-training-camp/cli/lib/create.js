@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const inquirer = require('inquirer');
 const fs = require('fs-extra');
 const path = require('path');
+const clear = require('clear');
 const loadCustomPreset = require('./utils/loadCustomPreset');
 const loadRemotePreset = require('./utils/loadRemotePreset');
 const generator = require('./utils/generator');
@@ -47,6 +48,7 @@ module.exports = async function create() {
    * @description Display some info
    */
   const projectPath = path.join(process.cwd(), projectName);
+  clear();
   console.log(`Success! Created ${projectName} at ${projectPath}`);
   console.log();
   console.log('We suggest that you begin by typing:');
