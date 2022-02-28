@@ -1,8 +1,8 @@
 class Person:
-    def fn():
+    def fn(self):
         pass
 
 
 class Student(Person):
-    def bar():
+    def bar(self):
         super().fn()

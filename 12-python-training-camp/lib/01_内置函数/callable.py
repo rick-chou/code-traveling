@@ -5,5 +5,7 @@ def fn():
 fn1 = 'foo'
 
 
-print(callable(fn))
-print(callable(fn1))
+print(callable(fn))  # True
+print(callable(fn1))  # False
+
+
