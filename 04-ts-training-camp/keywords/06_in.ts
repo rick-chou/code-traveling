@@ -1,3 +1,7 @@
+/**
+ * eg1
+ */
+
 enum Letter {
   A = 'a',
   B = 'b',
@@ -15,6 +19,9 @@ type _LetterMap = {
   c: string;
 };
 
+/**
+ * eg2
+ */
 type Keys = 'name' | 'sex';
 
 type PersonMap = {
@@ -25,4 +32,10 @@ type PersonMap = {
 type _PersonMap = {
   name: string;
   sex: string;
+};
+
+const a = {
+  A: 'a',
+  B: 'b',
+  C: 'c',
 };

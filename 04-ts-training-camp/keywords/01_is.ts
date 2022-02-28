@@ -1,13 +1,13 @@
-function isString1(test: any): test is string {
-  return typeof test === 'string';
-}
+/**
+ *  用作类型保护
+ */
 
-function isString2(test: any): boolean {
-  return typeof test === 'string';
-}
+const isString1 = (test: any): test is string => typeof test === 'string';
 
-const a = isString1('123'); // --> true
-const b = isString2('123'); // --> true
+const isString2 = (test: any): boolean => typeof test === 'string';
+
+isString1('123'); // --> true
+isString2('123'); // --> true
 
 function doSomething(params: any) {
   if (isString1(params)) {

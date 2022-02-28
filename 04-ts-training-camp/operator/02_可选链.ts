@@ -1,6 +1,6 @@
-const obj = {
-  foo: () => console.log('foo'),
-  bar: () => ({}),
-};
+const obj = undefined as any;
 
-obj.foo();
+const age1 = obj?.bar?.age;
+// const age2 = obj.bar.age;
+console.log(age1);
+// console.log(age2);

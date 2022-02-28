@@ -4,20 +4,22 @@
  * 做为变量使用的话用const，若做为属性则使用readonly
  */
 
-interface IPerson {
-  name: string;
-  height?: number;
-  readonly age: number;
-}
+namespace Interface {
+  interface IPerson {
+    name: string;
+    height?: number;
+    readonly age: number;
+  }
 
-//  多个interface会合并
-interface IPerson {
-  weight: number;
-}
+  //  多个interface会合并
+  interface IPerson {
+    weight: number;
+  }
 
-const person: IPerson = {
-  name: 'nanshu',
-  height: 181,
-  weight: 140,
-  age: 18,
-};
+  const person: IPerson = {
+    name: 'nanshu',
+    height: 181,
+    weight: 140,
+    age: 18,
+  };
+}

@@ -10,7 +10,6 @@ class GenericNumber<T> {
 }
 
 // 泛型约束
-
 function loggingIdentity1<T>(arg: T): T {
   // console.log(arg.length);  Property 'length' does not exist on type 'T'.
   return arg;

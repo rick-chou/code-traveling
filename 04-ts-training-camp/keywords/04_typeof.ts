@@ -1,2 +1,13 @@
+/**
+ * 类型推断
+ */
+
 let s = 'hello';
-let n: typeof s;
+type t = typeof s;
+
+let stu = {
+  name: 'chou',
+  age: 18,
+};
+
+type Stu = typeof stu;
