@@ -1,6 +1,4 @@
 const { capitalize } = require('lodash');
-const head = require('../Array/head');
-const tail = require('../Array/tail');
 
 capitalize('FRED');
 // => 'Fred'
@@ -12,14 +10,11 @@ capitalize('FRED');
  */
 
 const _capitalize = (string) => {
-  return (
-    head([...string])[0].toUpperCase() +
-    tail([...string]).map((i) => i.toLowerCase())
-  );
+  return string.toLowerCase().replace(/.{1}/, (w) => w.toUpperCase());
 };
 
 if (require.main === module) {
-  console.log(capitalize('FRED'));
+  console.log(_capitalize('FRED'));
 }
 
 module.exports = _capitalize;

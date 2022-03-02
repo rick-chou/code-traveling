@@ -1,14 +1,11 @@
-
 const { unescape } = require('lodash');
 
 /**
  * @example unescape
- * @description 
- * @param {} 
+ * @description https://www.lodashjs.com/docs/lodash.unescape
+ * @param {}
  */
-const _unescape = () => {
-  // TODO
-};
+const _unescape = () => {};
 
 if (require.main === module) {
 }

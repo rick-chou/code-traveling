@@ -1,14 +1,10 @@
-
 const { escapeRegExp } = require('lodash');
 
 /**
  * @example escapeRegExp
- * @description 
- * @param {} 
+ * @description 转义 RegExp 字符串中特殊的字符 "^", "$", "", ".", "*", "+", "?", "(", ")", "[", "]", ", ", 和 "|" in .
  */
-const _escapeRegExp = () => {
-  // TODO
-};
+const _escapeRegExp = () => {};
 
 if (require.main === module) {
 }

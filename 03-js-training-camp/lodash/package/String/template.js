@@ -1,13 +1,13 @@
-
 const { template } = require('lodash');
 
 /**
- * @example template
- * @description 
- * @param {} 
+ * @example template([string=''], [options=])
+ * @description
+ * @param {}
  */
-const _template = () => {
+const _template = (string = '', options) => {
   // TODO
+  // https://www.lodashjs.com/docs/lodash.template
 };
 
 if (require.main === module) {
