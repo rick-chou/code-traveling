@@ -11,3 +11,8 @@ console.log(Number.NEGATIVE_INFINITY === -Infinity); // true
 
 // 是否是有限的
 console.log(Number.isFinite(Infinity)); // false
+
+console.log(Infinity + Infinity); // Infinity
+console.log(Infinity - Infinity); // NaN
+console.log(Infinity * Infinity); // Infinity
+console.log(Infinity / Infinity); // NaN
