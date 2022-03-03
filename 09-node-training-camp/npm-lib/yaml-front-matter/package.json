@@ -1,0 +1,9 @@
+{
+  "name": "yaml-front-matter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "yaml-front-matter": "^4.1.1"
+  }
+}
