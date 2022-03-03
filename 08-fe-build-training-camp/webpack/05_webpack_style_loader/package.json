@@ -8,5 +8,8 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --entry ./src/index.js -o dist"
   }
 }

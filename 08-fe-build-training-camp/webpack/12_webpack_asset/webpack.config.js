@@ -11,6 +11,7 @@ module.exports = {
       {
         test: /\.(svg|png|gif|jpe?g)$/,
         type: 'asset/resource',
+        // https://webpack.docschina.org/configuration/module/#rulegenerator
         generator: {
           filename: '[name].[hash:4][ext]',
         },
