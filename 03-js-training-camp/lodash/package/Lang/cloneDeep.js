@@ -15,7 +15,9 @@ var deep = cloneDeep(objects);
  *
  * @param {*} value
  */
-const _cloneDeep = (value) => {};
+const _cloneDeep = (value) => {
+  // TODO
+};
 
 if (require.main === module) {
 }

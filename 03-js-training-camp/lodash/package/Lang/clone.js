@@ -16,7 +16,9 @@ var shallow = clone(objects);
  *
  * @param {*} value
  */
-const _clone = (value) => {};
+const _clone = (value) => {
+  // TODO
+};
 
 if (require.main === module) {
 }

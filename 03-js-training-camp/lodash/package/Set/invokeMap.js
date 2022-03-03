@@ -1,10 +1,9 @@
-
 const { invokeMap } = require('lodash');
 
 /**
  * @example invokeMap
- * @description 
- * @param {} 
+ * @description
+ * @param {}
  */
 const _invokeMap = () => {
   // TODO
