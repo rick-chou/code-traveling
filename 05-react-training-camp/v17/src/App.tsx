@@ -1,45 +1,54 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { renderRoutes } from 'react-router-config';
+import { useHistory, withRouter } from 'react-router-dom';
+import routes from './router';
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Layout, Menu, Breadcrumb } from 'antd';
+import {
+  UserOutlined,
+  LaptopOutlined,
+  NotificationOutlined,
+  FormOutlined,
+} from '@ant-design/icons';
 
+const { SubMenu } = Menu;
+const { Header, Content, Footer, Sider } = Layout;
+
+function App(props) {
+  const history = useHistory();
+  console.log('history', history);
+  console.log(props);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
+    <Layout>
+      <Header className="header">
+        <div className="logo" />
+        <h1 style={{ color: '#FFF' }}>React Docs 🐣🐣🐣</h1>
+      </Header>
+      <Content style={{ padding: '0 50px' }}>
+        <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>List</Breadcrumb.Item>
+          <Breadcrumb.Item>App</Breadcrumb.Item>
+        </Breadcrumb>
+        <Layout
+          className="site-layout-background"
+          style={{ padding: '24px 0' }}
+        >
+          <Sider className="site-layout-background" width={200}>
+            <Menu
+              mode="inline"
+              defaultSelectedKeys={['1']}
+              defaultOpenKeys={['sub1']}
+              style={{ height: '100%' }}
+            ></Menu>
+          </Sider>
+          <Content style={{ padding: '0 24px', minHeight: 280 }}>
+            {renderRoutes(routes)}
+          </Content>
+        </Layout>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>©2021 Created by Chou</Footer>
+    </Layout>
+  );
 }
 
-export default App
+export default withRouter(App);
