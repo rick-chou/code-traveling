@@ -7,13 +7,13 @@ import useRef from '@basic/hook/useRef';
 import useState from '@basic/hook/useState';
 
 const routes = [
-  { path: 'basic/hook/useCallback', component: useCallback },
-  { path: 'basic/hook/useContext', component: useContext },
-  { path: 'basic/hook/useEffect', component: useEffect },
-  { path: 'basic/hook/useMemo', component: useMemo },
-  { path: 'basic/hook/useReducer', component: useReducer },
-  { path: 'basic/hook/useRef', component: useRef },
-  { path: 'basic/hook/useState', component: useState },
+  { path: '/basic/hook/useCallback', component: useCallback },
+  { path: '/basic/hook/useContext', component: useContext },
+  { path: '/basic/hook/useEffect', component: useEffect },
+  { path: '/basic/hook/useMemo', component: useMemo },
+  { path: '/basic/hook/useReducer', component: useReducer },
+  { path: '/basic/hook/useRef', component: useRef },
+  { path: '/basic/hook/useState', component: useState },
 ];
 
 export default routes;

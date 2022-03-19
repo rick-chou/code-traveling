@@ -15,7 +15,7 @@ const dest = path.resolve(routerDir, targetDir) + ext;
 const files = glob.sync(`**/${targetDir}/*.tsx`);
 
 if (isEmpty(files)) {
-  console.log('该目录下没有文件');
+  console.log(chalk.yellow('该目录下没有文件'));
   return;
 }
 
@@ -36,7 +36,7 @@ result += '\nconst routes = [\n';
 files.forEach((file) => {
   const fileName = path.basename(file, '.tsx');
   const aliasPath = file.replace(/.tsx/, '');
-  const pathName = `  { path: '${aliasPath}', component: ${fileName} },\n`;
+  const pathName = `  { path: '/${aliasPath}', component: ${fileName} },\n`;
   result += pathName;
 });
 

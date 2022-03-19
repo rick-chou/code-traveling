@@ -22,7 +22,8 @@
       "@basic/*": ["src/basic/*"],
       "@ui/*": ["src/ui-lib/*"],
       "@components": ["src/components"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@router": ["src/router"]
     }
   },
   "include": ["src"],

@@ -11,6 +11,7 @@ export default defineConfig({
       '@ui': '@/ui-lib',
       '@components': '@/components',
       '@basic': '@/basic',
+      '@router': '@/router',
     },
   },
 });
