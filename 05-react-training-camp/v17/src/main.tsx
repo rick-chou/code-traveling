@@ -5,9 +5,44 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import 'antd/dist/antd.css';
 import './antd.css';
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('root')
-);
+import {
+  renderWithQiankun,
+  qiankunWindow,
+} from 'vite-plugin-qiankun/dist/helper';
+
+function render(props: any) {
+  const { container } = props;
+  ReactDOM.render(
+    <Router
+      basename={qiankunWindow.__POWERED_BY_QIANKUN__ ? '/start/react' : ''}
+    >
+      <App />
+    </Router>,
+    container
+      ? container.querySelector('#root')
+      : document.getElementById('root')
+  );
+}
+
+// some code
+renderWithQiankun({
+  mount(props) {
+    console.log('mount');
+    render(props);
+  },
+  bootstrap() {
+    console.log('bootstrap');
+  },
+  unmount(props: any) {
+    console.log('unmount');
+    const { container } = props;
+    const mountRoot = container?.querySelector('#root');
+    ReactDOM.unmountComponentAtNode(
+      mountRoot || document.querySelector('#root')
+    );
+  },
+});
+
+if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
+  render({});
+}
