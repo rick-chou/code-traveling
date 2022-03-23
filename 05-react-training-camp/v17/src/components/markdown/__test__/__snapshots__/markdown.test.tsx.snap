@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdwon components basic 1`] = `
+<ReactMarkdown
+  components={
+    Object {
+      "code": [Function],
+    }
+  }
+  transformLinkUri={[Function]}
+>
+  hello world
+</ReactMarkdown>
+`;
+
+exports[`Markdwon components code 1`] = `
+<Collapse
+  defaultActiveKey={
+    Array [
+      "1",
+    ]
+  }
+  style={
+    Object {
+      "marginBottom": "5vh",
+    }
+  }
+>
+  <CollapsePanel
+    header="
+    ~~~js
+    console.log('hello world');
+    ~~~
+    "
+    key="1"
+  >
+    <ReactMarkdown
+      components={
+        Object {
+          "code": [Function],
+        }
+      }
+      transformLinkUri={[Function]}
+    >
+      hello world
+    </ReactMarkdown>
+  </CollapsePanel>
+</Collapse>
+`;
+
+exports[`Markdwon components collapse 1`] = `
+<Collapse
+  defaultActiveKey={
+    Array [
+      "1",
+    ]
+  }
+  style={
+    Object {
+      "marginBottom": "5vh",
+    }
+  }
+>
+  <CollapsePanel
+    header="hello world"
+    key="1"
+  >
+    <ReactMarkdown
+      components={
+        Object {
+          "code": [Function],
+        }
+      }
+      transformLinkUri={[Function]}
+    >
+      hello world
+    </ReactMarkdown>
+  </CollapsePanel>
+</Collapse>
+`;
+
+exports[`Markdwon components theme 1`] = `
+<Collapse
+  defaultActiveKey={
+    Array [
+      "1",
+    ]
+  }
+  style={
+    Object {
+      "marginBottom": "5vh",
+    }
+  }
+>
+  <CollapsePanel
+    header="hello world"
+    key="1"
+  >
+    <ReactMarkdown
+      components={
+        Object {
+          "code": [Function],
+        }
+      }
+      transformLinkUri={[Function]}
+    >
+      hello world
+    </ReactMarkdown>
+  </CollapsePanel>
+</Collapse>
+`;

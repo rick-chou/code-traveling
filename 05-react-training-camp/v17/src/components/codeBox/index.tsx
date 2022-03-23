@@ -1,4 +1,7 @@
-import { Controlled as CodeMirror } from 'react-codemirror2';
+import {
+  Controlled as CodeMirror,
+  IControlledCodeMirror,
+} from 'react-codemirror2';
 
 import 'codemirror/lib/codemirror.css';
 
@@ -7,7 +10,6 @@ import 'codemirror/lib/codemirror.css';
 // import 'codemirror/theme/base16-light.css';
 // import 'codemirror/theme/bespin.css';
 import 'codemirror/theme/dracula.css';
-import { type } from 'os';
 // import 'codemirror/theme/duotone-light.css';
 // import 'codemirror/theme/eclipse.css';
 // import 'codemirror/theme/elegant.css';
@@ -37,15 +39,11 @@ import { type } from 'os';
 // import 'codemirror/theme/ttcn.css';
 // import 'codemirror/theme/xq-light.css';
 
-type CodeBoxCb = (editor: any, data: any, value: string) => void;
-
-interface IProps {
-  value: string;
-  onChange: CodeBoxCb;
-  onBeforeChange: CodeBoxCb;
-}
-
-export default ({ value, onChange, onBeforeChange }: IProps) => (
+const CodeBox = ({
+  value,
+  onChange,
+  onBeforeChange,
+}: IControlledCodeMirror) => (
   <CodeMirror
     value={value}
     options={{
@@ -64,3 +62,5 @@ export default ({ value, onChange, onBeforeChange }: IProps) => (
     onBeforeChange={onBeforeChange}
   />
 );
+
+export default CodeBox;

@@ -23,4 +23,6 @@ interface IProps {
   data: LooseObj;
 }
 
-export default (data: IProps) => <JSONTree data={data} theme={theme} />;
+const JsonTree = (data: IProps) => <JSONTree data={data} theme={theme} />;
+
+export default JsonTree;

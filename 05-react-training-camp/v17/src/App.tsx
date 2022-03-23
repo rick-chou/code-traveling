@@ -39,7 +39,9 @@ function App() {
         </Menu>
       </Sider>
 
-      <Content style={{ padding: '0 24px', minHeight: 280 }}>
+      <Content
+        style={{ padding: '0 24px', minHeight: 280, overflow: 'scroll' }}
+      >
         {renderRoutes(routes)}
       </Content>
     </Layout>
