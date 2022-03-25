@@ -2,17 +2,15 @@ const express = require('express');
 
 const app = express();
 
-const middlewareA = (req, res, next) => {
+const middlewareA = async (req, res, next) => {
   req.message = '';
   req.message += 'A';
-  next();
+  await next();
   res.end(req.message);
 };
 
 const middlewareB = async (req, res, next) => {
-  await Promise.resolve(() => {
-    req.message += 'B';
-  });
+  req.message += await Promise.resolve('B');
   await next();
 };
 
