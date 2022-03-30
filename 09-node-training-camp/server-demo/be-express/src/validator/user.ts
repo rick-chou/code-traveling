@@ -1,4 +1,4 @@
-import Joi from 'joi';
+import Joi, { string } from 'joi';
 
 const add = Joi.object({
   nickname: Joi.string().required(),
@@ -17,8 +17,8 @@ const update = Joi.object({
   nickname: Joi.string(),
   password: Joi.string(),
   status: Joi.boolean(),
-  address: Joi.string(),
-  tel: Joi.string(),
+  address: Joi.allow(string, null),
+  tel: Joi.allow(string, null),
 });
 
 const read = Joi.object({
