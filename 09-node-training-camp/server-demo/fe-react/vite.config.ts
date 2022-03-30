@@ -15,6 +15,7 @@ export default defineConfig({
     alias: [
       { find: '@', replacement: path.resolve(__dirname, './src') },
       { find: '@pages', replacement: path.resolve(__dirname, './src/pages') },
+      { find: '@api', replacement: path.resolve(__dirname, './src/api') },
       { find: '@res', replacement: path.resolve(__dirname, './src/res') },
       {
         find: '@components',
@@ -28,6 +29,15 @@ export default defineConfig({
     preprocessorOptions: {
       less: {
         javascriptEnabled: true,
+      },
+    },
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },

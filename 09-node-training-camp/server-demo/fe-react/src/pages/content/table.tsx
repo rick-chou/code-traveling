@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { ProColumns } from '@ant-design/pro-table';
 import { EditableProTable } from '@ant-design/pro-table';
 import { ProFormRadio } from '@ant-design/pro-form';
+import { omit } from 'lodash';
+import { addUser, delUser, readUser, updateUser } from '@/api';
 
 const waitTime = (time: number = 100) => {
   return new Promise((resolve) => {
@@ -12,11 +14,12 @@ const waitTime = (time: number = 100) => {
 };
 
 type DataSourceType = {
-  id: React.Key;
-  title?: string;
-  readonly?: string;
-  decs?: string;
-  state?: string;
+  id: number;
+  nickname?: string;
+  password?: string;
+  status?: boolean;
+  address?: string;
+  tel?: string;
   created_at?: string;
   update_at?: string;
   children?: DataSourceType[];
@@ -25,102 +28,78 @@ type DataSourceType = {
 const defaultData: DataSourceType[] = [
   {
     id: 624748504,
-    title: '活动名称一',
-    readonly: '活动名称一',
-    decs: '这个活动真好玩',
-    state: 'open',
+    nickname: 'chou',
+    password: '209',
+    address: 'HangZhou',
+    tel: '123',
+    status: false,
     created_at: '2020-05-26T09:42:56Z',
     update_at: '2020-05-26T09:42:56Z',
-  },
-  {
-    id: 624691229,
-    title: '活动名称二',
-    readonly: '活动名称二',
-    decs: '这个活动真好玩',
-    state: 'closed',
-    created_at: '2020-05-26T08:19:22Z',
-    update_at: '2020-05-26T08:19:22Z',
   },
 ];
 
 export default () => {
+  useEffect(() => {
+    fetchList();
+  }, []);
+
   const [editableKeys, setEditableRowKeys] = useState<React.Key[]>([]);
   const [dataSource, setDataSource] = useState<DataSourceType[]>([]);
   const [position, setPosition] = useState<'top' | 'bottom' | 'hidden'>(
     'bottom'
   );
 
+  const fetchList = () => readUser({}).then((res) => setDataSource(res.data));
+
   const columns: ProColumns<DataSourceType>[] = [
     {
-      title: 'user_nickname',
-      dataIndex: 'title',
-      tooltip: '只读，使用form.getFieldValue获取不到值',
-      formItemProps: (form, { rowIndex }) => {
-        return {
-          rules:
-            rowIndex > 1 ? [{ required: true, message: '此项为必填项' }] : [],
-        };
-      },
-      // 第一行不允许编辑
-      editable: (text, record, index) => {
-        return index !== 0;
-      },
+      title: 'nickname',
+      dataIndex: 'nickname',
       width: '15%',
     },
     {
-      title: '活动名称二',
-      dataIndex: 'readonly',
-      tooltip: '只读，使用form.getFieldValue可以获取到值',
-      formItemProps: (form, { rowIndex }) => {
-        return {
-          rules:
-            rowIndex > 2 ? [{ required: true, message: '此项为必填项' }] : [],
-        };
-      },
-      readonly: true,
+      title: 'password',
+      dataIndex: 'password',
       width: '15%',
     },
     {
-      title: '状态',
-      key: 'state',
-      dataIndex: 'state',
-      valueType: 'select',
+      title: 'status',
+      key: 'status',
+      dataIndex: 'status',
+      valueType: 'switch',
       valueEnum: {
-        all: { text: '全部', status: 'Default' },
-        open: {
-          text: '未解决',
-          status: 'Error',
-        },
-        closed: {
-          text: '已解决',
+        true: {
+          text: 'true',
           status: 'Success',
         },
+        false: {
+          text: 'false',
+          status: 'Error',
+        },
       },
     },
     {
-      title: '描述',
-      dataIndex: 'decs',
-      fieldProps: (from, { rowKey, rowIndex }) => {
-        if (from.getFieldValue([rowKey || '', 'title']) === '不好玩') {
-          return {
-            disabled: true,
-          };
-        }
-        if (rowIndex > 9) {
-          return {
-            disabled: true,
-          };
-        }
-        return {};
-      },
+      title: 'address',
+      dataIndex: 'address',
     },
     {
-      title: '活动时间',
-      dataIndex: 'created_at',
+      title: 'tel',
+      dataIndex: 'tel',
+    },
+    {
+      title: 'created_at',
+      dataIndex: 'createdAt',
       valueType: 'date',
+      readonly: true,
     },
     {
-      title: '操作',
+      title: 'update_at',
+      dataIndex: 'updatedAt',
+      valueType: 'date',
+      readonly: true,
+    },
+    {
+      title: 'op',
       valueType: 'option',
       width: 200,
       render: (text, record, _, action) => [
@@ -130,15 +109,16 @@ export default () => {
             action?.startEditable?.(record.id);
           }}
         >
-          编辑
+          Edit
         </a>,
         <a
           key="delete"
-          onClick={() => {
-            setDataSource(dataSource.filter((item) => item.id !== record.id));
+          onClick={async () => {
+            await delUser(record.id);
+            await fetchList();
           }}
         >
-          删除
+          Del
         </a>,
       ],
     },
@@ -147,9 +127,10 @@ export default () => {
   return (
     <>
       <EditableProTable<DataSourceType>
+        locale={{}}
         rowKey="id"
-        headerTitle="可编辑表格"
-        maxLength={5}
+        headerTitle="User Info"
+        // maxLength={5}
         scroll={{
           x: 960,
         }}
@@ -171,15 +152,15 @@ export default () => {
             }}
             options={[
               {
-                label: '添加到顶部',
+                label: 'top',
                 value: 'top',
               },
               {
-                label: '添加到底部',
+                label: 'bottom',
                 value: 'bottom',
               },
               {
-                label: '隐藏',
+                label: 'hidden',
                 value: 'hidden',
               },
             ]}
@@ -187,18 +168,23 @@ export default () => {
         ]}
         columns={columns}
         request={async () => ({
-          data: defaultData,
+          data: dataSource,
           total: 3,
           success: true,
         })}
+        // pagination={{ showQuickJumper: true, pageSize: 5 }}
         value={dataSource}
         onChange={setDataSource}
         editable={{
           type: 'multiple',
           editableKeys,
           onSave: async (rowKey, data, row) => {
-            console.log(rowKey, data, row);
-            await waitTime(2000);
+            if (dataSource.some((item) => item.id === rowKey)) {
+              await updateUser(omit(data, ['createdAt', 'updatedAt', 'index']));
+            } else {
+              await addUser(omit(data, ['id', 'index']));
+            }
+            await fetchList();
           },
           onChange: setEditableRowKeys,
         }}
