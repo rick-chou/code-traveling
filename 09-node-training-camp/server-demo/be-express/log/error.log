@@ -4,3 +4,12 @@
   param: { nickname: '1' },
   error: '"password" is required'
 }
+[2022-03-30T13:59:43.859] [ERROR] error - {
+  api: '/user/update',
+  param: [Object: null prototype] {
+    nickname: 'chou',
+    password: '209',
+    address: 'Hangzhou'
+  },
+  error: '"id" is required'
+}
