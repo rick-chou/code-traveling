@@ -1,6 +1,9 @@
 import { bg2Img } from '@/res';
+import { useHistory } from 'react-router-dom';
 
 const Home = () => {
+  const history = useHistory();
+
   return (
     <div className="relative h-screen">
       <img
@@ -23,7 +26,7 @@ const Home = () => {
                 quae.
               </p>
               <a
-                href="/content"
+                onClick={() => history.push('/content')}
                 aria-label=""
                 className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
               >

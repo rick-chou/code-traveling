@@ -138,7 +138,8 @@ export default () => {
           position !== 'hidden'
             ? {
                 position: position as 'top',
-                record: () => ({ id: (Math.random() * 1000000).toFixed(0) }),
+                record: () =>
+                  ({ id: (Math.random() * 1000000).toFixed(0) } as any),
               }
             : false
         }

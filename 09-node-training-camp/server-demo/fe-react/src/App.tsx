@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from '@pages/home';
 import Login from '@pages/login';
@@ -7,14 +7,14 @@ import NotFound from '@pages/404';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/content" element={<Content />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/content" component={Content} />
+        <Route path="*" component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 
