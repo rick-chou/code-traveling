@@ -1,0 +1,6 @@
+[2022-03-30T13:44:44.554] [ERROR] error - { api: '/user/add', param: {}, error: '"nickname" is required' }
+[2022-03-30T13:44:55.210] [ERROR] error - {
+  api: '/user/add',
+  param: { nickname: '1' },
+  error: '"password" is required'
+}

@@ -203,3 +203,163 @@
 [2022-03-30T12:01:06.183] [DEBUG] user - Executing (default): SELECT 1+1 AS result
 [2022-03-30T12:01:06.184] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
 [2022-03-30T12:01:06.206] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:40.534] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:40.544] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:40.570] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:41.400] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:41.401] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:41.404] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:47.074] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:47.075] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:47.079] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:48.506] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:48.507] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:48.514] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:51.968] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:51.969] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:51.972] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:54.060] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:54.062] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:54.065] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:55.227] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:55.228] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:55.231] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:35:58.519] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:35:58.520] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:35:58.524] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:00.525] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:00.526] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:00.530] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:02.275] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:02.276] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:02.280] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:06.044] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:06.045] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:06.048] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:11.566] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:11.567] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:11.570] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:13.146] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:13.147] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:13.154] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:16.555] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:16.556] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:16.559] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:19.410] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:36:19.411] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:36:19.414] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:36:37.444] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:36:53.499] [DEBUG] user - Executing (default): INSERT INTO `user_infos` (`id`,`nickname`,`password`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?); "1", "1", false, "2022-03-30 13:36:53", "2022-03-30 13:36:53"
+[2022-03-30T13:36:53.521] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:38:10.078] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:38:10.079] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:38:10.084] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:38:18.990] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:38:18.991] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:38:18.995] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:38:22.921] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:38:22.922] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:38:22.926] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:38:26.159] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:39:05.304] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:05.305] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:05.311] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:08.907] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:08.908] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:08.911] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:16.021] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:16.022] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:16.027] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:18.522] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:18.523] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:18.527] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:27.321] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:27.321] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:27.325] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:41.814] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:41.815] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:41.818] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:45.860] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:45.861] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:45.864] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:47.606] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:47.607] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:47.610] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:52.549] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:52.549] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:52.553] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:39:53.867] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:39:53.868] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:39:53.872] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:40:00.892] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:40:00.895] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:40:00.900] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:40:26.136] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:40:26.137] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:40:26.140] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:40:32.075] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:40:32.076] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:40:32.080] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:40:39.815] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:40:42.468] [ERROR] error - [Error [ValidationError]: "nickname" is required] {
+  _original: {},
+  details: [
+    {
+      message: '"nickname" is required',
+      path: [Array],
+      type: 'any.required',
+      context: [Object]
+    }
+  ]
+}
+[2022-03-30T13:41:11.813] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:41:11.814] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:41:11.818] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:10.696] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:10.696] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:10.701] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:13.141] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:13.141] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:13.151] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:16.399] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:16.400] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:16.404] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:18.293] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:18.294] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:18.298] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:21.089] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:21.090] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:21.097] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:23.403] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:23.404] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:23.407] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:24.266] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:42:24.267] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:42:24.270] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:42:28.117] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:43:26.369] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:43:26.371] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:43:26.379] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:43:27.791] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:43:55.947] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:43:55.948] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:43:55.953] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:44:16.232] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:44:16.232] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:44:16.236] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:44:18.756] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:44:18.758] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:44:18.762] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:44:22.894] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:44:22.895] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:44:22.899] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:44:28.094] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:44:28.095] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:44:28.099] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:44:31.935] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:44:31.936] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:44:31.943] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`
+[2022-03-30T13:44:39.038] [DEBUG] user - Executing (default): SELECT `id`, `nickname`, `password`, `status`, `address`, `tel`, `createdAt`, `updatedAt` FROM `user_infos` AS `user_info`;
+[2022-03-30T13:45:17.996] [DEBUG] user - Executing (default): SELECT 1+1 AS result
+[2022-03-30T13:45:17.997] [DEBUG] user - Executing (default): CREATE TABLE IF NOT EXISTS `user_infos` (`id` INTEGER auto_increment , `nickname` VARCHAR(255) NOT NULL, `password` VARCHAR(255) NOT NULL, `status` TINYINT(1) DEFAULT false, `address` VARCHAR(255), `tel` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+[2022-03-30T13:45:18.000] [DEBUG] user - Executing (default): SHOW INDEX FROM `user_infos`

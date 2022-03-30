@@ -3,13 +3,23 @@ import express from 'express';
 import UserInfo from '../dao/user';
 import Validator from '../validator/user';
 import { ReqUtils, ResUtils } from '../utils';
+import { logger } from '../log';
 
 const router = express.Router();
 
 router.post('/add', async (req, res) => {
-  await ReqUtils.validateParams(res, Validator.add.validateAsync(req.body));
-  await ReqUtils.validateParams(res, UserInfo.create(req.body));
-  ResUtils.success(res);
+  try {
+    console.log(req);
+    await ReqUtils.validateParams(res, Validator.add.validateAsync(req.body));
+    await ReqUtils.validateParams(res, UserInfo.create(req.body));
+    ResUtils.success(res);
+  } catch (error: any) {
+    logger('error').error({
+      api: req.originalUrl,
+      param: req.body,
+      error: error.message,
+    });
+  }
 });
 
 router.delete('/delete/:id', async (req, res) => {
