@@ -6,7 +6,7 @@
 
 import React, { FC, useRef, useState } from 'react';
 import { Button, Input } from 'antd';
-import JSONTree from '@components/jsonTree';
+import JSONTree from '@/components/json-tree';
 
 const App: FC = () => {
   const [count, setCount] = useState<number>(0);

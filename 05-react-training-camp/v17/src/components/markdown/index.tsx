@@ -37,8 +37,8 @@ const Markdown = ({ children, title, theme = 'vs' }: IProps) => {
   );
 
   const renderCollapse = () => (
-    <Collapse defaultActiveKey={['1']} style={{ marginBottom: '5vh' }}>
-      <Panel header={title} key="1">
+    <Collapse style={{ marginBottom: '5vh' }}>
+      <Panel header={`🤔 ${title}`} key="1">
         {renderCore()}
       </Panel>
     </Collapse>

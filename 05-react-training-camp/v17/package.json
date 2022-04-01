@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
+    "@monaco-editor/react": "^4.4.1",
     "antd": "^4.18.9",
     "chalk": "^4.1.2",
     "codemirror": "^5.65.2",
