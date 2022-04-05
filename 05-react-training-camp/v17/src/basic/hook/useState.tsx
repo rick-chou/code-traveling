@@ -13,7 +13,7 @@ const markdownText = `
  * 
  * DEMO 在每个方法内 分别调用两次 setA 和 setB 然后监听 A 和 B 的变化 每当有变化时 renderCount ++
  */
-const [a, setA] = useState<number>(0);
+  const [a, setA] = useState<number>(0);
   const [b, setB] = useState<number>(0);
   const [renderCount, setRenderCount] = useState<number>(0);
 
