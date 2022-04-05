@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import 'antd/dist/antd.css';
 import './antd.css';
+import './index.css';
 
 import {
   renderWithQiankun,

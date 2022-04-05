@@ -20,7 +20,7 @@ class App extends React.Component {
     // 无论多深，任何组件都能读取这个值。
     // 在这个例子中，我们将 “dark” 作为当前的值传递下去。
     return (
-      <ThemeContext.Provider value='dark'>
+      <ThemeContext.Provider value="dark">
         <p>
           <b>step1 const ThemeContext = React.createContext(xxx)</b>
         </p>
@@ -28,7 +28,9 @@ class App extends React.Component {
           <b>step2 ThemeContext.Provider 包裹所有自组件</b>
         </p>
         <p>
-          <b>step3 子组件中使用static contextType = ThemeContext 使用this.context</b>
+          <b>
+            step3 子组件中使用static contextType = ThemeContext 使用this.context
+          </b>
         </p>
         <hr />
         <Toolbar />
@@ -54,7 +56,9 @@ class ThemedButton extends React.Component {
   render() {
     // console.log(this.context); // -> dark
     return (
-      <Button style={{ backgroundColor: this.context === 'light' ? 'white' : 'gray' }}>
+      <Button
+        style={{ backgroundColor: this.context === 'light' ? 'white' : 'gray' }}
+      >
         ThemedButton
       </Button>
     );
