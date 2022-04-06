@@ -2,6 +2,10 @@
   height: 100vh;
 }
 
+.ant-layout-has-sider {
+  overflow: scroll;
+}
+
 #components-layout-demo-top-side .logo {
   float: left;
   width: 120px;

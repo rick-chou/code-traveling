@@ -20,9 +20,14 @@ const theme = {
 };
 
 interface IProps {
-  data: LooseObj;
+  data: LooseObj | null;
+  title?: string;
 }
 
-const JsonTree = (data: IProps) => <JSONTree data={data} theme={theme} />;
+const JsonTree = ({ data, title }: IProps) => (
+  <div className="mt-2">
+    <JSONTree data={{ [title || 'json-data']: data }} theme={theme} hideRoot />
+  </div>
+);
 
 export default JsonTree;

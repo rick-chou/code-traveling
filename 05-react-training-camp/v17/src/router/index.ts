@@ -1,10 +1,10 @@
 import _jsx from './jsx';
-import _class from './class';
 import _hook from './hook';
 import _css from './css';
-import _performance from './performance';
+import _store from './store';
+import _router from './router';
 
-export const routes = [..._jsx, ..._class, ..._hook, ..._css, ..._performance];
+export const routes = [..._jsx, ..._hook, ..._css, ..._store, ..._router];
 
 export const routeObj = routes.reduce((pre, cur) => {
   const key = cur.path.split('/')[2];
