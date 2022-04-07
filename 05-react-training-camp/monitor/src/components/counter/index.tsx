@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Button } from 'antd';
+import { Button, Space, Card } from 'antd';
+import { CaretUpOutlined, CaretDownOutlined } from '@ant-design/icons';
 import { animated, config, useSpring } from 'react-spring';
 
 function Number(props: { count: number }) {
@@ -16,19 +17,32 @@ function Number(props: { count: number }) {
 const Counter = () => {
   const [count, setCount] = useState(0);
   return (
-    <div className="bg-white flex flex-col justify-center items-center h-36 rounded-lg">
-      <div className="text-3xl mb-3 flex">
-        count: <Number count={count}></Number>
-      </div>
-      <div>
-        <Button onClick={() => setCount(count + 1)} size="large">
-          + 加
-        </Button>
-        <Button onClick={() => setCount(count - 1)} size="large">
-          - 减
-        </Button>
-      </div>
-    </div>
+    <Card
+      style={{
+        borderRadius: '0.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+      hoverable
+    >
+      <Space size={'large'}>
+        <Button
+          onClick={() => setCount(count + 1)}
+          size="large"
+          shape="circle"
+          icon={<CaretUpOutlined />}
+        />
+        <div className="text-3xl">
+          <Number count={count}></Number>
+        </div>
+        <Button
+          onClick={() => setCount(count - 1)}
+          size="large"
+          shape="circle"
+          icon={<CaretDownOutlined />}
+        />
+      </Space>
+    </Card>
   );
 };
 

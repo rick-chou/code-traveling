@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { M } from './instance';
-import { MEmitter } from './subscribe';
-import { EventListener } from './event-listener';
+import { M, MEvent } from './instance';
 
-export const MContext = React.createContext<Array<ReportItem>>([]);
-
-export const MEvent = new MEmitter();
+export const MContext = React.createContext<Array<IReportItem>>([]);
 
 interface MProps {
   children: React.ReactNode;
@@ -13,7 +9,6 @@ interface MProps {
 
 MContext.displayName = 'MContext';
 
-window.MEventListener = EventListener;
 M.init();
 
 export const MProvider = ({ children }: MProps) => {

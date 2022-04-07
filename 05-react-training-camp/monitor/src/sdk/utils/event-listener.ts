@@ -1,13 +1,13 @@
 const EventTargetProto = window.EventTarget.prototype;
 export class EventListener {
-  constructor(fn) {
+  constructor(fn: Function) {
     this.reWriteAddEventListener(fn);
     this.reWriteRemoveEventListener();
     return this;
   }
 
   // 重写addEventListener
-  reWriteAddEventListener(fn) {
+  reWriteAddEventListener(fn: Function) {
     const oldAdd = EventTargetProto.addEventListener;
     const newAdd = function () {
       const listener = arguments[1];
@@ -20,7 +20,7 @@ export class EventListener {
       return newListener;
     };
     EventTargetProto.addEventListener = function (type) {
-      return oldAdd.call(this, type, newAdd.call(this, ...arguments));
+      return oldAdd.call(this, type, newAdd.apply(this, arguments as any));
     };
   }
 
@@ -34,7 +34,7 @@ export class EventListener {
     };
 
     EventTargetProto.removeEventListener = function (type) {
-      return oRemove.call(this, type, nRemove.call(this, ...arguments));
+      return oRemove.call(this, type, nRemove.apply(this, arguments as any));
     };
   }
 }
