@@ -15,7 +15,7 @@ function render(props: any) {
   const { container } = props;
   ReactDOM.render(
     <Router
-      basename={qiankunWindow.__POWERED_BY_QIANKUN__ ? '/start/react' : ''}
+      basename={qiankunWindow.__POWERED_BY_QIANKUN__ ? '#/start/react' : '#'}
     >
       <App />
     </Router>,
