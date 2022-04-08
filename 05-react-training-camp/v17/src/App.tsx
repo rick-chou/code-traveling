@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { renderRoutes } from 'react-router-config';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Route } from 'react-router-dom';
 import { Layout, Menu, Breadcrumb, Card } from 'antd';
 import { NotificationOutlined } from '@ant-design/icons';
 
 import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper';
 import { routes, routeObj } from '@/router';
+import Home from './home';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -46,6 +47,7 @@ function App() {
         <Content
           style={{ padding: '0 24px', minHeight: 280, overflow: 'scroll' }}
         >
+          <Route path={'/'} exact component={Home} />
           {renderRoutes(routes)}
         </Content>
       </Layout>
