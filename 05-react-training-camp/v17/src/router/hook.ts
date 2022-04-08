@@ -1,11 +1,11 @@
-import useCallback from '@basic/hook/useCallback';
-import useContext from '@basic/hook/useContext';
-import useEffect from '@basic/hook/useEffect';
-import useMemo from '@basic/hook/useMemo';
-import useReducer from '@basic/hook/useReducer';
-import useRef from '@basic/hook/useRef';
-import useState from '@basic/hook/useState';
-import useLogger from '@basic/hook/useLogger';
+import useCallback from '@/basic/hook/useCallback';
+import useContext from '@/basic/hook/useContext';
+import useEffect from '@/basic/hook/useEffect';
+import useMemo from '@/basic/hook/useMemo';
+import useReducer from '@/basic/hook/useReducer';
+import useRef from '@/basic/hook/useRef';
+import useState from '@/basic/hook/useState';
+import useLogger from '@/basic/hook/useLogger';
 
 const routes = [
   { path: '/basic/hook/useState', component: useState },

@@ -73,7 +73,7 @@ export default function App() {
 import { useReducer } from 'react';
 import { Button } from 'antd';
 
-import { Markdown } from '@components';
+import { Markdown } from '@/components';
 
 enum Actions {
   ADD_COUNT_VALUE = 'ADD_COUNT_VALUE',

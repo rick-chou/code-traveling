@@ -18,12 +18,7 @@
     "baseUrl": "./",
     "typeRoots": ["node_modules/@types", "src/types/*.d.ts"],
     "paths": {
-      "@/*": ["src/*"],
-      "@basic/*": ["src/basic/*"],
-      "@ui/*": ["src/ui-lib/*"],
-      "@components": ["src/components"],
-      "@components/*": ["src/components/*"],
-      "@router": ["src/router"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src"],

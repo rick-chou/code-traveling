@@ -1,6 +1,6 @@
-import antd from '@basic/css/antd';
-import cssModule from '@basic/css/css-modules';
-import tailwind from '@basic/css/tailwind';
+import antd from '@/basic/css/antd';
+import cssModule from '@/basic/css/css-modules';
+import tailwind from '@/basic/css/tailwind';
 
 const routes = [
   { path: '/basic/css/antd', component: antd },

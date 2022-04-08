@@ -41,7 +41,7 @@ export default function App() {
 
 import React from 'react';
 
-import { Markdown } from '@components';
+import { Markdown } from '@/components';
 
 interface ITheme {
   theme: string;

@@ -72,7 +72,7 @@ export default Parent;
 import { useState, useEffect, useMemo } from 'react';
 import { Button, message } from 'antd';
 
-import { Markdown } from '@components';
+import { Markdown } from '@/components';
 
 interface IProps {
   getSum: () => number;

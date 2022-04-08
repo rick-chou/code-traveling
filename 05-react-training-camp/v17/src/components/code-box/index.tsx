@@ -50,13 +50,9 @@ const CodeBox = ({
       mode: 'javascript',
       theme: 'dracula dark',
       autofocus: true, //自动获取焦点
-      styleActiveLine: true, //光标代码高亮
       lineNumbers: true, //显示行号
       smartIndent: true, //自动缩进
       lineWrapping: true,
-      foldGutter: true,
-      matchBrackets: true, //括号匹配，光标旁边的括号都高亮显示
-      autoCloseBrackets: true, //键入时将自动关闭()[]{}''""
     }}
     onChange={onChange}
     onBeforeChange={onBeforeChange}

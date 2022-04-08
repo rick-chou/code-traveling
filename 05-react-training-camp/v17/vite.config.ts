@@ -9,10 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@ui': '@/ui-lib',
-      '@components': '@/components',
-      '@basic': '@/basic',
-      '@router': '@/router',
     },
   },
+  base: './',
 });
