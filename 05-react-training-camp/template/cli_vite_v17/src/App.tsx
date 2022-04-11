@@ -2,7 +2,7 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { bgImg, logoImg } from '@res';
+import { bgImg, logoImg } from '@/res';
 
 const navigation = [
   { name: 'React', href: '#' },
