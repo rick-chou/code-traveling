@@ -1,5 +1,7 @@
 > 环境 Mac M1
+
 > 文件目录 /opt/homebrew/var/www
+
 > nginx 目录 /opt/homebrew/etc/nginx
 
 ## 命令
