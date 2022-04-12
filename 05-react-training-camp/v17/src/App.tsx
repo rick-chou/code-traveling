@@ -11,6 +11,8 @@ import Home from './home';
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
+const base_url = import.meta.env.BASE_URL;
+
 function App() {
   // 设置菜单列表互斥 同时只能打开一个
   const [openKeys, setOpenKeys] = useState<string[]>([]);
@@ -30,7 +32,7 @@ function App() {
             mode="inline"
             openKeys={openKeys}
             onOpenChange={onOpenChange}
-            style={{ height: '100%' }}
+            style={{ height: '100%', overflow: 'scroll' }}
           >
             {Object.keys(routeObj).map((item) => (
               <SubMenu key={item} icon={<NotificationOutlined />} title={item}>
@@ -45,9 +47,9 @@ function App() {
         </Sider>
 
         <Content
-          style={{ padding: '0 24px', minHeight: 280, overflow: 'scroll' }}
+          style={{ padding: '10px 24px', minHeight: 280, overflow: 'scroll' }}
         >
-          <Route path={'/'} exact component={Home} />
+          <Route path={base_url} exact component={Home} />
           {renderRoutes(routes)}
         </Content>
       </Layout>

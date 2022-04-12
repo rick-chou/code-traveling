@@ -5,3 +5,19 @@
 svg {
   vertical-align: initial;
 }
+
+.ant-layout:first-child {
+  height: 100%;
+}
+
+.ant-layout-has-sider {
+  overflow: scroll;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+#root {
+  height: 100vh;
+}
