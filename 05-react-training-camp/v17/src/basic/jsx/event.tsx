@@ -4,7 +4,7 @@ const App = () => <h1 onClick={() => alert('hello')}>sayHello</h1>;
 ~~~
 `;
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const App = () => (
   <>

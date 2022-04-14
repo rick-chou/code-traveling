@@ -44,7 +44,7 @@ export default function App() {
 
 import { useEffect, useState } from 'react';
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const useLogger = (componentName: string) => {
   useEffect(() => {

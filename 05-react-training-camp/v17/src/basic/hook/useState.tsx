@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Statistic, Button, Space } from 'antd';
 import { LikeOutlined, AreaChartOutlined } from '@ant-design/icons';
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const markdownText = `
 ~~~js

@@ -10,3 +10,7 @@ interface IAction {
 interface Window {
   __REDUX_DEVTOOLS_EXTENSION_COMPOSE__: any;
 }
+
+interface ImportMetaEnv {
+  VITE_APP_BASE_URL: string;
+}

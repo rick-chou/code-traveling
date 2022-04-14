@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { Button, message } from 'antd';
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const markdownText = `
 ~~~jsx

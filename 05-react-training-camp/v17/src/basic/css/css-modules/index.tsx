@@ -7,7 +7,7 @@ const markdownText = `
 ~~~
 `;
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 import styles from './index.module.scss';
 

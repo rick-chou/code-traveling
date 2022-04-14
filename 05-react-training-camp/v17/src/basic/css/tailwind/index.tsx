@@ -10,7 +10,7 @@ const App = () => {
 ~~~
 `;
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const App = () => {
   return (

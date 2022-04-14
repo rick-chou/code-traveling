@@ -1,7 +1,7 @@
 import { FC, useRef, useState } from 'react';
 import { Button } from 'antd';
 
-import { JSONTree, Markdown } from '@/components';
+import { JsonTree, Markdown } from '@nanshu/ui';
 
 const markdownText = `
 ~~~tsx
@@ -14,7 +14,7 @@ const App: FC = () => {
     <div>
       <Markdown children={markdownText} title="useRef" />
       <input defaultValue="useRef" ref={domRef} />
-      <JSONTree data={domRef} />
+      <JsonTree data={{domRef}} />
       <p>count : {count}</p>
 
       {/* numRef的值始终引用最初的那个count 不会随着count的变化而变化*/}
@@ -43,7 +43,7 @@ const App: FC = () => {
     <div>
       <Markdown children={markdownText} title="useRef" />
       <input defaultValue="useRef" ref={domRef} />
-      <JSONTree data={domRef} />
+      <JsonTree data={{ domRef }} />
       <p>count : {count}</p>
 
       {/* numRef的值始终引用最初的那个count 不会随着count的变化而变化*/}

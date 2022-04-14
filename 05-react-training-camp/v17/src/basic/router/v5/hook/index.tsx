@@ -26,7 +26,7 @@ export default Article;
 ~~~
 `;
 
-import { JSONTree, Markdown } from '@/components';
+import { JsonTree, Markdown } from '@nanshu/ui';
 import { Button } from 'antd';
 import { FC } from 'react';
 import {
@@ -52,9 +52,9 @@ const Article: FC = () => {
         title="useParams / useLocation / useRouteMatch / useHistory"
       />
       <div className="text-4xl">Article: {params.id}</div>
-      <JSONTree data={params} title="params" />
-      <JSONTree data={location} title="location" />
-      <JSONTree data={match} title="match" />
+      <JsonTree data={{ params }} />
+      <JsonTree data={{ location }} />
+      <JsonTree data={{ match }} />
       <Button onClick={() => history.push('/basic/router/v5-hook/209')}>
         Article: 209
       </Button>

@@ -30,7 +30,7 @@ export default Home;
 import { Button } from 'antd';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { JSONTree, Markdown } from '@/components';
+import { JsonTree, Markdown } from '@nanshu/ui';
 
 const Home = () => {
   const anchorRef = useRef<HTMLAnchorElement | null>(null);
@@ -48,7 +48,7 @@ const Home = () => {
           Article: 209
         </Link>
       </Button>
-      <JSONTree data={anchorRef} title="anchorRef" />
+      <JsonTree data={{ anchorRef }} />
     </div>
   );
 };

@@ -35,7 +35,7 @@ export default About;
 import { FC } from 'react';
 import { Link, BrowserRouter, Route } from 'react-router-dom';
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const Address: FC = () => <div>Address</div>;
 const Culture: FC = () => <div>Culture</div>;

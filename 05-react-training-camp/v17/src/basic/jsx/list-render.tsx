@@ -11,7 +11,7 @@ const App = () => {
 ~~~
 `;
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 const App = () => {
   const gameList = ['剑盾', '塞尔达', '马里奥制造', '风花雪月'];

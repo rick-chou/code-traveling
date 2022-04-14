@@ -10,7 +10,7 @@ const markdownText = `
 
 import { Button } from 'antd';
 
-import { Markdown } from '@/components';
+import { Markdown } from '@nanshu/ui';
 
 import './index.module.scss';
 
