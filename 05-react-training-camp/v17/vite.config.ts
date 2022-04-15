@@ -14,6 +14,6 @@ export default ({ mode }) => {
       },
     },
     // 这里对应 nginx 中的 location
-    base: '/',
+    base: env.VITE_APP_BASE_URL,
   });
 };
