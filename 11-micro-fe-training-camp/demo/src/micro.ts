@@ -5,7 +5,13 @@ registerMicroApps([
     name: 'react-demo',
     entry: '//localhost:3001',
     container: '#container',
-    activeRule: '/start/react',
+    activeRule: '/react',
+  },
+  {
+    name: 'monitor',
+    entry: '//localhost:3002',
+    container: '#container',
+    activeRule: '/monitor',
   },
 ]);
 

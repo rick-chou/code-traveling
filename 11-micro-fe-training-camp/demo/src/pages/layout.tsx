@@ -1,13 +1,21 @@
 /* This example requires Tailwind CSS v2.0+ */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import Welcome from './welcome';
+import { Route, useLocation } from 'react-router-dom';
+import { IconBlog } from '@nanshu/ui';
+import Home from './home';
 
 import { logoImg } from '@/res';
 
-const navigation = [{ name: 'React', href: '/start/react', current: false }];
+const navigation = [
+  { name: 'React', href: '/react', current: true },
+  { name: 'UI', href: '/ui', current: true },
+  // { name: 'Vue', href: '/start/vue', current: false },
+  // { name: 'Node', href: '/start/node', current: false },
+  // { name: 'Monitor', href: '/start/monitor', current: false },
+];
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ');
@@ -28,7 +36,7 @@ export default function Layout() {
                     <a className="flex-shrink-0" href="/">
                       <img className="h-8 w-8" src={logoImg} alt="Workflow" />
                     </a>
-                    <div className="hidden md:block">
+                    <div className="">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <a
@@ -90,10 +98,19 @@ export default function Layout() {
             </>
           )}
         </Disclosure>
-        <main>
+        <main className="h-[calc(100vh-4rem)] flex justify-center items-center">
           <div className="max-w-full mx-auto py-6 sm:px-6 lg:px-8">
             <div id="container">
-              <Welcome />
+              {/* <Route
+                children={({ match }) =>
+                  match && (
+                    <Card iframe={{ url: 'http://124.223.71.181:3002/' }} />
+                  )
+                }
+              /> */}
+              {/* <IconBlog /> */}
+              {/* <Card iframe={{ url: 'http://124.223.71.181:3002/' }} /> */}
+              <Home />
             </div>
           </div>
         </main>
