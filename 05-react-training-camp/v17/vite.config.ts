@@ -7,11 +7,17 @@ import path from 'path';
 export default ({ mode }) => {
   const env = loadEnv(mode, process.cwd());
   return defineConfig({
-    plugins: [react(), qiankun('react-demo', { useDevMode: true })],
+    plugins: [react(), qiankun('react', { useDevMode: true })],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
       },
+    },
+    optimizeDeps: {
+      include: ['prop-types'],
+    },
+    build: {
+      commonjsOptions: { exclude: ['prop-types'], include: [] },
     },
     // 这里对应 nginx 中的 location
     base: env.VITE_APP_BASE_URL,

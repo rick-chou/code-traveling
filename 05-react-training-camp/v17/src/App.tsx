@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { renderRoutes } from 'react-router-config';
 import { useHistory, Route } from 'react-router-dom';
-import { Layout, Menu, Card } from 'antd';
+import { Layout, Menu } from 'antd';
 import { qiankunWindow } from 'vite-plugin-qiankun/dist/helper';
 import { NotificationOutlined } from '@ant-design/icons';
+import { Card } from '@nanshu/ui';
 
 import { routes, routeObj } from '@/router';
 import Home from './home';
@@ -20,15 +21,7 @@ function App() {
   };
 
   const rednerCore = (height: string, width: string) => (
-    <Card
-      hoverable
-      style={{
-        height,
-        width,
-        borderRadius: 20,
-        overflow: 'scroll',
-      }}
-    >
+    <Card style={{ height, width }}>
       <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
         <Sider className="site-layout-background" width={200}>
           <Menu
@@ -67,7 +60,7 @@ function App() {
     if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
       return (
         <div className="flex justify-center items-center h-screen">
-          {rednerCore('80%', '80%')}
+          {rednerCore('81%', '88%')}
         </div>
       );
     }
