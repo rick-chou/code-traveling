@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getQuotes } from '@/api';
 import { bgImg } from '@/res';
-import { IconBlog, IconGithub, IconJueJin } from '@/components/icon';
+import { IconBlog, IconGithub, IconJueJin } from '@nanshu/ui';
 
 const Welcome = () => {
   const [quotes, setQuotes] = useState<any>([]);
