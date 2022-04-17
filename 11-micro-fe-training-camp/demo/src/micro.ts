@@ -3,7 +3,8 @@ import { registerMicroApps, start } from 'qiankun';
 registerMicroApps([
   {
     name: 'react-demo',
-    entry: '//localhost:3001',
+    // entry: import.meta.env.VITE_SUB_APP_REACT_URL,
+    entry: 'http://124.223.71.181:3001/',
     container: '#container',
     activeRule: '/react',
   },

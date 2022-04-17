@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './micro';
+// import './micro';
 import './index.css';
+import '@nanshu/ui/lib/index.css'
 import App from './App';
-import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>

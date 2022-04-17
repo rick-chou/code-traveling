@@ -1,120 +1,46 @@
 /* This example requires Tailwind CSS v2.0+ */
-
-import { useEffect, useState } from 'react';
-import { Disclosure } from '@headlessui/react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { Route, useLocation } from 'react-router-dom';
-import { IconBlog } from '@nanshu/ui';
-import Home from './home';
-
-import { logoImg } from '@/res';
+import { Route } from 'react-router-dom';
+import { Card, Home, Nav } from '@nanshu/ui';
 
 const navigation = [
-  { name: 'React', href: '/react', current: true },
-  { name: 'UI', href: '/ui', current: true },
-  // { name: 'Vue', href: '/start/vue', current: false },
-  // { name: 'Node', href: '/start/node', current: false },
-  // { name: 'Monitor', href: '/start/monitor', current: false },
+  { name: 'UI', href: '/ui' },
+  { name: 'React', href: '/react' },
 ];
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ');
-}
-
 export default function Layout() {
-  const [activeTab, setActiveTab] = useState('');
-
   return (
-    <>
-      <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800">
-          {({ open }) => (
-            <>
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                  <div className="flex items-center">
-                    <a className="flex-shrink-0" href="/">
-                      <img className="h-8 w-8" src={logoImg} alt="Workflow" />
-                    </a>
-                    <div className="">
-                      <div className="ml-10 flex items-baseline space-x-4">
-                        {navigation.map((item) => (
-                          <a
-                            key={item.name}
-                            href={item.href}
-                            onClick={() => setActiveTab(item.name)}
-                            className={classNames(
-                              item.name === activeTab
-                                ? 'bg-gray-900 text-white'
-                                : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'px-3 py-2 rounded-md text-sm font-medium'
-                            )}
-                            aria-current={item.current ? 'page' : undefined}
-                          >
-                            {item.name}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="-mr-2 flex md:hidden">
-                    {/* Mobile menu button */}
-                    <Disclosure.Button className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                      <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <XIcon className="block h-6 w-6" aria-hidden="true" />
-                      ) : (
-                        <MenuIcon
-                          className="block h-6 w-6"
-                          aria-hidden="true"
-                        />
-                      )}
-                    </Disclosure.Button>
-                  </div>
-                </div>
-              </div>
-
-              <Disclosure.Panel className="md:hidden">
-                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
-                      onClick={() => setActiveTab(item.name)}
-                      className={classNames(
-                        item.name === activeTab
-                          ? 'bg-gray-900 text-white'
-                          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'block px-3 py-2 rounded-md text-base font-medium'
-                      )}
-                      aria-current={item.current ? 'page' : undefined}
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
-                </div>
-              </Disclosure.Panel>
-            </>
-          )}
-        </Disclosure>
-        <main className="h-[calc(100vh-4rem)] flex justify-center items-center">
-          <div className="max-w-full mx-auto py-6 sm:px-6 lg:px-8">
-            <div id="container">
-              {/* <Route
-                children={({ match }) =>
-                  match && (
-                    <Card iframe={{ url: 'http://124.223.71.181:3002/' }} />
-                  )
-                }
-              /> */}
-              {/* <IconBlog /> */}
-              {/* <Card iframe={{ url: 'http://124.223.71.181:3002/' }} /> */}
-              <Home />
-            </div>
+    <div className="min-h-full">
+      <Nav navigation={navigation} />
+      <main className="h-[calc(100vh-4rem)] flex justify-center items-center overflow-hidden">
+        <div className="max-w-full mx-auto py-6 sm:px-6 lg:px-8">
+          <div id="container">
+            <Route
+              path={'/ui'}
+              children={({ match }) =>
+                match && (
+                  <Card iframe={{ url: 'http://124.223.71.181:3002/' }} />
+                )
+              }
+            />
+            <Route
+              path={'/react'}
+              children={({ match }) =>
+                match && (
+                  <iframe
+                    src="http://124.223.71.181:3001/"
+                    style={{ width: '100vw', height: '100vh' }}
+                  />
+                )
+              }
+            />
+            <Route
+              path={'/'}
+              exact
+              render={() => <Home title="FE DEMO 🔥 🔥 🔥" />}
+            />
           </div>
-        </main>
-      </div>
-    </>
+        </div>
+      </main>
+    </div>
   );
 }
