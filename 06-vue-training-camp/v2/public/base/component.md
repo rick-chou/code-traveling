@@ -37,19 +37,6 @@ export const EventBus = new Vue();
     },
   };
 </script>
-
-<style scoped>
-  .content {
-    display: flex;
-  }
-  .card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-</style>
 ```
 
 ### 子组件 A
