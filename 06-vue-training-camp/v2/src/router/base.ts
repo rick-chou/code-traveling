@@ -18,6 +18,12 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "base" */ '@/views/base/lifecycle.vue'),
       },
+      {
+        path: '/base/component',
+        name: 'component',
+        component: () =>
+          import(/* webpackChunkName: "base" */ '@/views/base/parent-component.vue'),
+      },
     ],
   },
 ];

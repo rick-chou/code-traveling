@@ -17,28 +17,47 @@ export default {
     };
   },
   beforeCreate() {
-    this.$message('beforeCreate触发了');
+    this.$notify.info({
+      message: 'beforeCreate触发了',
+    });
   },
   created() {
-    this.$message('created触发了');
+    this.$notify.info({
+      message: 'created触发了',
+      offset: 50
+    });
   },
   beforeMount() {
-    this.$message('beforeMount触发了');
+    this.$notify.info({
+      message: 'beforeMount触发了',
+      offset: 100
+    });
   },
-  mountd() {
-    this.$message('mountd触发了');
+  mounted() {
+    this.$notify.info({
+      message: 'mounted触发了',
+      offset: 150
+    });
   },
   beforeUpdate() {
-    this.$message('beforeUpdate触发了');
+    this.$notify.info({
+      message: 'beforeUpdate触发了',
+    });
   },
   updated() {
-    this.$message('updated触发了');
+    this.$notify.info({
+      message: 'updated触发了',
+    });
   },
   beforeestory() {
-    this.$message('beforeestory触发了');
+    this.$notify.info({
+      message: 'beforeestory触发了',
+    });
   },
   destoryed() {
-    this.$message('destoryed触发了');
+    this.$notify.info({
+      message: 'destoryed触发了',
+    });
   },
 };
 </script>

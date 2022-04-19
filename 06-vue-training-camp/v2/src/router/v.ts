@@ -45,6 +45,18 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "v" */ '@/views/v/v-show.vue'),
       },
+      {
+        path: '/v/v-once',
+        name: 'v-once',
+        component: () =>
+          import(/* webpackChunkName: "v" */ '@/views/v/v-once.vue'),
+      },
+      {
+        path: '/v/v-text',
+        name: 'v-text',
+        component: () =>
+          import(/* webpackChunkName: "v" */ '@/views/v/v-text.vue'),
+      },
     ],
   },
 ];
