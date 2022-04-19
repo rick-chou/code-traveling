@@ -1,10 +1,10 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Route } from 'react-router-dom';
 import { Card, Home, Nav } from '@nanshu/ui';
 
 const navigation = [
   { name: 'UI', href: '/ui' },
   { name: 'React', href: '/react' },
+  { name: 'Vue', href: '/vue' },
 ];
 
 export default function Layout() {
@@ -14,6 +14,11 @@ export default function Layout() {
       <main className="h-[calc(100vh-4rem)] flex justify-center items-center overflow-hidden">
         <div className="max-w-full mx-auto py-6 sm:px-6 lg:px-8">
           <div id="container">
+            <Route
+              path={'/'}
+              exact
+              render={() => <Home title="FE DEMO 🔥 🔥 🔥" />}
+            />
             <Route
               path={'/ui'}
               children={({ match }) =>
@@ -34,9 +39,12 @@ export default function Layout() {
               }
             />
             <Route
-              path={'/'}
-              exact
-              render={() => <Home title="FE DEMO 🔥 🔥 🔥" />}
+              path={'/vue'}
+              children={({ match }) =>
+                match && (
+                  <Card iframe={{ url: 'http://124.223.71.181:3003/' }} />
+                )
+              }
             />
           </div>
         </div>
