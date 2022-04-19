@@ -3,6 +3,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import './index.css';
+import 'tailwindcss/tailwind.css';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
@@ -16,7 +17,6 @@ import '@kangc/v-md-editor/lib/theme/style/github.css';
 
 // highlightjs
 import hljs from 'highlight.js';
-
 
 VMdPreview.use(githubTheme, {
   Hljs: hljs,
