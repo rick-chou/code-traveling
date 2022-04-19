@@ -19,7 +19,7 @@ const routes = [
             name: 'base',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/base.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/base.vue'
               ),
           },
           {
@@ -27,7 +27,7 @@ const routes = [
             name: 'dynamic-route-matching',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/dynamic-route-matching.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/dynamic-route-matching.vue'
               ),
           },
           {
@@ -35,7 +35,7 @@ const routes = [
             name: 'nested-routes',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/nested-routes.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/nested-routes.vue'
               ),
           },
           {
@@ -43,7 +43,7 @@ const routes = [
             name: 'programmatic-navigation',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/programmatic-navigation.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/programmatic-navigation.vue'
               ),
           },
           {
@@ -51,7 +51,7 @@ const routes = [
             name: 'named-routes',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/named-routes.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/named-routes.vue'
               ),
           },
           {
@@ -59,7 +59,7 @@ const routes = [
             name: 'named-views',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/named-views.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/named-views.vue'
               ),
           },
           {
@@ -67,7 +67,7 @@ const routes = [
             name: 'redirect-alias',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/redirect-alias.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/redirect-alias.vue'
               ),
           },
           {
@@ -75,7 +75,7 @@ const routes = [
             name: 'passing-props-to-route-components',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/passing-props-to-route-components.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/passing-props-to-route-components.vue'
               ),
           },
           {
@@ -83,7 +83,7 @@ const routes = [
             name: 'h5-history-mode',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/essentials/h5-history-mode.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/essentials/h5-history-mode.vue'
               ),
           },
         ],
@@ -101,7 +101,7 @@ const routes = [
             name: 'navigation-guards',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/navigation-guards.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/navigation-guards.vue'
               ),
           },
           {
@@ -109,7 +109,7 @@ const routes = [
             name: 'route-meta-fields',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/route-meta-fields.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/route-meta-fields.vue'
               ),
           },
           {
@@ -117,7 +117,7 @@ const routes = [
             name: 'transitions',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/transitions.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/transitions.vue'
               ),
           },
           {
@@ -125,7 +125,7 @@ const routes = [
             name: 'data-fetching',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/data-fetching.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/data-fetching.vue'
               ),
           },
           {
@@ -133,7 +133,7 @@ const routes = [
             name: 'scroll-behavior',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/scroll-behavior.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/scroll-behavior.vue'
               ),
           },
           {
@@ -141,7 +141,7 @@ const routes = [
             name: 'lazy-loading-routes',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/lazy-loading-routes.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/lazy-loading-routes.vue'
               ),
           },
           {
@@ -149,7 +149,7 @@ const routes = [
             name: 'navigation-failures',
             component: () =>
               import(
-                /* webpackChunkName: "vue-router" */ '@/components/vue-router/advanced/navigation-failures.vue'
+                /* webpackChunkName: "vue-router" */ '@/views/vue-router/advanced/navigation-failures.vue'
               ),
           },
         ],

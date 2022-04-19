@@ -10,14 +10,14 @@ const routes = [
         path: '/vuex/state',
         name: 'state',
         component: () =>
-          import(/* webpackChunkName: "vuex" */ '@/components/vuex/state.vue'),
+          import(/* webpackChunkName: "vuex" */ '@/views/vuex/state.vue'),
       },
       {
         path: '/vuex/getters',
         name: 'getters',
         component: () =>
           import(
-            /* webpackChunkName: "vuex" */ '@/components/vuex/getters.vue'
+            /* webpackChunkName: "vuex" */ '@/views/vuex/getters.vue'
           ),
       },
       {
@@ -25,7 +25,7 @@ const routes = [
         name: 'mutations',
         component: () =>
           import(
-            /* webpackChunkName: "vuex" */ '@/components/vuex/mutations.vue'
+            /* webpackChunkName: "vuex" */ '@/views/vuex/mutations.vue'
           ),
       },
       {
@@ -33,7 +33,7 @@ const routes = [
         name: 'actions',
         component: () =>
           import(
-            /* webpackChunkName: "vuex" */ '@/components/vuex/actions.vue'
+            /* webpackChunkName: "vuex" */ '@/views/vuex/actions.vue'
           ),
       },
       {
@@ -41,7 +41,7 @@ const routes = [
         name: 'modules',
         component: () =>
           import(
-            /* webpackChunkName: "vuex" */ '@/components/vuex/modules.vue'
+            /* webpackChunkName: "vuex" */ '@/views/vuex/modules.vue'
           ),
       },
     ],

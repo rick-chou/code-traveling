@@ -41,4 +41,8 @@
   width: 70vw;
   margin: auto;
 }
+
+.v-md-editor-preview {
+  text-align: left;
+}
 </style>

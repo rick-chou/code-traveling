@@ -1,3 +1,4 @@
+```html
 <template>
   <div class="app" ref="app">
     <el-result icon="success" title="success" v-show="result" />
@@ -14,28 +15,29 @@ export default {
     };
   },
   beforeCreate() {
-    console.log(`beforeCreate`, "beforeCreate");
+    this.$message('beforeCreate触发了');
   },
   created() {
-    console.log(`created`, "created");
+    this.$message('created触发了');
   },
   beforeMount() {
-    console.log(`beforeMount`, "beforeMount");
+    this.$message('beforeMount触发了');
   },
   mountd() {
-    console.log(`mountd`, "mountd");
+    this.$message('mountd触发了');
   },
   beforeUpdate() {
-    console.log(`beforeUpdate`, "beforeUpdate");
+    this.$message('beforeUpdate触发了');
   },
   updated() {
-    console.log(`updated`, "updated");
+    this.$message('updated触发了');
   },
   beforeestory() {
-    console.log(`beforeestory`, "beforeestory");
+    this.$message('beforeestory触发了');
   },
   destoryed() {
-    console.log(`destoryed`, "destoryed");
+    this.$message('destoryed触发了');
   },
 };
 </script>
+```

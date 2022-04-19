@@ -7,11 +7,14 @@
       v-on:click="toggle"
       >{{ flag ? "UnStar" : "Start" }}</el-button
     >
+    <code-preview path="/v/v-on.md" />
   </div>
 </template>
 
 <script>
+import codePreview from '@/components/code-preview.vue';
 export default {
+  components: { codePreview },
   data() {
     return {
       flag: true,

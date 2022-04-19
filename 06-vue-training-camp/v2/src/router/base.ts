@@ -10,13 +10,13 @@ const routes = [
         path: '/base/data',
         name: 'data',
         component: () =>
-          import(/* webpackChunkName: "base" */ '@/components/base/data.vue'),
+          import(/* webpackChunkName: "base" */ '@/views/base/data.vue'),
       },
       {
-        path: '/base/life',
-        name: 'life',
+        path: '/base/lifecycle',
+        name: 'lifecycle',
         component: () =>
-          import(/* webpackChunkName: "base" */ '@/components/base/life.vue'),
+          import(/* webpackChunkName: "base" */ '@/views/base/lifecycle.vue'),
       },
     ],
   },

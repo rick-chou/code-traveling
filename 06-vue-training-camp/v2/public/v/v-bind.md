@@ -1,3 +1,6 @@
+> v-bind: value 可以简写成 :value 主要用来动态绑定 data 中的值
+
+```html
 <template>
   <div class="app">
     <!-- 简写 v-bind:value -> :value -->
@@ -17,20 +20,21 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      input: "",
-      result: true,
-    };
-  },
-  methods: {
-    handleInputChange(val) {
-      this.input = val;
+  export default {
+    data() {
+      return {
+        input: '',
+        result: true,
+      };
     },
-    toggle() {
-      this.result = !this.result;
+    methods: {
+      handleInputChange(val) {
+        this.input = val;
+      },
+      toggle() {
+        this.result = !this.result;
+      },
     },
-  },
-};
+  };
 </script>
+```
