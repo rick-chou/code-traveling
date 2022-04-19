@@ -49,3 +49,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.mb-2 {
+  margin-bottom: 20px;
+}
+</style>
