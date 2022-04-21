@@ -1,0 +1,8 @@
+<script>
+  function errorHandler(error) {
+    console.log('onerror捕获到异常', error);
+  }
+</script>
+
+<!-- 静态资源加载异常 -->
+<script src="https://nanshu.js" onerror="errorHandler(this)"></script>

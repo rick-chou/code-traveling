@@ -1,0 +1,21 @@
+<button id="btn">click</button>
+
+<script>
+  // 重写addEventListener
+  const oldAddEventListener = EventTarget.prototype.addEventListener;
+  const newAddEventListener = function (eventType, callback, ...args) {
+    const newCb = (e) => {
+      callback();
+      console.log('[addEventListener]', e.target);
+    };
+    oldAddEventListener.call(this, eventType, newCb, ...args);
+  };
+
+  window.onload = () => {
+    EventTarget.prototype.addEventListener = newAddEventListener;
+
+    document.querySelector('#btn').addEventListener('click', () => {
+      console.log('btn click');
+    });
+  };
+</script>

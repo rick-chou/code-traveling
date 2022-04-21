@@ -1,0 +1,9 @@
+<script>
+  Promise.reject('ops').catch((e) => {});
+  Promise.reject('ops');
+
+  // 捕获未对 rejected 状态做处理的 Promise
+  window.addEventListener('unhandledrejection', (event) => {
+    console.log('unhandledrejection', event);
+  });
+</script>

@@ -1,0 +1,53 @@
+<script>
+  /**
+   * @param {String}  message    错误信息
+   * @param {String}  source     出错文件
+   * @param {Number}  lineno     行号
+   * @param {Number}  colno      列号
+   * @param {Object}  error      Error对象（对象）
+   * @description 无法捕获静态资源异常和 JS 代码错误
+   */
+  window.onerror = function (message, source, lineno, colno, error) {
+    console.log('window.onerror捕获到异常', {
+      message,
+      source,
+      lineno,
+      colno,
+      error,
+    });
+  };
+  window.addEventListener(
+    'error',
+    (event) => {
+      console.log('window.addEventListener("error")捕获到异常', event);
+    },
+    true
+  );
+</script>
+
+<script>
+  // 无法捕获异步场景
+  try {
+    jsError;
+  } catch (error) {
+    console.log('try-catch捕获到异常>>>', error);
+  }
+
+  try {
+    setTimeout(() => {
+      undefined.map((v) => v);
+    }, 1000);
+  } catch (error) {
+    console.log('try-catch捕获到异常>>>', error);
+  }
+</script>
+
+<script>
+  // Error：错误的基类，其他错误都继承自该类型
+  // EvalError：Eval 函数执行异常
+  // RangeError：数组越界
+  // ReferenceError：尝试引用一个未被定义的变量时，将会抛出此异常
+  // SyntaxError：语法解析不合理
+  // TypeError：类型错误，用来表示值的类型非预期类型时发生的错误
+  // URIError：以一种错误的方式使用全局 URI 处理函数而产生的错误
+</script>

@@ -11,11 +11,11 @@ import { MInstance } from './instance';
 export const Plugins = {
   dom: domPlugin,
   xhr: xhrPlugin,
-  // fetch: fetchPlugin,
-  // err: errPlugin,
-  // unhandledrejection: unhandledrejectionPlugin,
-  // hashRoute: hashRoutePlugin,
-  // historyRoute: historyRoutePlugin,
+  fetch: fetchPlugin,
+  err: errPlugin,
+  unhandledrejection: unhandledrejectionPlugin,
+  hashRoute: hashRoutePlugin,
+  historyRoute: historyRoutePlugin,
 };
 
 export type IPlugins = Array<keyof typeof Plugins>;

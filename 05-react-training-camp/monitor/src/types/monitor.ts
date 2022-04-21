@@ -1,5 +1,5 @@
 // 收集路由信息
-interface RouteChangeCollectType {
+export interface RouteChangeCollectType {
   from: string;
   to: string;
 }
@@ -9,7 +9,7 @@ export const enum EventCategories {
   HTTP = 'Http',
   CLICK = 'UI.Click',
   ROUTE = 'Route',
-  Error = 'Error',
+  ERROR = 'Error',
 }
 
 // 具体的事件种类
@@ -46,9 +46,9 @@ export interface BasePluginType<T extends EventTypes> {
   /**
    * @description 转换数据格式
    */
-  transform: (collectedData: any) => any;
+  transform: (collectedData: any) => IStackItem;
   /**
    * @description 拿到数据进行一些操作 例如report
    */
-  consumer: (transformData: any) => void;
+  consumer: (transformData: IStackItem) => void;
 }

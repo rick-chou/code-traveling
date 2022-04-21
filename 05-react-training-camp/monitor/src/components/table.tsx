@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Button, Card, Table } from 'antd';
+import { Card, Table } from 'antd';
 import moment from 'moment';
 
 import { ColumnsType } from 'antd/lib/table';
@@ -45,12 +45,6 @@ const MTable = () => {
       hoverable
     >
       <div className="rounded-lg overflow-hidden">
-        <div className="flex justify-between items-center mb-2">
-          <h1 className="text-2xl">MTable</h1>
-          <Button type="primary" shape="circle" danger onClick={() => null}>
-            X
-          </Button>
-        </div>
         <Table
           columns={columns}
           dataSource={data}

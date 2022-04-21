@@ -1,0 +1,25 @@
+<!-- 方式一 直接在DOM上绑定 -->
+<button id="btn" onclick="handleClick()">click</button>
+
+<script>
+  const handleClick = () => {
+    console.log('A');
+  };
+
+  window.onload = () => {
+    // 方式二 在 js 事件中获取 dom 事件绑定
+    document.querySelector('#btn').onclick = () => {
+      console.log('B');
+    };
+    document.querySelector('#btn').onclick = () => {
+      console.log('C');
+    };
+    // 方式三 事件监听 addEventListener
+    document.querySelector('#btn').addEventListener('click', () => {
+      console.log('D');
+    });
+    document.querySelector('#btn').addEventListener('click', () => {
+      console.log('E');
+    });
+  };
+</script>

@@ -1,0 +1,21 @@
+<button onclick="handleFetch()">fetch request</button>
+
+<script>
+  const oldFetch = window.fetch;
+  const newFetch = function (url, options) {
+    console.log('url>>>', url);
+    console.log('options>>>', options);
+    return oldFetch.call(this, url, options);
+  };
+  window.fetch = newFetch;
+</script>
+
+<script>
+  const handleFetch = () => {
+    fetch('http://v3.wufazhuce.com:8000/api/channel/one/0/0', {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then(console.log);
+  };
+</script>
