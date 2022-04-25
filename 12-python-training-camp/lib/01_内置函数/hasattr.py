@@ -1,1 +1,0 @@
-# hasattr(object, name)
