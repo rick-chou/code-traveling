@@ -324,10 +324,10 @@
     "@monaco-editor/loader" "^1.3.1"
     prop-types "^15.7.2"
 
-"@nanshu/ui@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmmirror.com/@nanshu/ui/-/ui-2.0.0.tgz#8ae483ef46f7733c688e73e01b818dfb548b27e7"
-  integrity sha512-fSdWfpXM3j3yDHkJyOP0oQO6j3tqAmUU/+6z95EELnd8d4mp3/EBIV13yAUVfgAh/wO3sD5x/lN9sxuxl4l3qA==
+"@nanshu/ui@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@nanshu/ui/-/ui-2.0.2.tgz#e71a8b3ee742eae46c960a472fd9b209e5185330"
+  integrity sha512-DdBwlag1umLjfnq3cLnV8qWuNEOtc4X1vD3I4rDyxrsJIwjNpvQAZGdJSQc+7E068DX5TjV5D2x639JDIcgdQA==
   dependencies:
     "@headlessui/react" "^1.5.0"
     "@heroicons/react" "^1.0.6"

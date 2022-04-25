@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Card, Home, Nav } from '@nanshu/ui';
 
 const navigation = [
@@ -9,51 +9,46 @@ const navigation = [
 ];
 
 export default function Layout() {
+  const location = useLocation();
+
   return (
     <div className="min-h-full">
       <Nav navigation={navigation} />
       <main className="h-[calc(100vh-4rem)] flex justify-center items-center overflow-hidden">
         <div className="max-w-full mx-auto py-6 sm:px-6 lg:px-8">
           <div id="container">
-            <Route
-              path={'/'}
-              exact
-              render={() => <Home title="FE DEMO 🔥 🔥 🔥" />}
+            <div
+              style={{
+                display: location.pathname === '/' ? 'block' : 'none',
+              }}
+            >
+              <Home title="FE DEMO 🔥 🔥 🔥" />
+            </div>
+            <Card
+              style={{
+                display: location.pathname === '/ui' ? 'block' : 'none',
+              }}
+              iframe={{ url: 'http://124.223.71.181:3002/' }}
             />
-            <Route
-              path={'/ui'}
-              children={({ match }) =>
-                match && (
-                  <Card iframe={{ url: 'http://124.223.71.181:3002/' }} />
-                )
-              }
+            <iframe
+              style={{
+                width: '100vw',
+                height: '100vh',
+                display: location.pathname === '/react' ? 'block' : 'none',
+              }}
+              src="http://124.223.71.181:3001/"
             />
-            <Route
-              path={'/react'}
-              children={({ match }) =>
-                match && (
-                  <iframe
-                    src="http://124.223.71.181:3001/"
-                    style={{ width: '100vw', height: '100vh' }}
-                  />
-                )
-              }
+            <Card
+              style={{
+                display: location.pathname === '/vue' ? 'block' : 'none',
+              }}
+              iframe={{ url: 'http://124.223.71.181:3003/' }}
             />
-            <Route
-              path={'/vue'}
-              children={({ match }) =>
-                match && (
-                  <Card iframe={{ url: 'http://124.223.71.181:3003/' }} />
-                )
-              }
-            />
-            <Route
-              path={'/monitor'}
-              children={({ match }) =>
-                match && (
-                  <Card iframe={{ url: 'http://124.223.71.181:3004/' }} />
-                )
-              }
+            <Card
+              style={{
+                display: location.pathname === '/monitor' ? 'block' : 'none',
+              }}
+              iframe={{ url: 'http://124.223.71.181:3004/' }}
             />
           </div>
         </div>
