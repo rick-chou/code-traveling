@@ -72,4 +72,4 @@
 - [x] 构建自己的 UI 库 @nanshu/ui [docs](http://124.223.71.181:3002/) ｜ [repo](https://github.com/LuckyChou710/nanshu-ui) ｜ [npm](https://www.npmjs.com/package/@nanshu/ui) ( 建设中 🚧 )
 - [x] 实现一个前端监控平台 @nanshu/monitor [demo-preview](http://124.223.71.181:3004/) ｜ [repo](https://github.com/LuckyChou710/nanshu-monitor) ｜ [npm](https://www.npmjs.com/package/@nanshu/monitor) ( 迭代中 🚧 )
 
-![](https://cdn.jsdelivr.net/gh/LuckyChou710/nanshu-assets/jpg/bg38.jpg")
+![](https://cdn.jsdelivr.net/gh/LuckyChou710/nanshu-assets/jpg/bg38.jpg)
