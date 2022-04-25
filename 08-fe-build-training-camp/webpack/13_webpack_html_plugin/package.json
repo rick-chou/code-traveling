@@ -1,0 +1,14 @@
+{
+  "name": "13_webpack_html_plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --entry ./src/index.js -o dist"
+  }
+}
