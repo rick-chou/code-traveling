@@ -1,0 +1,4 @@
+# 不需要打包进入 image 文件
+.git
+node_modules
+npm-debug.log
