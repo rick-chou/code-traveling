@@ -5,6 +5,7 @@ const navigation = [
   { name: 'UI', href: '/ui' },
   { name: 'React', href: '/react' },
   { name: 'Vue', href: '/vue' },
+  { name: 'Monitor', href: '/monitor' },
 ];
 
 export default function Layout() {
@@ -43,6 +44,14 @@ export default function Layout() {
               children={({ match }) =>
                 match && (
                   <Card iframe={{ url: 'http://124.223.71.181:3003/' }} />
+                )
+              }
+            />
+            <Route
+              path={'/monitor'}
+              children={({ match }) =>
+                match && (
+                  <Card iframe={{ url: 'http://124.223.71.181:3004/' }} />
                 )
               }
             />
